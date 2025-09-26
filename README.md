@@ -11,11 +11,10 @@
  An AI tool for data analysis without writing code
  </h2>
  <div align='center'>
- <a href="https://github.com/NexDatawork/data-agents/graphs/commit-activity"><img alt = "commit activity" src = "https://img.shields.io/badge/commit_activity-blue"/></a>
- <a href="https://github.com/NexDatawork/data-agents/issues"><img alt = "issues" src = "https://img.shields.io/badge/issues-blue"/></a>
- <a href="https://github.com/NexDatawork/data-agents/pulls"><img alt = "pull requests" src = "https://img.shields.io/badge/pull_requests-blue"/></a> 
+ <a href="https://github.com/NexDatawork/data-agents/pulls"><img alt = "pull requests" src = "https://img.shields.io/github/issues-pr/NexDatawork/data-agents?label=pull%20requests&labelColor=blue"/></a> 
  <a href="https://github.com/NexDatawork/data-agents/blob/main/LICENSE"><img alt = "LICENSE" src = "https://img.shields.io/badge/license-blue"/></a> 
-
+ <img alt = "Discord" src = "https://img.shields.io/discord/logo=discord&logoColor=white"/></a>
+ <a href="https://github.com/NexDatawork/data-agents/stargazers"><img src="https://img.shields.io/github/stars/NexDatawork/data-agents?style=social" alt="GitHub Stars"></a>
 
 
 
@@ -25,14 +24,16 @@ A data agent designed for data analysis specified for particular tasks, quick vi
 
 
 ## Table of contents
- * [Features](##Features)
- * [Workflow](##Workflow)
- * [Results](##Results)
+ * [Features](#features)
+ * [Workflow](#workflow)
+ * [Results](#results)
+ * [License](#license)
+ * [Contributing](#contributing)
 
 
 
 
-## Features
+## <a name='features'></a>Features
 
  - Display of reasoning
  - Simple Dashboard and Export
@@ -40,7 +41,7 @@ A data agent designed for data analysis specified for particular tasks, quick vi
  - Contextual intelligence
  - Chat-bot for refining the results
 
-## Workflow
+## <a name='workflow'></a>Workflow
 
 ### Create an account
 Sign up with your Gmail, Microsoft account or create a new one on the website.
@@ -57,7 +58,7 @@ In the **Dashboard** tab you can see the the graphs of the graphs of some distri
 
 In the **Chat** tab you can ask the bot about the details of the data.
 
-## Results
+## <a name='results'></a>Results
 
 After the analysis is completed the results are received in two tabs: **Data Brain** and **Dashboard**.
 
@@ -93,9 +94,9 @@ Brief overview is followed by analysis summary with a rundown of trends needed t
 
 Finally, graphs of the most important variables are presented.
 
-## Contributing
+## <a name='contributing'></a>Contributing
 
-## License
+## <a name='license'></a>License
 
 This project is licensed under [the Apache-2.0 license](LICENSE).
 

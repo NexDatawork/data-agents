@@ -1,15 +1,19 @@
+<p align="center">
+  <img src="assets/banner.png" alt="NexDatawork Banner" width="100%"/>
+</p>
+
 <div align="center">
 
- <h1>
- <a href="https://www.nexdatawork.io/blank">
- NexDatawork
- </a>
-
+ <h1 style="margin-bottom:0; border-bottom:none;">
+   <a href="https://www.nexdatawork.io/blank">
+     NexDatawork
+   </a>
  </h1>
 
- <h2>
- An AI tool for data analysis without writing code
+ <h2 style="margin-top:0;">
+   An AI tool for data analysis without writing code
  </h2>
+
  <div align='center'>
  <a href="https://github.com/NexDatawork/data-agents/pulls"><img alt = "pull requests" src = "https://img.shields.io/github/issues-pr/NexDatawork/data-agents?label=pull%20requests&labelColor=blue"/></a> 
  <a href="https://github.com/NexDatawork/data-agents/blob/main/LICENSE"><img alt = "LICENSE" src = "https://img.shields.io/badge/license-blue"/></a> 

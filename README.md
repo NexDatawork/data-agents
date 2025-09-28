@@ -15,17 +15,47 @@
  </h2>
 
  <div align='center'>
- <a href="https://github.com/NexDatawork/data-agents/pulls"><img alt = "pull requests" src = "https://img.shields.io/github/issues-pr/NexDatawork/data-agents?label=pull%20requests&labelColor=blue"/></a> 
+ <a href="https://github.com/NexDatawork/data-agents/pulls"><img alt = "pull requests" src = "https://img.shields.io/github/issues-pr-closed/NexDatawork/data-agents?label=pull%20requests&labelColor=blue"/></a> 
  <a href="https://github.com/NexDatawork/data-agents/blob/main/LICENSE"><img alt = "LICENSE" src = "https://img.shields.io/badge/license-blue"/></a> 
- <img alt = "Discord" src = "https://img.shields.io/discord/logo=discord&logoColor=white"/></a>
+ <a href = "https://discord.gg/Tb55tT5UtZ"><img src="https://img.shields.io/badge/Discord-Join%20Community-7289DA?logo=discord&logoColor=white" alt="Discord"></a>
  <a href="https://github.com/NexDatawork/data-agents/stargazers"><img src="https://img.shields.io/github/stars/NexDatawork/data-agents?style=social" alt="GitHub Stars"></a>
 
 
 
  </div>
+
 </div>
 A data agent designed for data analysis specified for particular tasks, quick visualisation and built for adapting for specific requirenments.
 
+## Prerequisites
+ * [Node.js](https://nodejs.org/en)
+ 
+ In order to run the programme Supabase and OpenAI API keys are needed.
+ 
+ * [Supabase](https://supabase.com/)
+ * [OpenAI](https://platform.openai.com/docs/overview)
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your [.env](.env.example) file
+
+`NEXT_PUBLIC_SUPABASE_URL`
+
+`NEXT_PUBLIC_SUPABASE_ANON_KEY`
+
+`OPENAI_API_KEY`
+
+## Quickstart
+
+When starting the programme for the first time run the following script in your command line:
+```bash
+npm install
+```
+
+Afterwards the programme can be started as follows:
+```bash
+npm run dev
+```
 
 ## Table of contents
  * [Features](#features)

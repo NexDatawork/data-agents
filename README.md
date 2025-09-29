@@ -14,30 +14,69 @@
    An AI tool for data analysis without writing code
  </h2>
 
- <div align="center">
-
- <a href="https://github.com/NexDatawork/data-agents/graphs/commit-activity"><img alt = "commit activity" src = "https://img.shields.io/badge/commit_activity-blue"/></a>
- <a href="https://github.com/NexDatawork/data-agents/issues"><img alt = "issues" src = "https://img.shields.io/badge/issues-blue"/></a>
- <a href="https://github.com/NexDatawork/data-agents/pulls"><img alt = "pull requests" src = "https://img.shields.io/badge/pull_requests-blue"/></a> 
+ <div align='center'>
+ <a href="https://github.com/NexDatawork/data-agents/pulls"><img alt = "pull requests" src = "https://img.shields.io/github/issues-pr-closed/NexDatawork/data-agents?label=pull%20requests&labelColor=blue"/></a> 
  <a href="https://github.com/NexDatawork/data-agents/blob/main/LICENSE"><img alt = "LICENSE" src = "https://img.shields.io/badge/license-blue"/></a> 
-
+ <a href = "https://discord.gg/Tb55tT5UtZ"><img src="https://img.shields.io/badge/Discord-Join%20Community-7289DA?logo=discord&logoColor=white" alt="Discord"></a>
+ <a href="https://github.com/NexDatawork/data-agents/stargazers"><img src="https://img.shields.io/github/stars/NexDatawork/data-agents?style=social" alt="GitHub Stars"></a>
 
 
 
  </div>
+
 </div>
 A data agent designed for data analysis specified for particular tasks, quick visualisation and built for adapting for specific requirenments.
 
+## Prerequisites
+ * [Node.js](https://nodejs.org/en)
+ 
+ In order to run the programme Supabase and OpenAI API keys are needed.
+ 
+ * [Supabase](https://supabase.com/)
+ * [OpenAI](https://platform.openai.com/docs/overview)
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your [.env](.env.example) file
+
+`NEXT_PUBLIC_SUPABASE_URL`
+
+`NEXT_PUBLIC_SUPABASE_ANON_KEY`
+
+`OPENAI_API_KEY`
+
+## Quickstart
+
+In order to start working with the program run the following code:
+```bash
+git clone https://github.com/NexDatawork/data-agents.git
+cd data-agents
+cp .env.example .env
+```
+Fill the URL and APIs in the environment file as shown in the [.env.example](.env.example).
+
+When starting the program for the first time, run this code in your command line:
+
+```bash
+npm install
+```
+
+Afterwards the programme can be started as follows:
+```bash
+npm run dev
+```
 
 ## Table of contents
- * [Features](##Features)
- * [Workflow](##Workflow)
- * [Results](##Results)
+ * [Features](#features)
+ * [Workflow](#workflow)
+ * [Results](#results)
+ * [License](#license)
+ * [Contributing](#contributing)
 
 
 
 
-## Features
+## <a name='features'></a>Features
 
  - Display of reasoning
  - Simple Dashboard and Export
@@ -45,7 +84,7 @@ A data agent designed for data analysis specified for particular tasks, quick vi
  - Contextual intelligence
  - Chat-bot for refining the results
 
-## Workflow
+## <a name='workflow'></a>Workflow
 
 ### Create an account
 Sign up with your Gmail, Microsoft account or create a new one on the website.
@@ -62,7 +101,7 @@ In the **Dashboard** tab you can see the the graphs of the graphs of some distri
 
 In the **Chat** tab you can ask the bot about the details of the data.
 
-## Results
+## <a name='results'></a>Results
 
 After the analysis is completed the results are received in two tabs: **Data Brain** and **Dashboard**.
 
@@ -98,9 +137,9 @@ Brief overview is followed by analysis summary with a rundown of trends needed t
 
 Finally, graphs of the most important variables are presented.
 
-## Contributing
+## <a name='contributing'></a>Contributing
 
-## License
+## <a name='license'></a>License
 
 This project is licensed under [the Apache-2.0 license](LICENSE).
 

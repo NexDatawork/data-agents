@@ -11,7 +11,7 @@
  </h1>
 
  <h2 style="margin-top:0;">
-   An AI tool for data analysis without writing code
+  An AI data agent for data engineering and analytics without writing code 
  </h2>
 
  <div align="center">
@@ -20,9 +20,6 @@
  <a href="https://github.com/NexDatawork/data-agents/issues"><img alt = "issues" src = "https://img.shields.io/badge/issues-blue"/></a>
  <a href="https://github.com/NexDatawork/data-agents/pulls"><img alt = "pull requests" src = "https://img.shields.io/badge/pull_requests-blue"/></a> 
  <a href="https://github.com/NexDatawork/data-agents/blob/main/LICENSE"><img alt = "LICENSE" src = "https://img.shields.io/badge/license-blue"/></a> 
-
-
-
 
  </div>
 </div>

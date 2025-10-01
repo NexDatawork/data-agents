@@ -22,6 +22,31 @@ When filing an issue please include as much information as possible:
 
 ## Prerequisites
 
+For running the program locally you need:
+ - [Node.js](https://nodejs.org/en)
+ - [Supabase URL](https://supabase.com/)
+ - [Supabase API key](https://supabase.com/)
+ - [OpenAI API key](https://platform.openai.com/docs/overview)
+
+For more information check the [example of the environment file](.env.example).
+
 ## Getting started
 
+In order to start working with the program run the following code:
+```bash
+git clone https://github.com/NexDatawork/data-agents.git
+cd data-agents
+cp .env.example .env
+```
+Fill the URL and APIs in the environment file as shown in the [.env.example](.env.example).
 
+When starting the program for the first time, run this code in your command line:
+
+```bash
+npm install
+```
+
+Afterwards the programme can be started as follows:
+```bash
+npm run dev
+```

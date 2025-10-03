@@ -26,56 +26,19 @@
 </div>
 A data agent designed for data analysis specified for particular tasks, quick visualisation and built for adapting for specific requirenments.
 
-## Prerequisites
- * [Node.js](https://nodejs.org/en)
- 
- In order to run the programme Supabase and OpenAI API keys are needed.
- 
- * [Supabase](https://supabase.com/)
- * [OpenAI](https://platform.openai.com/docs/overview)
-
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your [.env](.env.example) file
-
-`NEXT_PUBLIC_SUPABASE_URL`
-
-`NEXT_PUBLIC_SUPABASE_ANON_KEY`
-
-`OPENAI_API_KEY`
-
-## Quickstart
-
-In order to start working with the program run the following code:
-```bash
-git clone https://github.com/NexDatawork/data-agents.git
-cd data-agents
-cp .env.example .env
-```
-Fill the URL and APIs in the environment file as shown in the [.env.example](.env.example).
-
-When starting the program for the first time, run this code in your command line:
-
-```bash
-npm install
-```
-
-Afterwards the programme can be started as follows:
-```bash
-npm run dev
-```
 
 ## Table of contents
- * [Features](#features)
- * [Workflow](#workflow)
- * [Results](#results)
+ * [Features & Workflow ](#features--workflow)
+ * [Architechture](#architecture)
+ * [Use Case](#use-case)
+ * [Requirenments & Starting Procedures](#requirenments--starting-procedures)
  * [License](#license)
  * [Contributing](#contributing)
 
 
+## <a name='features--workflow'></a>Features & Workflow
 
-
-## <a name='features'></a>Features
+### Features
 
  - Display of reasoning
  - Simple Dashboard and Export
@@ -83,26 +46,35 @@ npm run dev
  - Contextual intelligence
  - Chat-bot for refining the results
 
-## <a name='workflow'></a>Workflow
+### Workflow
 
 
-### Upload your data
+**Upload your data**
+
 Choose the **Data Upload** menu and choose a csv file from your computer or drag and drop it in the menu.
 
-### Specify what you expect from the result
+**Specify what you expect from the result**
+
+
 In the windows below choose an **Industries**, **Topics** and **Requirenments** for better results. You can add comments in a seperate window.
 
-![alt text](image.png)
+<image src='Images/image.png' alt='uploading data' width=250>
 
-### Receive the analysed data
+**Receive the analysed data**
+
 In the **Data brain** tab you can see the summary, insights and description of the data.
 
 In the **Dashboard** tab you can see the the graphs of the graphs of some distributions as well as summary.
 
 In the **Chat** tab you can ask the bot about the details of the data.
-![alt text](image-1.png)
 
-## <a name='results'></a>Results
+<image src='Images/image-1.png' alt='uploading data' width=300>
+
+
+## <a name='architecture'></a>Architecture
+
+
+## <a name='use-case'></a>Use Case
 
 After the analysis is completed the results are received in two tabs: **Data Brain** and **Dashboard**.
 
@@ -123,6 +95,50 @@ Brief overview of the data with only the most important metrics and figures, suc
 
 Finally, graphs of the most important variables are presented.
 
+## <a name='requirenments--starting-procedures'></a>Requirenments & Starting Procedures
+
+### Requirenments
+ * [Node.js](https://nodejs.org/en)
+ 
+ In order to run the programme Supabase and OpenAI API keys are needed.
+ 
+ * [Supabase](https://supabase.com/)
+ * [OpenAI](https://platform.openai.com/docs/overview)
+
+
+### Environment Variables
+
+To run this project, you will need to add the following environment variables to your [.env](.env.example) file
+
+`NEXT_PUBLIC_SUPABASE_URL`
+
+`NEXT_PUBLIC_SUPABASE_ANON_KEY`
+
+`OPENAI_API_KEY`
+
+### Quickstart
+
+In order to start working with the program run the following code:
+```bash
+git clone https://github.com/NexDatawork/data-agents.git
+cd data-agents
+cp .env.example .env
+```
+Fill the URL and APIs in the environment file as shown in the [.env.example](.env.example).
+
+When starting the program for the first time, run this code in your command line:
+
+```bash
+npm install
+```
+
+Afterwards the programme can be started as follows:
+```bash
+npm run dev
+```
+
+
+
 ## <a name='contributing'></a>Contributing
 
 Contributions are always welcome!
@@ -132,10 +148,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for ways to get started.
 ## <a name='license'></a>License
 
 This project is licensed under [the Apache-2.0 license](LICENSE).
-
-
-
-
 
 
 

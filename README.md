@@ -79,21 +79,51 @@ In the **Chat** tab you can ask the bot about the details of the data.
 After the analysis is completed the results are received in two tabs: **Data Brain** and **Dashboard**.
 
 ### Data Brain
-1) General overview of the data is presented as well as the methodology of approaching the dataset 
+1) General overview of the data is presented as well as the methodology of approaching the dataset
+
+<p align='center'>
+<image src='Images/executive_summary.png' alt='executive summary' width=500>
+</p>
 
 2) Recommendations on possible aspects of the data are generated
 
+<p align='center'>
+<image src='Images/business_insights.png' alt='business insights' width=500>
+</p>
+
 3) a conclusive overview of the data and statistical insights are presented
+
+
+
+<p align='center'>
+<image src='Images/Methodology.png' alt='Methodology' width=500 />
+<image src='Images/Data_evidence.png' alt='Data evidence' width=500 />
+<image src='Images/Statistical_insights.png' alt='Statistical insights' width=500 />
+<image src='Images/categorical_distribution.png' alt='categorical distribution' width=500 />
+</p>
 
 
 ### Dashboard
 
 Brief overview of the data with only the most important metrics and figures, such as:
  * file information
+<p align='center'>
+<image src='Images/file_information.png' alt='file_information' width=500 />
+</p>
+
  * number of columns of each type (numerical, categorical and temporal)
+
  * data quality and statistical summary
+<p align='center'>
+ <image src='Images/analysis_summary.png' alt='analysis_summary' width=500 />
+</p>
 
 Finally, graphs of the most important variables are presented.
+<p align='center'>
+ <image src='Images/graph1.png' alt='graph1' width=225 />
+ <image src='Images/graph2.png' alt='graph2' width=250 />
+ <image src='Images/graph3.png' alt='graph3' width=225 />
+</p>
 
 ## <a name='requirenments--starting-procedures'></a>Requirenments & Starting Procedures
 

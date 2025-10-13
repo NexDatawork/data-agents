@@ -58,7 +58,7 @@ Choose the **Data Upload** menu and choose a csv file from your computer or drag
 
 In the windows below choose an **Industries**, **Topics** and **Requirenments** for better results. You can add comments in a seperate window.
 
-<image src='Images/image.png' alt='uploading data' width=250>
+<image src='assets/image.png' alt='uploading data' width=250>
 
 **Receive the analysed data**
 
@@ -68,7 +68,7 @@ In the **Dashboard** tab you can see the the graphs of the graphs of some distri
 
 In the **Chat** tab you can ask the bot about the details of the data.
 
-<image src='Images/image-1.png' alt='uploading data' width=300>
+<image src='assets/image-1.png' alt='uploading data' width=300>
 
 
 ## <a name='architecture'></a>Architecture
@@ -82,13 +82,13 @@ After the analysis is completed the results are received in two tabs: **Data Bra
 1) General overview of the data is presented as well as the methodology of approaching the dataset
 
 <p align='center'>
-<image src='Images/executive_summary.png' alt='executive summary' width=500>
+<image src='assets/executive_summary.png' alt='executive summary' width=500>
 </p>
 
 2) Recommendations on possible aspects of the data are generated
 
 <p align='center'>
-<image src='Images/business_insights.png' alt='business insights' width=500>
+<image src='assets/business_insights.png' alt='business insights' width=500>
 </p>
 
 3) a conclusive overview of the data and statistical insights are presented
@@ -96,10 +96,10 @@ After the analysis is completed the results are received in two tabs: **Data Bra
 
 
 <p align='center'>
-<image src='Images/Methodology.png' alt='Methodology' width=500 />
-<image src='Images/Data_evidence.png' alt='Data evidence' width=500 />
-<image src='Images/Statistical_insights.png' alt='Statistical insights' width=500 />
-<image src='Images/categorical_distribution.png' alt='categorical distribution' width=500 />
+<image src='assets/Methodology.png' alt='Methodology' width=500 />
+<image src='assets/Data_evidence.png' alt='Data evidence' width=500 />
+<image src='assets/Statistical_insights.png' alt='Statistical insights' width=500 />
+<image src='assets/categorical_distribution.png' alt='categorical distribution' width=500 />
 </p>
 
 
@@ -108,21 +108,21 @@ After the analysis is completed the results are received in two tabs: **Data Bra
 Brief overview of the data with only the most important metrics and figures, such as:
  * file information
 <p align='center'>
-<image src='Images/file_information.png' alt='file_information' width=500 />
+<image src='assets/file_information.png' alt='file_information' width=500 />
 </p>
 
  * number of columns of each type (numerical, categorical and temporal)
 
  * data quality and statistical summary
 <p align='center'>
- <image src='Images/analysis_summary.png' alt='analysis_summary' width=500 />
+ <image src='assets/analysis_summary.png' alt='analysis_summary' width=500 />
 </p>
 
 Finally, graphs of the most important variables are presented.
 <p align='center'>
- <image src='Images/graph1.png' alt='graph1' width=225 />
- <image src='Images/graph2.png' alt='graph2' width=250 />
- <image src='Images/graph3.png' alt='graph3' width=225 />
+ <image src='assets/graph1.png' alt='graph1' width=225 />
+ <image src='assets/graph2.png' alt='graph2' width=250 />
+ <image src='assets/graph3.png' alt='graph3' width=225 />
 </p>
 
 ## <a name='requirenments--starting-procedures'></a>Requirenments & Starting Procedures

@@ -32,9 +32,9 @@ A data agent designed for data analysis specified for particular tasks, quick vi
 
 ## Table of contents
  * [Features & Workflow ](#features--workflow)
- * [Architechture](#architecture)
+ * [Architecture](#architecture)
  * [Use Case](#use-case)
- * [Requirenments & Starting Procedures](#requirenments--starting-procedures)
+ * [Requirements & Starting Procedures](#requirements--starting-procedures)
  * [License](#license)
  * [Contributing](#contributing)
 
@@ -59,7 +59,7 @@ Choose the **Data Upload** menu and choose a csv file from your computer or drag
 **Specify what you expect from the result**
 
 
-In the windows below choose an **Industries**, **Topics** and **Requirenments** for better results. You can add comments in a seperate window.
+In the windows below choose an **Industries**, **Topics** and **Requirements** for better results. You can add comments in a seperate window.
 
 <image src='assets/image.png' alt='uploading data' width=250>
 
@@ -128,9 +128,9 @@ Finally, graphs of the most important variables are presented.
  <image src='assets/graph3.png' alt='graph3' width=225 />
 </p>
 
-## <a name='requirenments--starting-procedures'></a>Requirenments & Starting Procedures
+## <a name='requirements--starting-procedures'></a>Requirements & Starting Procedures
 
-### Requirenments
+### Requirements
  * [Node.js](https://nodejs.org/en)
  
  In order to run the programme Supabase and OpenAI API keys are needed.

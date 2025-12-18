@@ -32,9 +32,9 @@ A data agent designed for data analysis specified for particular tasks, quick vi
 
 ## Table of contents
  * [Features & Workflow ](#features--workflow)
- * [Architechture](#architecture)
+ * [Architecture](#architecture)
  * [Use Case](#use-case)
- * [Requirenments & Starting Procedures](#requirenments--starting-procedures)
+ * [Requirements & Starting Procedures](#requirements--starting-procedures)
  * [License](#license)
  * [Contributing](#contributing)
 

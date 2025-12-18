@@ -82,7 +82,7 @@ In the **Chat** tab you can ask the bot about the details of the data.
 After the analysis is completed the results are received in two tabs: **Data Brain** and **Dashboard**.
 
 ### Data Brain
-1) General overview of the data is presented as well as the methodology of approaching the dataset
+1) General overview of the data is presented as well as the methodology of approaching the dataset.
 
 <p align='center'>
 <image src='assets/executive_summary.png' alt='executive summary' width=500>

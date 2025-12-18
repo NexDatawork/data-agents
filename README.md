@@ -130,6 +130,25 @@ Finally, graphs of the most important variables are presented.
 
 ## <a name='requirements--starting-procedures'></a>Requirements & Starting Procedures
 
+## Demo Dataset
+
+This repository includes a **mock dataset** which was added purely for demonstration(and debugging) purposes.
+They are designed to help pinpoint the cause and place for delays/errors within the AI data agent workflow using mock datasets.
+
+### User Workflow Steps Demo
+
+- `data/workflow_painpoints_demo.csv`
+
+Captures how users move through the product demo workflow, such as
+(data upload → schema detection → data cleaning → data analysis → data visualization → exporting the data).
+Each row represents a single workflow step and includes:
+- the time spent on the step in minutes
+- whether or not an error actually occurred(simple boolean)
+- the associated pain point (if it exists to begin with)
+
+> **Note:** All added demo datasets in this repository are meant solely for demonstration and testing purposes.
+
+
 ### Requirements
  * [Node.js](https://nodejs.org/en)
  

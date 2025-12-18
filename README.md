@@ -14,13 +14,13 @@
   An AI data agent for data engineering and analytics without writing code 
  </h2>
 
- <div align='center'>
- <a href="https://github.com/NexDatawork/data-agents/pulls"><img alt = "pull requests" src = "https://img.shields.io/github/issues-pr/NexDatawork/data-agents?label=pull%20requests&labelColor=rgba(56, 52, 182, 1)&color=rgb(90, 42, 184)"/></a> 
- <a href="https://github.com/NexDatawork/data-agents/blob/main/LICENSE"><img alt = "LICENSE" src = "https://img.shields.io/badge/license-Apache%202.0-blueviolet?style=flat&color=rgb(90, 42, 184)&labelColor=rgba(56, 52, 182, 1)"/></a> 
- <a href = "https://discord.gg/Tb55tT5UtZ"><img src="https://img.shields.io/badge/Discord-Join%20Community-7289DA?logo=discord&logoColor=white&color=rgb(90, 42, 184)&labelColor=rgba(56, 52, 182, 1)" alt="Discord"></a>
- <a href="https://github.com/NexDatawork/data-agents/stargazers"><img src="https://img.shields.io/github/stars/NexDatawork/data-agents?style=social" alt="GitHub Stars"></a>
- <a href="https://huggingface.co/NexDatawork">
-  <img alt="Hugging Face" src="https://img.shields.io/badge/Hugging%20Face-Models%20%26%20Datasets?logo=huggingface&color=rgb(90, 42, 184)">
+<div align='center'>
+<a href="https://github.com/NexDatawork/data-agents/pulls"><img alt = "pull requests" src = "https://img.shields.io/github/issues-pr/NexDatawork/data-agents?label=pull%20requests&labelColor=rgba(56, 52, 182, 1)&color=rgb(90, 42, 184)"/></a> 
+<a href="LICENSE"><img alt = "LICENSE" src = "https://img.shields.io/badge/license-Apache%202.0-blueviolet?style=flat&color=rgb(90, 42, 184)&labelColor=rgba(56, 52, 182, 1)"/></a> 
+<a href = "https://discord.gg/Tb55tT5UtZ"><img src="https://img.shields.io/badge/Discord-Join%20Community-7289DA?logo=discord&logoColor=white&color=rgb(90, 42, 184)&labelColor=rgba(56, 52, 182, 1)" alt="Discord"></a>
+<a href="https://github.com/NexDatawork/data-agents/stargazers"><img src="https://img.shields.io/github/stars/NexDatawork/data-agents?style=social" alt="GitHub Stars"></a>
+<a href="https://huggingface.co/NexDatawork">
+ <img alt="Hugging Face" src="https://img.shields.io/badge/Hugging%20Face-Models%20%26%20Datasets?logo=huggingface&color=rgb(90, 42, 184)">
 </a>
 
 

@@ -1,0 +1,13 @@
+ticket_id,created_at,channel,customer_id,priority,status,category,agent_id,resolution_time_minutes,satisfaction_rating
+TCKT-1001,2024-09-01 09:13:00,email,CUST-001,High,Resolved,Billing,AG-01,45,5
+TCKT-1002,2024-09-01 10:27:00,chat,CUST-002,Medium,Resolved,Technical Issue,AG-02,32,4
+TCKT-1003,2024-09-01 11:05:00,phone,CUST-003,Low,Open,Account Access,,,
+TCKT-1004,2024-09-01 11:42:00,chat,CUST-004,High,Resolved,Outage,AG-01,18,5
+TCKT-1005,2024-09-01 12:10:00,email,CUST-005,Medium,Escalated,Billing,AG-03,,,
+TCKT-1006,2024-09-01 13:55:00,web,CUST-006,Low,Resolved,Feature Request,AG-02,120,4
+TCKT-1007,2024-09-01 14:21:00,chat,CUST-007,High,Resolved,Technical Issue,AG-04,27,3
+TCKT-1008,2024-09-01 15:03:00,phone,CUST-008,Medium,Resolved,Account Access,AG-01,36,5
+TCKT-1009,2024-09-01 15:47:00,email,CUST-009,Low,Closed,Feedback,,,
+TCKT-1010,2024-09-01 16:32:00,chat,CUST-010,High,Resolved,Outage,AG-03,22,5
+
+

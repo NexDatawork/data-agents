@@ -16,14 +16,9 @@
 
  <div align='center'>
  <a href="https://github.com/NexDatawork/data-agents/pulls"><img src="https://img.shields.io/github/issues-pr/NexDatawork/data-agents?label=Pull%20Requests&style=flat&color=7B5CE1" alt="Pull Requests"/></a>
-
  <a href="https://github.com/NexDatawork/data-agents/blob/main/LICENSE"> <img src="https://img.shields.io/badge/License-Apache%202.0-7B5CE1?style=flat" alt="License"/></a>
- 
- <a href="https://discord.gg/Tb55tT5UtZ">
-  <img src="https://img.shields.io/badge/Discord-Join%20Community-5865F2?style=flat&logo=discord&logoColor=white" alt="Discord"/></a>
-
+ <a href="https://discord.gg/Tb55tT5UtZ"><img src="https://img.shields.io/badge/Discord-Join%20Community-5865F2?style=flat&logo=discord&logoColor=white" alt="Discord"/></a>
  <a href="https://github.com/NexDatawork/data-agents/stargazers"><img src="https://img.shields.io/github/stars/NexDatawork/data-agents?style=social" alt="GitHub Stars"></a>
-
  <a href="https://huggingface.co/NexDatawork"><img src="https://img.shields.io/badge/HuggingFace-Models%20%26%20Datasets-FFD21E?style=flat&logo=huggingface&logoColor=black" alt="Hugging Face"/></a>
 
 </div>

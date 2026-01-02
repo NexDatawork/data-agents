@@ -1,0 +1,13 @@
+review_id,product_id,product_name,customer_id,review_date,rating,title,review_text,verified_purchase,source
+R-5001,PROD-001,Wireless Headphones,CUST-101,2024-08-01,5,Great sound quality,Really impressed with the noise cancellation and battery life.,True,website
+R-5002,PROD-001,Wireless Headphones,CUST-102,2024-08-02,3,Decent but uncomfortable,Audio is fine but the ear cups get uncomfortable after an hour.,True,website
+R-5003,PROD-002,Smartwatch,CUST-103,2024-08-03,4,Good value,Tracks steps and heart rate accurately, but the screen is hard to see in sunlight.,True,mobile_app
+R-5004,PROD-002,Smartwatch,CUST-104,2024-08-03,2,Battery drains fast,Battery barely lasts a day even with minimal use.,False,third_party
+R-5005,PROD-003,Standing Desk,CUST-105,2024-08-04,5,Love this desk,Easy to assemble and very sturdy. My back pain is gone.,True,website
+R-5006,PROD-003,Standing Desk,CUST-106,2024-08-05,4,Solid but heavy,Great build quality but difficult to move once assembled.,True,website
+R-5007,PROD-004,USB-C Hub,CUST-107,2024-08-05,1,Stopped working,Worked for a week and then randomly stopped being detected.,True,website
+R-5008,PROD-004,USB-C Hub,CUST-108,2024-08-06,3,Okay for the price,Ports are a bit loose but it does the job.,False,third_party
+R-5009,PROD-005,Office Chair,CUST-109,2024-08-06,4,Comfortable chair,Good lumbar support and easy to adjust.,True,mobile_app
+R-5010,PROD-005,Office Chair,CUST-110,2024-08-07,2,Not as described,The cushion is much thinner than in the photos.,False,third_party
+
+

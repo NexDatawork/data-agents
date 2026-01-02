@@ -1,0 +1,5 @@
+[
+    {"date":"2025-12-1", "product": "Product one", "units":2,"revenue":200.18},
+    {"date":"2025-11-12", "product": "Product two", "units":50,"revenue":32.01}
+
+]

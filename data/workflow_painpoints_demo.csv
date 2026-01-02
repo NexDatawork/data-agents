@@ -1,0 +1,6 @@
+user_id,workflow_step,webtools_used,minutes_spent,error_existence,pain_point
+U001,Data_Upload,CSV Import,6,false,none
+U001,Data_Cleaning,Manual Script,18,true,complex setup
+U002,Mapping,UI Tool,10,false,unclear labelling
+U003,Visualization,Dashboard,7,true,very slow rendering
+U004,Exporting_Results,CSV Export,5,false,none

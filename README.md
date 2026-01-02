@@ -15,13 +15,16 @@
  </h2>
 
  <div align='center'>
- <a href="https://github.com/NexDatawork/data-agents/pulls"><img src="https://img.shields.io/github/issues-pr/NexDatawork/data-agents?label=Pull%20Requests&style=flat&color=7B5CE1" alt="Pull Requests"/></a>
- <a href="https://github.com/NexDatawork/data-agents/blob/main/LICENSE"> <img src="https://img.shields.io/badge/License-Apache%202.0-7B5CE1?style=flat" alt="License"/></a>
- <a href="https://discord.gg/Tb55tT5UtZ"><img src="https://img.shields.io/badge/Discord-Join%20Community-5865F2?style=flat&logo=discord&logoColor=white" alt="Discord"/></a>
+ <a href="https://github.com/NexDatawork/data-agents/pulls"><img alt = "pull requests" src = "https://img.shields.io/github/issues-pr/NexDatawork/data-agents?label=pull%20requests&labelColor=3834B6&color=5A2AB8"/></a> 
+ <a href="https://github.com/NexDatawork/data-agents/blob/main/LICENSE"><img alt = "LICENSE" src = "https://img.shields.io/badge/license-Apache%202.0-blueviolet?style=flat&labelColor=3834B6&color=5A2AB8/></a> 
+ <a href = "https://discord.gg/Tb55tT5UtZ"><img src="https://img.shields.io/badge/Discord-Join%20Community-7289DA?logo=discord&logoColor=white&labelColor=3834B6&color=5A2AB8" alt="Discord"></a>
  <a href="https://github.com/NexDatawork/data-agents/stargazers"><img src="https://img.shields.io/github/stars/NexDatawork/data-agents?style=social" alt="GitHub Stars"></a>
- <a href="https://huggingface.co/NexDatawork"><img src="https://img.shields.io/badge/HuggingFace-Models%20%26%20Datasets-FFD21E?style=flat&logo=huggingface&logoColor=black" alt="Hugging Face"/></a>
+ <a href="https://huggingface.co/NexDatawork">
+  <img alt="Hugging Face" src="https://img.shields.io/badge/Hugging%20Face-Models%20%26%20Datasets?logo=huggingface&labelColor=3834B6&color=5A2AB8">
+</a>
 
-</div>
+
+ </div>
 
 </div>
 A data agent designed for data analysis specified for particular tasks, quick visualisation and built for adapting for specific requirenments.
@@ -56,7 +59,7 @@ Choose the **Data Upload** menu and choose a csv file from your computer or drag
 **Specify what you expect from the result**
 
 
-In the windows below choose an **Industries**, **Topics** and **Requirements** for better results. You can add comments in a seperate window.
+In the windows below choose an **Industries**, **Topics** and **Requirenments** for better results. You can add comments in a seperate window.
 
 <image src='assets/image.png' alt='uploading data' width=250>
 
@@ -79,7 +82,7 @@ In the **Chat** tab you can ask the bot about the details of the data.
 After the analysis is completed the results are received in two tabs: **Data Brain** and **Dashboard**.
 
 ### Data Brain
-1) General overview of the data is presented as well as the methodology of approaching the dataset.
+1) General overview of the data is presented as well as the methodology of approaching the dataset
 
 <p align='center'>
 <image src='assets/executive_summary.png' alt='executive summary' width=500>
@@ -125,28 +128,9 @@ Finally, graphs of the most important variables are presented.
  <image src='assets/graph3.png' alt='graph3' width=225 />
 </p>
 
-## <a name='requirements--starting-procedures'></a>Requirements & Starting Procedures
+## <a name='requirenments--starting-procedures'></a>Requirenments & Starting Procedures
 
-## Demo Dataset
-
-This repository includes a **mock dataset** which was added purely for demonstration(and debugging) purposes.
-They are designed to help pinpoint the cause and place for delays/errors within the AI data agent workflow using mock datasets.
-
-### User Workflow Steps Demo
-
-- `data/workflow_painpoints_demo.csv`
-
-Captures how users move through the product demo workflow, such as
-(data upload → schema detection → data cleaning → data analysis → data visualization → exporting the data).
-Each row represents a single workflow step and includes:
-- the time spent on the step in minutes
-- whether or not an error actually occurred(simple boolean)
-- the associated pain point (if it exists to begin with)
-
-> **Note:** All added demo datasets in this repository are meant solely for demonstration and testing purposes.
-
-
-### Requirements
+### Requirenments
  * [Node.js](https://nodejs.org/en)
  
  In order to run the programme Supabase and OpenAI API keys are needed.
@@ -172,7 +156,7 @@ In order to start working with the program run the following code:
 git clone https://github.com/NexDatawork/data-agents.git
 cd data-agents
 cp .env.example .env
-```
+
 Fill the URL and APIs in the environment file as shown in the [.env.example](.env.example).
 
 When starting the program for the first time, run this code in your command line:

@@ -13,7 +13,7 @@ Example:
 """
 
 import os
-from typing import List, Optional, Any, Tuple
+from typing import List, Optional, Any
 
 import pandas as pd
 from sqlalchemy import create_engine

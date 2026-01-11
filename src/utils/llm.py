@@ -17,7 +17,7 @@ Environment Variables Required:
 """
 
 import os
-from typing import Optional, Any
+from typing import Any
 
 from langchain_core.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 

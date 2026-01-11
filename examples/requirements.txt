@@ -17,7 +17,7 @@ langgraph>=0.2.0,<0.3.0
 # -------------
 langchain-openai>=0.2.0        # OpenAI and Azure OpenAI
 langchain-anthropic>=0.2.0     # Claude models (optional)
-langchain-google-vertexai>=2.0.0  # Google Vertex AI (optional)
+langchain-google-vertexai>=2.0.0,<3.0.0  # Google Vertex AI (optional)
 
 # Web Scraping
 # ------------

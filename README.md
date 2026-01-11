@@ -44,6 +44,31 @@ It supports multiple data engineering and analytics workflows, including **multi
 
 The open source project includes a Hugging Face playground as a sandbox environment where users can experiment with the data agent, and a notebook for contributors to validate use cases and contribute improvements through pull requests.
 
+## Trying out the Demo on Hugging Face
+
+You can test the NexDatawork data agent directly in the Hugging Face sandbox without any local setup requirment. You can:
+- Upload CSV, or JSON files
+- Ask questions about your uploaded dataset
+- View the explainable agent's reasoning and ETL steps
+
+> Important Note: The Hugging Face demo is intended purelty for experimentation, testing and demonstration purposes only, and is not reflective of the final product's full capabilities and features.
+
+
+## Run the Notebook
+
+To understand how the data agent works step by step, you can run the Jupyter notebook included in this repository, in which each cell shows respective reasoning and outputs, and is primarily helpful for debugging the agent logic.
+
+
+## Contributing via the Notebook
+
+Contributors are welcome to:
+- Improve the agent's various prompts
+- Add new helpful tools (such as ETL, SQL, or web enrichments)
+- Experiment with the UI or implement certain workflow changes
+
+Note: You can attempt to submit adequate changes by opening a pull request.
+
+
 ## Table of contents
  * [Features & Workflow ](#features--workflow)
  * [Architecture](#architecture)

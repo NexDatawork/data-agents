@@ -99,7 +99,8 @@ class AITools:
             
         except Exception as e:
             error_msg = f"Impossible to generate SQL query: {e}"
-            return error_msg
+            self.sql_etl += error_msg + "\n"
+            return self.sql_etl
     
     def ETL(self, dataframe: List[Any]) -> str:
         """
@@ -128,7 +129,8 @@ class AITools:
             
         except Exception as e:
             error_msg = f"Impossible to generate ETL pipeline: {e}"
-            return error_msg
+            self.sql_etl += error_msg + "\n"
+            return self.sql_etl
     
     def agent_analysis(self, files: List[Any], question: str) -> str:
         """
@@ -157,7 +159,8 @@ class AITools:
             
         except Exception as e:
             error_msg = f"Impossible to generate analysis: {e}"
-            return error_msg
+            self.analysis += error_msg + "\n"
+            return self.analysis
     
     def web(self, question: str) -> str:
         """
@@ -186,7 +189,8 @@ class AITools:
             
         except Exception as e:
             error_msg = f"Impossible to return output: {e}"
-            return error_msg
+            self.analysis += error_msg + "\n"
+            return self.analysis
     
     def clear_history(self) -> None:
         """

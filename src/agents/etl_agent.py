@@ -111,7 +111,7 @@ class ETLAgent:
 
             Only return pandas code. No explanation, no markdown.
             """
-            return model.predict(prompt).strip()
+            return model.invoke(prompt).strip()
         
         return [preview_data, suggest_transformation, generate_python_code]
     

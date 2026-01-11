@@ -151,15 +151,16 @@ class ETLAgent:
             Do not stop the Python session.
             """
             
-            # Run the agent
-            response = agent.run({
+            # Run the agent using the newer invoke API
+            response = agent.invoke({
                 "input": input_prompt,
                 "chat_history": [],
                 "handle_parsing_errors": True
             })
             
-            # Clean up the response (remove markdown code blocks if present)
-            code = response.strip('`').replace('python', '').strip()
+            # Extract the textual output and clean it up (remove markdown code blocks if present)
+            output_text = response.get("output", "") if isinstance(response, dict) else str(response)
+            code = output_text.strip('`').replace('python', '').strip()
             return code
             
         except Exception as e:

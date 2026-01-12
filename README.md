@@ -1,3 +1,14 @@
+---
+title: NexDatawork Mini Agent
+emoji: 🤖
+colorFrom: indigo
+colorTo: purple
+sdk: gradio
+app_file: app.py
+pinned: false
+---
+
+
 <p align="center">
   <img src="assets/banner.png" alt="NexDatawork Banner" width="100%"/>
 </p>

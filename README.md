@@ -1,3 +1,14 @@
+---
+title: NexDatawork Mini Agent
+emoji: 🤖
+colorFrom: indigo
+colorTo: purple
+sdk: gradio
+app_file: examples/app.py
+pinned: false
+---
+
+
 <p align="center">
   <img src="assets/banner.png" alt="NexDatawork Banner" width="100%"/>
 </p>
@@ -51,7 +62,7 @@ You can test the NexDatawork data agent directly in the Hugging Face sandbox wit
 - Ask questions about your uploaded dataset
 - View the explainable agent's reasoning and ETL steps
 
-> Important Note: The Hugging Face demo is intended purelty for experimentation, testing and demonstration purposes only, and is not reflective of the final product's full capabilities and features.
+> Important Note: The Hugging Face demo is intended purely for experimentation, testing and demonstration purposes only, and is not reflective of the final product's full capabilities and features.
 
 
 ## Run the Notebook
@@ -155,4 +166,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for ways to get started.
 This project is licensed under [the Apache-2.0 license](LICENSE).
 
 
+## How to Try and Contribute
 
+### Try the App
+Users can test the application directly in the Hugging Face sandbox without any local setup. 
+
+### Run the Notebooks
+The project includes Jupyter notebooks that allow users to run the code step by step and observe results line by line. 
+
+### Contribute to the Project
+Contributors are welcome to improve the project by modifying existing notebook files. 

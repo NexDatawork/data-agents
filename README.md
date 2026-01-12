@@ -51,7 +51,7 @@ You can test the NexDatawork data agent directly in the Hugging Face sandbox wit
 - Ask questions about your uploaded dataset
 - View the explainable agent's reasoning and ETL steps
 
-> Important Note: The Hugging Face demo is intended purelty for experimentation, testing and demonstration purposes only, and is not reflective of the final product's full capabilities and features.
+> Important Note: The Hugging Face demo is intended purely for experimentation, testing and demonstration purposes only, and is not reflective of the final product's full capabilities and features.
 
 
 ## Run the Notebook

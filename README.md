@@ -155,4 +155,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for ways to get started.
 This project is licensed under [the Apache-2.0 license](LICENSE).
 
 
+## How to Try and Contribute
 
+### Try the App
+Users can test the application directly in the Hugging Face sandbox without any local setup. 
+
+### Run the Notebooks
+The project includes Jupyter notebooks that allow users to run the code step by step and observe results line by line. 
+
+### Contribute to the Project
+Contributors are welcome to improve the project by modifying existing notebook files. 

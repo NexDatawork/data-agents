@@ -100,9 +100,9 @@ Replace the placeholders with the actual values.
 
 # Set default environment variables only if not already set
 if not os.getenv("AZURE_OPENAI_ENDPOINT"):
-    os.environ["AZURE_OPENAI_ENDPOINT"] = "https://team-mah5us1o-eastus2.cognitiveservices.azure.com/"
+    os.environ["AZURE_OPENAI_ENDPOINT"] = "YOUR_AZURE_OPENAI_ENDPOINT"
 if not os.getenv("AZURE_OPENAI_API_KEY"):
-    os.environ["AZURE_OPENAI_API_KEY"] = "3qxQkhZiOXja5Nyo7RCtJdFIsvAvwVozmpd29q9BNcY2jVbRpWLmJQQJ99BEACHYHv6XJ3w3AAAAACOGpcDe"
+    os.environ["AZURE_OPENAI_API_KEY"] = "YOUR_AZURE_OPENAI_API_KEY"
 if not os.getenv("SGAI_API_KEY"):
     os.environ["SGAI_API_KEY"] = "INSERT YOUR SGAI API KEY"
 

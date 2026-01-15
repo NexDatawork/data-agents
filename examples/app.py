@@ -323,10 +323,18 @@ def sql_pipeline(tables,question,history):
     print("="*10+"\nSQL_PIPELINE\n"+"="*10)
     db = create_db(tables) #uploads the files added by the user and puts them in a database
 
+    if isinstance(db, str):  # Error message returned
+      return f"❌ {db}", history
+    
     if not os.path.exists("database.db"):
       print("Database doesn't exist")
-      return "Database doesn't exist"
-    llm, tools = start_llm(db) #returns the agent and the tools for working with the database
+      return "❌ Database doesn't exist", history
+    
+    result = start_llm(db) #returns the agent and the tools for working with the database
+    if isinstance(result, str):  # Error message returned
+      return f"❌ {result}", history
+    
+    llm, tools = result
     try:
         agent_executor = create_react_agent(llm, tools, prompt=system_message+sql_suffix_prompt)
         output = ""
@@ -339,7 +347,7 @@ def sql_pipeline(tables,question,history):
         final_answer = extract_code(output)
         return history + final_answer, final_answer
     except Exception as e:
-        return f"SQL agent error: {e}"
+        return f"❌ SQL agent error: {e}", history
 
 """THe following block is responsible for creating a smart ETL pipeline"""
 
@@ -376,28 +384,31 @@ def generate_python_code(transform_description: str) -> str:
 #llm is the agent that creates the etl pipeline
 #dataframe is a string with the name of the dataframe push through the etl process
 def etl_pipeline(dataframe,history):
-  tools = [preview_data, suggest_transformation, generate_python_code]
+  try:
+    tools = [preview_data, suggest_transformation, generate_python_code]
 
-  agent = initialize_agent(tools, model, agent='zero-shot-react-description',verbose=True)
+    agent = initialize_agent(tools, model, agent='zero-shot-react-description',verbose=True)
 
-  input_prompt = f"""
-  Preview the table {dataframe} and \
-      generate Python code to read the table, clean it, and finally write the \
-      dataframe into a table called {'Cleaned_'+dataframe}]. \
-      Do not stop the Python session
-      """
+    input_prompt = f"""
+    Preview the table {dataframe} and \
+        generate Python code to read the table, clean it, and finally write the \
+        dataframe into a table called {'Cleaned_'+dataframe}]. \
+        Do not stop the Python session
+        """
 
-  # Preview + suggest + generate code in a single run
-  response = agent.run({
-      "input": input_prompt,
-      "chat_history": [],
-      "handle_parsing_errors": True
-  })
+    # Preview + suggest + generate code in a single run
+    response = agent.run({
+        "input": input_prompt,
+        "chat_history": [],
+        "handle_parsing_errors": True
+    })
 
-  print("Generated Python Code:\n")
-  print(response)
-  response2 = response.strip('`').replace('python', '')
-  return history + response2, response2
+    print("Generated Python Code:\n")
+    print(response)
+    response2 = response.strip('`').replace('python', '')
+    return history + response2, response2
+  except Exception as e:
+    return f"❌ ETL pipeline error: {e}", history
 
 """The following code is responsible for AI web scraping agent"""
 
@@ -422,7 +433,7 @@ def web_scraping(question,history):
     trace = buffer.getvalue() #the trace of the agent is saved in the trace variable
     return history + response, response
   except Exception as e:
-    return f'Web scraping error {e}',f'Web scraping error {e}',""
+    return f'❌ Web scraping error: {e}', history
 
 """The next section creates a web interface using Gradio, providing a user-friendly way to analyze data and create SQL queries.
 ```
@@ -453,79 +464,124 @@ For debugging use `debug=True` in order to see the messages in the console.
 with gr.Blocks(
     css="""
     body, .gradio-container {
-        background: #ffffff !important;
-        color: #1f2937 !important;
-        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%) !important;
+        color: #1e293b !important;
+        font-family: 'Inter', 'SF Pro Display', -apple-system, sans-serif;
+        min-height: 100vh;
     }
     #title {
-        color: #1f2937 !important;
-        font-size: 2rem;
-        font-weight: 600;
+        color: #0f172a !important;
+        font-size: 2.25rem;
+        font-weight: 700;
         text-align: center;
-        padding-top: 20px;
-        padding-bottom: 10px;
+        padding: 24px 0 8px 0;
+        letter-spacing: -0.025em;
+    }
+    #subtitle {
+        text-align: center;
+        color: #64748b !important;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .instructions-box {
+        background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%) !important;
+        border: 1px solid #93c5fd !important;
+        border-radius: 12px !important;
+        padding: 16px !important;
+        margin-bottom: 16px !important;
     }
     .gr-box, .gr-input, .gr-output, .gr-markdown, .gr-textbox, .gr-file, textarea, input {
-        background: rgba(0, 0, 0, 0.04) !important;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        border-radius: 12px !important;
-        color: #1f2937 !important;
+        background: #ffffff !important;
+        border: 1px solid #e2e8f0 !important;
+        border-radius: 10px !important;
+        color: #1e293b !important;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     }
     .trace-markdown {
         height: 400px !important;
-        overflow-y: scroll;
+        overflow-y: auto;
         resize: none;
+        background: #ffffff !important;
     }
     textarea::placeholder, input::placeholder {
-        color: rgba(31, 41, 55, 0.6) !important;
+        color: #94a3b8 !important;
     }
-    button {
-        background: rgba(0, 0, 0, 0.07) !important;
-        color: #1f2937 !important;
-        border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    .primary-btn {
+        background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%) !important;
+        color: #ffffff !important;
+        border: none !important;
         border-radius: 8px !important;
+        font-weight: 600 !important;
+        padding: 10px 24px !important;
+        transition: all 0.2s ease !important;
     }
-    button:hover {
-        background: rgba(0, 0, 0, 0.15) !important;
+    .primary-btn:hover {
+        background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%) !important;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4) !important;
+    }
+    .secondary-btn {
+        background: #ffffff !important;
+        color: #475569 !important;
+        border: 1px solid #cbd5e1 !important;
+        border-radius: 8px !important;
+        font-weight: 500 !important;
+        padding: 10px 24px !important;
+        transition: all 0.2s ease !important;
+    }
+    .secondary-btn:hover {
+        background: #f8fafc !important;
+        border-color: #94a3b8 !important;
+    }
+    .button-row {
+        gap: 12px !important;
     }
     """
 ) as demo:
 
     gr.Markdown("<h2 id='title'>📊 NexDatawork Data Agent</h2>")
+    gr.Markdown("<p id='subtitle'>AI-powered data analysis without writing code</p>")
 
     with gr.Column():
-
-      result_display = gr.Markdown(label="📌 Report Output (Markdown)")
-
-      with gr.Row():
-
-        trace_display = gr.Markdown(label="🛠️ Data Agent Reasoning - Your Explainable Agent", elem_classes=["trace-markdown"])
-
-        sql_display = gr.Markdown(label='SQL Process')
-
+      
+      # Instructions Section
+      gr.Markdown("""
+### 📋 Instructions
+1. **Upload CSV Files** — Drag & drop or click to upload one or more CSV files
+2. **Ask Your Question** — Type your data analysis question in natural language
+3. **Choose an Action:**
+   - **Analyze Data** — Get AI-powered insights and analysis from your data
+   - **Generate SQL** — Create SQL queries based on your question
+   - **Web Scraping** — Find relevant data from the web
+      """, elem_classes=["instructions-box"])
 
       with gr.Row(equal_height=True):
+        file_input = gr.File(label="📁 Upload CSV Files", file_types=[".csv"], file_count="multiple", height=140)
+        question_input = gr.Textbox(
+            label="💬 Ask Your Question",
+            placeholder="e.g., What is the trend for revenue over time? Show me top 10 customers by sales.",
+            lines=4
+        )
 
-        file_input = gr.File(label="📁 Upload CSV(s)", file_types=[".csv"], file_count="multiple",height=120)
-
-        question_input = gr.Textbox(label="💬 Ask Your Agent",placeholder="e.g., What is the trend for revenue over time?",lines=2)
+      # Buttons aligned to the left
+      with gr.Row(elem_classes=["button-row"]):
+        ask_button = gr.Button("🔍 Analyze Data", elem_classes=["primary-btn"])
+        sql_button = gr.Button("🗄️ Generate SQL", elem_classes=["secondary-btn"])
+        scraping_button = gr.Button("🌐 Web Scraping", elem_classes=["secondary-btn"])
+      
+      history = gr.State(value="")
 
       with gr.Row():
+        with gr.Column():
+          gr.Markdown("### 📈 Analysis Results")
+          trace_display = gr.Markdown(elem_classes=["trace-markdown"])
+        with gr.Column():
+          gr.Markdown("### 🗃️ SQL / ETL Output")
+          sql_display = gr.Markdown(elem_classes=["trace-markdown"])
 
-        ask_button = gr.Button("💡 Analyze")
-
-        with gr.Row():
-
-          sql_button = gr.Button('Create Query')
-
-          scraping_button = gr.Button('Find the answer online')
-
-          history = gr.State(value="")
-
-        sql_button.click(fn=sql_pipeline,inputs=[file_input,question_input,history],outputs = [trace_display,history])
-
-        scraping_button.click(fn=web_scraping,inputs=[question_input,history],outputs = [trace_display,history])
-
-        ask_button.click(fn=ask_agent,inputs=[file_input, question_input,history],outputs=[trace_display,history])
+      # Event handlers
+      ask_button.click(fn=ask_agent, inputs=[file_input, question_input, history], outputs=[trace_display, history])
+      sql_button.click(fn=sql_pipeline, inputs=[file_input, question_input, history], outputs=[sql_display, history])
+      scraping_button.click(fn=web_scraping, inputs=[question_input, history], outputs=[trace_display, history])
 
 demo.launch(share=True,debug=False)

@@ -1,0 +1,29 @@
+name: Deploy to Hugging Face Space
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      - name: Ensure Git LFS
+        run: |
+          git lfs install
+      
+      - name: Push to Hugging Face
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git remote add hf https://huggingface.co/spaces/NexDatawork/NexDatawork-Mini-Agent
+          git push https://NexDatawork:${HF_TOKEN}@huggingface.co/spaces/NexDatawork/NexDatawork-Mini-Agent main --force

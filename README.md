@@ -30,7 +30,7 @@ A data agent designed for data analysis specified for particular tasks, quick vi
 ## Trying out the Demo on Hugging Face
 
 You can test the NexDatawork data agent directly in the Hugging Face sandbox without any local setup requirment. You can:
-- Upload CSV, or JSON files
+- Upload CSV, JSON or PDF files
 - Ask questions about your uploaded dataset
 - View the explainable agent's reasoning and ETL steps
 

@@ -90,16 +90,60 @@ Note: You can attempt to submit adequate changes by opening a pull request.
 
 ### Workflow
 
+1. **Data Input**
+   Users upload structured or semi-structured data files (CSV, JSON, or PDF) through the UI or Hugging Face sandbox.
 
+2. **Context Understanding**
+   The agent analyzes the uploaded data, infers schema, captures metadata, and builds an initial understanding of the dataset context.
+
+3. **User Query / Instruction**
+   Users ask questions or provide instructions via a chat-based interface.
+
+4. **Agent Reasoning & Planning**
+   The agent performs step-by-step reasoning to determine the required actions.
+
+5. **Execution & Data Processing**
+   Based on the plan, the agent executes data transformations, queries, or enrichment tasks using built-in tools and workflows.
+
+6. **Results & Feedback Loop**
+   Results are displayed in a dashboard or returned as structured outputs.
+   Users can refine results by continuing the conversation, enabling an iterative human-in-the-loop workflow.
 
 
 ## <a name='architecture'></a>Architecture
+
+<p align="center">
+  <img src="assets/Architecture.png" alt="System Architecture" width="85%"/>
+</p>
+
+This agent follows a modular, agent-centered architecture designed for transparency and experimentation.
+
+- **User Interface**  
+  Users interact with the system through a Web UI or Hugging Face sandbox to upload data and submit queries.
+
+- **Agent Orchestration Layer**  
+  Acts as the central coordinator that interprets user intent, plans multi-step workflows, and orchestrates reasoning and tool execution.
+
+- **LLM Reasoning Engine**  
+  Handles prompt-based reasoning, schema understanding, and natural language interpretation.
+
+- **Tool Modules**  
+  Execute data-related operations such as parsing, transformation, querying, and analytics.
+
+- **Data Transformation & Analytics**  
+  Processes structured and semi-structured data to produce actionable results.
+
+- **Outputs**  
+  Returns answers, dashboards, or exportable artifacts back to the user.
 
 
 
 ## <a name='use-case'></a>Use Case
 
-
+Typical use cases include:
+- Exploring and querying uploaded datasets (CSV, JSON, PDF) through natural language
+- Understanding how an agent reasons about data schema and transformations
+- Prototyping data extraction, transformation, and analytics workflows
 
 
 ### Requirenments

@@ -654,4 +654,4 @@ with gr.Blocks(
       expand_sql_btn.click(fn=show_modal, inputs=[sql_content], outputs=[modal_row, modal_content])
       close_modal_btn.click(fn=hide_modal, outputs=[modal_row, modal_content])
 
-demo.launch(share=False, debug=True)
+demo.launch(share=True, debug=True)

@@ -72,8 +72,15 @@ from langchain_core.callbacks.streaming_stdout import StreamingStdOutCallbackHan
 from langchain.agents import initialize_agent
 from langchain.agents.agent_types import AgentType
 from langchain.tools import tool
-from langchain_scrapegraph.tools import SmartScraperTool
 from langchain.memory import ConversationTokenBufferMemory
+
+# Try to import SmartScraperTool, make it optional
+try:
+    from langchain_scrapegraph.tools import SmartScraperTool
+    SCRAPING_AVAILABLE = True
+except ImportError:
+    SCRAPING_AVAILABLE = False
+    print("⚠️ langchain-scrapegraph not installed. Web scraping feature will be disabled.")
 from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent
 from langchain_community.agent_toolkits import SQLDatabaseToolkit
 from langchain_community.utilities import SQLDatabase
@@ -91,16 +98,20 @@ To access SmartScraperTool you will need a ScrapeGraphAI (SGAI) account and get 
 Replace the placeholders with the actual values.
 """
 
-os.environ["AZURE_OPENAI_ENDPOINT"] = "INSERT THE AZURE OPENAI ENDPOINT"
-os.environ["AZURE_OPENAI_API_KEY"] = "INSERT YOUR AZURE OPENAI API KEY"
-os.environ["SGAI_API_KEY"] = "INSERT YOUR SGAI API KEY"
+# Set default environment variables only if not already set
+if not os.getenv("AZURE_OPENAI_ENDPOINT"):
+    os.environ["AZURE_OPENAI_ENDPOINT"] = "YOUR_AZURE_OPENAI_ENDPOINT"
+if not os.getenv("AZURE_OPENAI_API_KEY"):
+    os.environ["AZURE_OPENAI_API_KEY"] = "YOUR_AZURE_OPENAI_API_KEY"
+if not os.getenv("SGAI_API_KEY"):
+    os.environ["SGAI_API_KEY"] = "INSERT YOUR SGAI API KEY"
 
 """To set up the Azure OpenAI model choose the name for ```AZURE_DEPLOYMENT_NAME``` and insert ```AZURE_API_VERSION``` (the latest supported version can be found here: https://learn.microsoft.com/en-us/azure/ai-services/openai/reference)."""
 
 # Load your Azure environment variables
 AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
-AZURE_DEPLOYMENT_NAME = "gpt-4.1"  # 👈 Change if needed
-AZURE_API_VERSION = "2025-01-01-preview"  # 👈 Use your correct version
+AZURE_DEPLOYMENT_NAME = os.getenv("AZURE_DEPLOYMENT_NAME", "gpt-4.1")
+AZURE_API_VERSION = os.getenv("AZURE_API_VERSION", "2025-01-01-preview")
 
 # Define Azure LLM with streaming enabled
 model = AzureChatOpenAI(
@@ -234,33 +245,37 @@ pd.DataFrame({
 
 # --- Agent Logic ---
 def ask_agent(files, question, history):
+    if not files:
+        return "❌ Please upload at least one CSV file.", ""
+    if not question or not question.strip():
+        return "❌ Please enter a question.", ""
+    
     try:
         dfs = [pd.read_csv(f.name) for f in files]
-        df = pd.concat(dfs, ignore_index=True) #concatenation of all of the files uploaded into one
+        df = pd.concat(dfs, ignore_index=True)
     except Exception as e:
         return f"❌ Could not read CSVs: {e}", ""
 
     try:
         agent = create_pandas_dataframe_agent(
-        llm=model, #sets the llm as the one specified earlier (Azure LLM)
-        df=df, #pandas dataframe or a list of pandas dataframes
-        verbose=True, #enables verbose logging for debugging
-        agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION, #defines a specific type of agent that performs tasks without additional examples
-        allow_dangerous_code=True, #allows execution of Python code
-        handle_parsing_errors=True,  # 👈 this is the fix
-    ) #creates an agent for working with pandas dataframes
-
+            llm=model,
+            df=df,
+            verbose=True,
+            agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
+            allow_dangerous_code=True,
+            handle_parsing_errors=True,
+            max_iterations=15,
+        )
 
         full_prompt = CSV_PROMPT_PREFIX + question + CSV_PROMPT_SUFFIX
 
         buffer = io.StringIO()
-        with contextlib.redirect_stdout(buffer): #the output is redirected to the buffer
-            result = agent.invoke(full_prompt)
-        trace = buffer.getvalue() #retrieves the text created by the agent
-        output = result["output"] #retrieves the final answer
+        with contextlib.redirect_stdout(buffer):
+            result = agent.invoke({"input": full_prompt})
+        trace = buffer.getvalue()
+        output = result.get("output", str(result))
 
-
-        return history + output, output
+        return output, output
 
     except Exception as e:
         return f"❌ Agent error: {e}", ""
@@ -320,11 +335,16 @@ def extract_code(HumanMessage):
 
 #Function that receives dataframes, puts them in a database and uses an AI agent to create quieries based on the user's question
 def sql_pipeline(tables,question,history):
+    if not tables:
+        return "❌ Please upload at least one CSV file.", ""
+    if not question or not question.strip():
+        return "❌ Please enter a question.", ""
+    
     print("="*10+"\nSQL_PIPELINE\n"+"="*10)
-    db = create_db(tables) #uploads the files added by the user and puts them in a database
+    db = create_db(tables)
 
     if isinstance(db, str):  # Error message returned
-      return f"❌ {db}", history
+      return f"❌ {db}", ""
     
     if not os.path.exists("database.db"):
       print("Database doesn't exist")
@@ -343,11 +363,12 @@ def sql_pipeline(tables,question,history):
             stream_mode="values",
         ):
             output += step["messages"][-1].content
-        #query = extract_code(output)
         final_answer = extract_code(output)
-        return history + final_answer, final_answer
+        if final_answer:
+            return final_answer, final_answer
+        return output, output
     except Exception as e:
-        return f"❌ SQL agent error: {e}", history
+        return f"❌ SQL agent error: {e}", ""
 
 """THe following block is responsible for creating a smart ETL pipeline"""
 
@@ -413,6 +434,9 @@ def etl_pipeline(dataframe,history):
 """The following code is responsible for AI web scraping agent"""
 
 def web_scraping(question,history):
+  if not SCRAPING_AVAILABLE:
+    return "❌ Web scraping is not available. Please install langchain-scrapegraph package.", ""
+  
   try:
     tools = [
         SmartScraperTool(),
@@ -428,12 +452,11 @@ def web_scraping(question,history):
     buffer = io.StringIO()
 
     print(SCRAPING_PROMPT_PREFIX + question + SCRAPING_PROMPT_SUFFIX)
-    with contextlib.redirect_stdout(buffer): #the output is redirected to the buffer
+    with contextlib.redirect_stdout(buffer):
         response = agent.run(SCRAPING_PROMPT_PREFIX + question + SCRAPING_PROMPT_SUFFIX)
-    trace = buffer.getvalue() #the trace of the agent is saved in the trace variable
-    return history + response, response
+    return response, response
   except Exception as e:
-    return f'❌ Web scraping error: {e}', history
+    return f'❌ Web scraping error: {e}', ""
 
 """The next section creates a web interface using Gradio, providing a user-friendly way to analyze data and create SQL queries.
 ```
@@ -536,6 +559,27 @@ with gr.Blocks(
     .button-row {
         gap: 12px !important;
     }
+    .result-box {
+        min-height: 300px !important;
+        max-height: 400px !important;
+        overflow-y: auto !important;
+    }
+    .expand-btn {
+        background: #f1f5f9 !important;
+        color: #475569 !important;
+        border: 1px solid #e2e8f0 !important;
+        border-radius: 6px !important;
+        font-size: 0.85rem !important;
+        padding: 6px 12px !important;
+    }
+    .expand-btn:hover {
+        background: #e2e8f0 !important;
+    }
+    .modal-content {
+        min-height: 70vh !important;
+        max-height: 80vh !important;
+        overflow-y: auto !important;
+    }
     """
 ) as demo:
 
@@ -573,15 +617,41 @@ with gr.Blocks(
 
       with gr.Row():
         with gr.Column():
-          gr.Markdown("### 📈 Analysis Results")
-          trace_display = gr.Markdown(elem_classes=["trace-markdown"])
+          with gr.Row():
+            gr.Markdown("### 📈 Analysis Results")
+            expand_analysis_btn = gr.Button("⛶ Expand", elem_classes=["expand-btn"], size="sm")
+          trace_display = gr.Markdown(elem_classes=["result-box"])
         with gr.Column():
-          gr.Markdown("### 🗃️ SQL / ETL Output")
-          sql_display = gr.Markdown(elem_classes=["trace-markdown"])
+          with gr.Row():
+            gr.Markdown("### 🗃️ SQL / ETL Output")
+            expand_sql_btn = gr.Button("⛶ Expand", elem_classes=["expand-btn"], size="sm")
+          sql_display = gr.Markdown(elem_classes=["result-box"])
+
+      # Modal for expanded view
+      with gr.Row(visible=False) as modal_row:
+        with gr.Column():
+          modal_title = gr.Markdown("### 📄 Expanded View")
+          modal_content = gr.Markdown(elem_classes=["modal-content"])
+          close_modal_btn = gr.Button("✕ Close", elem_classes=["secondary-btn"])
+      
+      # State to track current content for modal
+      analysis_content = gr.State(value="")
+      sql_content = gr.State(value="")
+
+      def show_modal(content):
+          return gr.update(visible=True), content
+      
+      def hide_modal():
+          return gr.update(visible=False), ""
 
       # Event handlers
-      ask_button.click(fn=ask_agent, inputs=[file_input, question_input, history], outputs=[trace_display, history])
-      sql_button.click(fn=sql_pipeline, inputs=[file_input, question_input, history], outputs=[sql_display, history])
-      scraping_button.click(fn=web_scraping, inputs=[question_input, history], outputs=[trace_display, history])
+      ask_button.click(fn=ask_agent, inputs=[file_input, question_input, history], outputs=[trace_display, analysis_content])
+      sql_button.click(fn=sql_pipeline, inputs=[file_input, question_input, history], outputs=[sql_display, sql_content])
+      scraping_button.click(fn=web_scraping, inputs=[question_input, history], outputs=[trace_display, analysis_content])
+      
+      # Modal handlers
+      expand_analysis_btn.click(fn=show_modal, inputs=[analysis_content], outputs=[modal_row, modal_content])
+      expand_sql_btn.click(fn=show_modal, inputs=[sql_content], outputs=[modal_row, modal_content])
+      close_modal_btn.click(fn=hide_modal, outputs=[modal_row, modal_content])
 
-demo.launch(share=True,debug=False)
+demo.launch(share=True, debug=True)

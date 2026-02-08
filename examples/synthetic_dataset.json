@@ -1,0 +1,8502 @@
+[
+  {
+    "order_id":"ORD-100000",
+    "date":"2026-11-07",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":26.73,
+    "revenue":53.46
+  },
+  {
+    "order_id":"ORD-100001",
+    "date":"2026-12-06",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":4,
+    "unit_price":38.33,
+    "revenue":153.32
+  },
+  {
+    "order_id":"ORD-100002",
+    "date":"2026-04-23",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":22.54,
+    "revenue":45.08
+  },
+  {
+    "order_id":"ORD-100003",
+    "date":"2026-07-23",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":3,
+    "unit_price":38.15,
+    "revenue":114.45
+  },
+  {
+    "order_id":"ORD-100004",
+    "date":"2026-11-02",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":43.3,
+    "revenue":86.6
+  },
+  {
+    "order_id":"ORD-100005",
+    "date":"2026-08-05",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":42.29,
+    "revenue":42.29
+  },
+  {
+    "order_id":"ORD-100006",
+    "date":"2026-05-31",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":63.05,
+    "revenue":63.05
+  },
+  {
+    "order_id":"ORD-100007",
+    "date":"2026-08-06",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":42.36,
+    "revenue":42.36
+  },
+  {
+    "order_id":"ORD-100008",
+    "date":"2026-11-01",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":42.35,
+    "revenue":84.7
+  },
+  {
+    "order_id":"ORD-100009",
+    "date":"2026-12-25",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":24.19,
+    "revenue":24.19
+  },
+  {
+    "order_id":"ORD-100010",
+    "date":"2026-06-18",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":24.47,
+    "revenue":48.94
+  },
+  {
+    "order_id":"ORD-100011",
+    "date":"2026-12-27",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":54.94,
+    "revenue":109.88
+  },
+  {
+    "order_id":"ORD-100012",
+    "date":"2026-09-08",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":43.47,
+    "revenue":43.47
+  },
+  {
+    "order_id":"ORD-100013",
+    "date":"2026-04-12",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":45.97,
+    "revenue":45.97
+  },
+  {
+    "order_id":"ORD-100014",
+    "date":"2026-12-03",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":26.75,
+    "revenue":53.5
+  },
+  {
+    "order_id":"ORD-100015",
+    "date":"2026-02-06",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":45.71,
+    "revenue":91.42
+  },
+  {
+    "order_id":"ORD-100016",
+    "date":"2026-04-22",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":24.33,
+    "revenue":48.66
+  },
+  {
+    "order_id":"ORD-100017",
+    "date":"2026-10-18",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":59.98,
+    "revenue":59.98
+  },
+  {
+    "order_id":"ORD-100018",
+    "date":"2026-11-04",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":59.98,
+    "revenue":59.98
+  },
+  {
+    "order_id":"ORD-100019",
+    "date":"2026-02-10",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":53.96,
+    "revenue":53.96
+  },
+  {
+    "order_id":"ORD-100020",
+    "date":"2026-10-07",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":3,
+    "unit_price":36.86,
+    "revenue":110.58
+  },
+  {
+    "order_id":"ORD-100021",
+    "date":"2026-11-09",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":58.57,
+    "revenue":117.14
+  },
+  {
+    "order_id":"ORD-100022",
+    "date":"2027-02-01",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":4,
+    "unit_price":58.99,
+    "revenue":235.96
+  },
+  {
+    "order_id":"ORD-100023",
+    "date":"2026-06-07",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":55.71,
+    "revenue":55.71
+  },
+  {
+    "order_id":"ORD-100024",
+    "date":"2026-03-03",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":43.08,
+    "revenue":86.16
+  },
+  {
+    "order_id":"ORD-100025",
+    "date":"2026-10-07",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":24.24,
+    "revenue":24.24
+  },
+  {
+    "order_id":"ORD-100026",
+    "date":"2026-03-22",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":23.69,
+    "revenue":23.69
+  },
+  {
+    "order_id":"ORD-100027",
+    "date":"2026-02-28",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":40.67,
+    "revenue":81.34
+  },
+  {
+    "order_id":"ORD-100028",
+    "date":"2026-06-08",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":61.35,
+    "revenue":61.35
+  },
+  {
+    "order_id":"ORD-100029",
+    "date":"2026-06-08",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":53.33,
+    "revenue":106.66
+  },
+  {
+    "order_id":"ORD-100030",
+    "date":"2026-02-08",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"56-65",
+    "quantity":3,
+    "unit_price":25.88,
+    "revenue":77.64
+  },
+  {
+    "order_id":"ORD-100031",
+    "date":"2026-05-21",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"66+",
+    "quantity":2,
+    "unit_price":25.54,
+    "revenue":51.08
+  },
+  {
+    "order_id":"ORD-100032",
+    "date":"2026-09-21",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":28.29,
+    "revenue":56.58
+  },
+  {
+    "order_id":"ORD-100033",
+    "date":"2026-03-02",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":53.58,
+    "revenue":107.16
+  },
+  {
+    "order_id":"ORD-100034",
+    "date":"2026-10-30",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":3,
+    "unit_price":56.41,
+    "revenue":169.23
+  },
+  {
+    "order_id":"ORD-100035",
+    "date":"2026-06-01",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":3,
+    "unit_price":50.43,
+    "revenue":151.29
+  },
+  {
+    "order_id":"ORD-100036",
+    "date":"2026-10-26",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":57.53,
+    "revenue":57.53
+  },
+  {
+    "order_id":"ORD-100037",
+    "date":"2027-01-10",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":39.96,
+    "revenue":39.96
+  },
+  {
+    "order_id":"ORD-100038",
+    "date":"2026-03-24",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":3,
+    "unit_price":41.63,
+    "revenue":124.89
+  },
+  {
+    "order_id":"ORD-100039",
+    "date":"2026-03-08",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":3,
+    "unit_price":24.68,
+    "revenue":74.04
+  },
+  {
+    "order_id":"ORD-100040",
+    "date":"2027-01-01",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":39.03,
+    "revenue":39.03
+  },
+  {
+    "order_id":"ORD-100041",
+    "date":"2026-03-26",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":62.31,
+    "revenue":124.62
+  },
+  {
+    "order_id":"ORD-100042",
+    "date":"2026-06-25",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"66+",
+    "quantity":3,
+    "unit_price":23.47,
+    "revenue":70.41
+  },
+  {
+    "order_id":"ORD-100043",
+    "date":"2026-06-16",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":58.95,
+    "revenue":58.95
+  },
+  {
+    "order_id":"ORD-100044",
+    "date":"2026-07-21",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":36.44,
+    "revenue":36.44
+  },
+  {
+    "order_id":"ORD-100045",
+    "date":"2026-11-10",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":59.69,
+    "revenue":59.69
+  },
+  {
+    "order_id":"ORD-100046",
+    "date":"2026-11-07",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":3,
+    "unit_price":61.93,
+    "revenue":185.79
+  },
+  {
+    "order_id":"ORD-100047",
+    "date":"2026-07-08",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":3,
+    "unit_price":37.27,
+    "revenue":111.81
+  },
+  {
+    "order_id":"ORD-100048",
+    "date":"2026-08-28",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":26.0,
+    "revenue":26.0
+  },
+  {
+    "order_id":"ORD-100049",
+    "date":"2026-05-02",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":61.39,
+    "revenue":61.39
+  },
+  {
+    "order_id":"ORD-100050",
+    "date":"2026-06-08",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":26.69,
+    "revenue":53.38
+  },
+  {
+    "order_id":"ORD-100051",
+    "date":"2026-05-25",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":61.31,
+    "revenue":61.31
+  },
+  {
+    "order_id":"ORD-100052",
+    "date":"2026-08-24",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":42.6,
+    "revenue":85.2
+  },
+  {
+    "order_id":"ORD-100053",
+    "date":"2026-11-02",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":25.0,
+    "revenue":25.0
+  },
+  {
+    "order_id":"ORD-100054",
+    "date":"2026-09-11",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":23.18,
+    "revenue":69.54
+  },
+  {
+    "order_id":"ORD-100055",
+    "date":"2026-11-23",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":4,
+    "unit_price":37.16,
+    "revenue":148.64
+  },
+  {
+    "order_id":"ORD-100056",
+    "date":"2027-01-10",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":28.38,
+    "revenue":28.38
+  },
+  {
+    "order_id":"ORD-100057",
+    "date":"2026-04-05",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":42.63,
+    "revenue":42.63
+  },
+  {
+    "order_id":"ORD-100058",
+    "date":"2026-11-11",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":42.97,
+    "revenue":42.97
+  },
+  {
+    "order_id":"ORD-100059",
+    "date":"2026-11-08",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":39.01,
+    "revenue":39.01
+  },
+  {
+    "order_id":"ORD-100060",
+    "date":"2026-09-27",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":42.55,
+    "revenue":42.55
+  },
+  {
+    "order_id":"ORD-100061",
+    "date":"2026-04-28",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":56.01,
+    "revenue":112.02
+  },
+  {
+    "order_id":"ORD-100062",
+    "date":"2027-01-11",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":43.51,
+    "revenue":43.51
+  },
+  {
+    "order_id":"ORD-100063",
+    "date":"2026-12-10",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":4,
+    "unit_price":28.65,
+    "revenue":114.6
+  },
+  {
+    "order_id":"ORD-100064",
+    "date":"2026-08-16",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":26.99,
+    "revenue":53.98
+  },
+  {
+    "order_id":"ORD-100065",
+    "date":"2026-03-27",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":28.08,
+    "revenue":28.08
+  },
+  {
+    "order_id":"ORD-100066",
+    "date":"2026-04-04",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":28.23,
+    "revenue":28.23
+  },
+  {
+    "order_id":"ORD-100067",
+    "date":"2026-09-15",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":41.95,
+    "revenue":83.9
+  },
+  {
+    "order_id":"ORD-100068",
+    "date":"2026-10-02",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":61.84,
+    "revenue":123.68
+  },
+  {
+    "order_id":"ORD-100069",
+    "date":"2026-06-03",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":25.53,
+    "revenue":25.53
+  },
+  {
+    "order_id":"ORD-100070",
+    "date":"2026-05-30",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":23.36,
+    "revenue":23.36
+  },
+  {
+    "order_id":"ORD-100071",
+    "date":"2026-09-27",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":24.57,
+    "revenue":49.14
+  },
+  {
+    "order_id":"ORD-100072",
+    "date":"2026-11-22",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":27.85,
+    "revenue":83.55
+  },
+  {
+    "order_id":"ORD-100073",
+    "date":"2026-09-03",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":27.83,
+    "revenue":27.83
+  },
+  {
+    "order_id":"ORD-100074",
+    "date":"2026-10-07",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":53.25,
+    "revenue":106.5
+  },
+  {
+    "order_id":"ORD-100075",
+    "date":"2026-12-16",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":45.2,
+    "revenue":45.2
+  },
+  {
+    "order_id":"ORD-100076",
+    "date":"2026-09-25",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":40.29,
+    "revenue":40.29
+  },
+  {
+    "order_id":"ORD-100077",
+    "date":"2026-08-14",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":39.27,
+    "revenue":39.27
+  },
+  {
+    "order_id":"ORD-100078",
+    "date":"2026-05-26",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":45.52,
+    "revenue":91.04
+  },
+  {
+    "order_id":"ORD-100079",
+    "date":"2026-05-14",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":62.56,
+    "revenue":125.12
+  },
+  {
+    "order_id":"ORD-100080",
+    "date":"2026-05-23",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"56-65",
+    "quantity":3,
+    "unit_price":57.25,
+    "revenue":171.75
+  },
+  {
+    "order_id":"ORD-100081",
+    "date":"2026-03-31",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":3,
+    "unit_price":42.06,
+    "revenue":126.18
+  },
+  {
+    "order_id":"ORD-100082",
+    "date":"2026-08-12",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":26.1,
+    "revenue":26.1
+  },
+  {
+    "order_id":"ORD-100083",
+    "date":"2026-06-05",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":60.92,
+    "revenue":60.92
+  },
+  {
+    "order_id":"ORD-100084",
+    "date":"2027-01-05",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":3,
+    "unit_price":41.33,
+    "revenue":123.99
+  },
+  {
+    "order_id":"ORD-100085",
+    "date":"2026-03-27",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":60.81,
+    "revenue":60.81
+  },
+  {
+    "order_id":"ORD-100086",
+    "date":"2026-11-03",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":38.7,
+    "revenue":38.7
+  },
+  {
+    "order_id":"ORD-100087",
+    "date":"2026-06-06",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":38.68,
+    "revenue":77.36
+  },
+  {
+    "order_id":"ORD-100088",
+    "date":"2026-08-14",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":26.31,
+    "revenue":52.62
+  },
+  {
+    "order_id":"ORD-100089",
+    "date":"2026-06-13",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":39.55,
+    "revenue":118.65
+  },
+  {
+    "order_id":"ORD-100090",
+    "date":"2026-10-09",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":5,
+    "unit_price":59.4,
+    "revenue":297.0
+  },
+  {
+    "order_id":"ORD-100091",
+    "date":"2026-02-09",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":25.3,
+    "revenue":50.6
+  },
+  {
+    "order_id":"ORD-100092",
+    "date":"2026-09-06",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":25.82,
+    "revenue":25.82
+  },
+  {
+    "order_id":"ORD-100093",
+    "date":"2026-06-19",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"66+",
+    "quantity":3,
+    "unit_price":59.16,
+    "revenue":177.48
+  },
+  {
+    "order_id":"ORD-100094",
+    "date":"2026-05-10",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":26.81,
+    "revenue":26.81
+  },
+  {
+    "order_id":"ORD-100095",
+    "date":"2026-06-25",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":41.25,
+    "revenue":123.75
+  },
+  {
+    "order_id":"ORD-100096",
+    "date":"2026-04-06",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":26.93,
+    "revenue":26.93
+  },
+  {
+    "order_id":"ORD-100097",
+    "date":"2026-10-10",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":23.29,
+    "revenue":46.58
+  },
+  {
+    "order_id":"ORD-100098",
+    "date":"2026-10-03",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":22.82,
+    "revenue":22.82
+  },
+  {
+    "order_id":"ORD-100099",
+    "date":"2026-02-28",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":3,
+    "unit_price":26.43,
+    "revenue":79.29
+  },
+  {
+    "order_id":"ORD-100100",
+    "date":"2026-12-14",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":57.84,
+    "revenue":115.68
+  },
+  {
+    "order_id":"ORD-100101",
+    "date":"2026-11-29",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":53.59,
+    "revenue":53.59
+  },
+  {
+    "order_id":"ORD-100102",
+    "date":"2026-05-18",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"66+",
+    "quantity":4,
+    "unit_price":36.99,
+    "revenue":147.96
+  },
+  {
+    "order_id":"ORD-100103",
+    "date":"2026-11-10",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":38.4,
+    "revenue":76.8
+  },
+  {
+    "order_id":"ORD-100104",
+    "date":"2026-06-25",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":24.3,
+    "revenue":48.6
+  },
+  {
+    "order_id":"ORD-100105",
+    "date":"2026-12-18",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":45.24,
+    "revenue":45.24
+  },
+  {
+    "order_id":"ORD-100106",
+    "date":"2026-04-14",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":28.18,
+    "revenue":28.18
+  },
+  {
+    "order_id":"ORD-100107",
+    "date":"2026-06-28",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":26.06,
+    "revenue":26.06
+  },
+  {
+    "order_id":"ORD-100108",
+    "date":"2026-02-21",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":36.8,
+    "revenue":110.4
+  },
+  {
+    "order_id":"ORD-100109",
+    "date":"2026-03-19",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":52.94,
+    "revenue":52.94
+  },
+  {
+    "order_id":"ORD-100110",
+    "date":"2026-02-21",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":5,
+    "unit_price":53.21,
+    "revenue":266.05
+  },
+  {
+    "order_id":"ORD-100111",
+    "date":"2026-06-23",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":26.57,
+    "revenue":26.57
+  },
+  {
+    "order_id":"ORD-100112",
+    "date":"2026-03-26",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":53.91,
+    "revenue":161.73
+  },
+  {
+    "order_id":"ORD-100113",
+    "date":"2026-08-25",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":38.88,
+    "revenue":38.88
+  },
+  {
+    "order_id":"ORD-100114",
+    "date":"2026-08-26",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":51.09,
+    "revenue":102.18
+  },
+  {
+    "order_id":"ORD-100115",
+    "date":"2026-05-08",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":25.08,
+    "revenue":50.16
+  },
+  {
+    "order_id":"ORD-100116",
+    "date":"2026-06-28",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":57.05,
+    "revenue":114.1
+  },
+  {
+    "order_id":"ORD-100117",
+    "date":"2026-06-03",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":58.16,
+    "revenue":116.32
+  },
+  {
+    "order_id":"ORD-100118",
+    "date":"2026-03-31",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":45.92,
+    "revenue":45.92
+  },
+  {
+    "order_id":"ORD-100119",
+    "date":"2026-06-30",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":28.33,
+    "revenue":28.33
+  },
+  {
+    "order_id":"ORD-100120",
+    "date":"2026-08-16",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":41.51,
+    "revenue":83.02
+  },
+  {
+    "order_id":"ORD-100121",
+    "date":"2026-09-01",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":53.3,
+    "revenue":53.3
+  },
+  {
+    "order_id":"ORD-100122",
+    "date":"2026-10-09",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":63.23,
+    "revenue":63.23
+  },
+  {
+    "order_id":"ORD-100123",
+    "date":"2026-11-10",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":39.45,
+    "revenue":78.9
+  },
+  {
+    "order_id":"ORD-100124",
+    "date":"2026-08-16",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":3,
+    "unit_price":38.39,
+    "revenue":115.17
+  },
+  {
+    "order_id":"ORD-100125",
+    "date":"2026-08-15",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":43.05,
+    "revenue":43.05
+  },
+  {
+    "order_id":"ORD-100126",
+    "date":"2026-03-24",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":54.06,
+    "revenue":108.12
+  },
+  {
+    "order_id":"ORD-100127",
+    "date":"2026-02-08",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":45.1,
+    "revenue":45.1
+  },
+  {
+    "order_id":"ORD-100128",
+    "date":"2027-01-21",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":39.39,
+    "revenue":39.39
+  },
+  {
+    "order_id":"ORD-100129",
+    "date":"2026-10-08",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":24.48,
+    "revenue":48.96
+  },
+  {
+    "order_id":"ORD-100130",
+    "date":"2026-05-28",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":24.3,
+    "revenue":48.6
+  },
+  {
+    "order_id":"ORD-100131",
+    "date":"2027-01-22",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":3,
+    "unit_price":40.44,
+    "revenue":121.32
+  },
+  {
+    "order_id":"ORD-100132",
+    "date":"2026-10-30",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":23.41,
+    "revenue":46.82
+  },
+  {
+    "order_id":"ORD-100133",
+    "date":"2026-08-15",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":57.88,
+    "revenue":57.88
+  },
+  {
+    "order_id":"ORD-100134",
+    "date":"2026-06-11",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":24.09,
+    "revenue":48.18
+  },
+  {
+    "order_id":"ORD-100135",
+    "date":"2026-09-15",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":37.58,
+    "revenue":75.16
+  },
+  {
+    "order_id":"ORD-100136",
+    "date":"2026-08-16",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":53.65,
+    "revenue":53.65
+  },
+  {
+    "order_id":"ORD-100137",
+    "date":"2026-11-22",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":26.07,
+    "revenue":26.07
+  },
+  {
+    "order_id":"ORD-100138",
+    "date":"2027-01-18",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":57.28,
+    "revenue":171.84
+  },
+  {
+    "order_id":"ORD-100139",
+    "date":"2026-06-27",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":27.71,
+    "revenue":27.71
+  },
+  {
+    "order_id":"ORD-100140",
+    "date":"2027-01-04",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":24.07,
+    "revenue":48.14
+  },
+  {
+    "order_id":"ORD-100141",
+    "date":"2026-09-14",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":24.43,
+    "revenue":48.86
+  },
+  {
+    "order_id":"ORD-100142",
+    "date":"2026-11-04",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":38.01,
+    "revenue":76.02
+  },
+  {
+    "order_id":"ORD-100143",
+    "date":"2026-04-26",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":45.13,
+    "revenue":45.13
+  },
+  {
+    "order_id":"ORD-100144",
+    "date":"2026-05-27",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":43.54,
+    "revenue":130.62
+  },
+  {
+    "order_id":"ORD-100145",
+    "date":"2026-08-22",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":54.53,
+    "revenue":54.53
+  },
+  {
+    "order_id":"ORD-100146",
+    "date":"2026-12-24",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":54.74,
+    "revenue":54.74
+  },
+  {
+    "order_id":"ORD-100147",
+    "date":"2026-11-15",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"66+",
+    "quantity":3,
+    "unit_price":22.66,
+    "revenue":67.98
+  },
+  {
+    "order_id":"ORD-100148",
+    "date":"2026-04-01",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":58.43,
+    "revenue":58.43
+  },
+  {
+    "order_id":"ORD-100149",
+    "date":"2026-11-03",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":23.97,
+    "revenue":47.94
+  },
+  {
+    "order_id":"ORD-100150",
+    "date":"2026-03-23",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":40.15,
+    "revenue":40.15
+  },
+  {
+    "order_id":"ORD-100151",
+    "date":"2026-08-09",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":49.95,
+    "revenue":99.9
+  },
+  {
+    "order_id":"ORD-100152",
+    "date":"2026-08-03",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":45.78,
+    "revenue":137.34
+  },
+  {
+    "order_id":"ORD-100153",
+    "date":"2026-03-19",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":44.24,
+    "revenue":88.48
+  },
+  {
+    "order_id":"ORD-100154",
+    "date":"2026-11-17",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":63.1,
+    "revenue":126.2
+  },
+  {
+    "order_id":"ORD-100155",
+    "date":"2026-07-19",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":61.46,
+    "revenue":122.92
+  },
+  {
+    "order_id":"ORD-100156",
+    "date":"2026-06-09",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":51.29,
+    "revenue":102.58
+  },
+  {
+    "order_id":"ORD-100157",
+    "date":"2026-06-02",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":22.59,
+    "revenue":22.59
+  },
+  {
+    "order_id":"ORD-100158",
+    "date":"2026-03-05",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":3,
+    "unit_price":25.79,
+    "revenue":77.37
+  },
+  {
+    "order_id":"ORD-100159",
+    "date":"2026-10-16",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":37.09,
+    "revenue":74.18
+  },
+  {
+    "order_id":"ORD-100160",
+    "date":"2026-08-25",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":63.23,
+    "revenue":126.46
+  },
+  {
+    "order_id":"ORD-100161",
+    "date":"2026-12-09",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":4,
+    "unit_price":23.0,
+    "revenue":92.0
+  },
+  {
+    "order_id":"ORD-100162",
+    "date":"2026-10-30",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":28.72,
+    "revenue":28.72
+  },
+  {
+    "order_id":"ORD-100163",
+    "date":"2027-01-02",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":59.15,
+    "revenue":118.3
+  },
+  {
+    "order_id":"ORD-100164",
+    "date":"2026-09-21",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":54.16,
+    "revenue":54.16
+  },
+  {
+    "order_id":"ORD-100165",
+    "date":"2026-08-11",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":58.65,
+    "revenue":117.3
+  },
+  {
+    "order_id":"ORD-100166",
+    "date":"2026-08-10",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"66+",
+    "quantity":2,
+    "unit_price":55.44,
+    "revenue":110.88
+  },
+  {
+    "order_id":"ORD-100167",
+    "date":"2026-11-15",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":62.65,
+    "revenue":125.3
+  },
+  {
+    "order_id":"ORD-100168",
+    "date":"2026-02-27",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":28.22,
+    "revenue":84.66
+  },
+  {
+    "order_id":"ORD-100169",
+    "date":"2026-10-18",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":50.92,
+    "revenue":50.92
+  },
+  {
+    "order_id":"ORD-100170",
+    "date":"2026-06-23",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":51.08,
+    "revenue":102.16
+  },
+  {
+    "order_id":"ORD-100171",
+    "date":"2026-12-27",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":42.14,
+    "revenue":42.14
+  },
+  {
+    "order_id":"ORD-100172",
+    "date":"2026-07-24",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":53.75,
+    "revenue":107.5
+  },
+  {
+    "order_id":"ORD-100173",
+    "date":"2026-12-22",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":22.93,
+    "revenue":68.79
+  },
+  {
+    "order_id":"ORD-100174",
+    "date":"2026-07-10",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":23.48,
+    "revenue":23.48
+  },
+  {
+    "order_id":"ORD-100175",
+    "date":"2026-04-21",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":61.65,
+    "revenue":123.3
+  },
+  {
+    "order_id":"ORD-100176",
+    "date":"2026-06-20",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":55.58,
+    "revenue":55.58
+  },
+  {
+    "order_id":"ORD-100177",
+    "date":"2027-01-14",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":53.39,
+    "revenue":160.17
+  },
+  {
+    "order_id":"ORD-100178",
+    "date":"2026-05-16",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":50.25,
+    "revenue":100.5
+  },
+  {
+    "order_id":"ORD-100179",
+    "date":"2026-10-13",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":4,
+    "unit_price":23.25,
+    "revenue":93.0
+  },
+  {
+    "order_id":"ORD-100180",
+    "date":"2027-01-09",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":25.99,
+    "revenue":25.99
+  },
+  {
+    "order_id":"ORD-100181",
+    "date":"2026-09-24",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":25.23,
+    "revenue":25.23
+  },
+  {
+    "order_id":"ORD-100182",
+    "date":"2026-03-31",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":40.18,
+    "revenue":40.18
+  },
+  {
+    "order_id":"ORD-100183",
+    "date":"2026-08-05",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":42.9,
+    "revenue":42.9
+  },
+  {
+    "order_id":"ORD-100184",
+    "date":"2026-07-24",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":24.44,
+    "revenue":24.44
+  },
+  {
+    "order_id":"ORD-100185",
+    "date":"2026-05-11",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":25.82,
+    "revenue":25.82
+  },
+  {
+    "order_id":"ORD-100186",
+    "date":"2026-12-06",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":37.97,
+    "revenue":75.94
+  },
+  {
+    "order_id":"ORD-100187",
+    "date":"2026-09-26",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":58.13,
+    "revenue":116.26
+  },
+  {
+    "order_id":"ORD-100188",
+    "date":"2026-12-19",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":53.94,
+    "revenue":53.94
+  },
+  {
+    "order_id":"ORD-100189",
+    "date":"2026-06-21",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":39.03,
+    "revenue":39.03
+  },
+  {
+    "order_id":"ORD-100190",
+    "date":"2026-06-27",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":36.57,
+    "revenue":36.57
+  },
+  {
+    "order_id":"ORD-100191",
+    "date":"2026-11-11",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":3,
+    "unit_price":25.39,
+    "revenue":76.17
+  },
+  {
+    "order_id":"ORD-100192",
+    "date":"2026-12-07",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"66+",
+    "quantity":3,
+    "unit_price":52.09,
+    "revenue":156.27
+  },
+  {
+    "order_id":"ORD-100193",
+    "date":"2026-07-26",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":23.15,
+    "revenue":23.15
+  },
+  {
+    "order_id":"ORD-100194",
+    "date":"2026-10-27",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"66+",
+    "quantity":3,
+    "unit_price":28.69,
+    "revenue":86.07
+  },
+  {
+    "order_id":"ORD-100195",
+    "date":"2026-08-18",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":28.24,
+    "revenue":56.48
+  },
+  {
+    "order_id":"ORD-100196",
+    "date":"2027-01-14",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":36.95,
+    "revenue":110.85
+  },
+  {
+    "order_id":"ORD-100197",
+    "date":"2026-04-14",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":41.83,
+    "revenue":41.83
+  },
+  {
+    "order_id":"ORD-100198",
+    "date":"2026-08-12",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":39.1,
+    "revenue":39.1
+  },
+  {
+    "order_id":"ORD-100199",
+    "date":"2027-01-10",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":36.93,
+    "revenue":36.93
+  },
+  {
+    "order_id":"ORD-100200",
+    "date":"2026-05-10",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":43.66,
+    "revenue":43.66
+  },
+  {
+    "order_id":"ORD-100201",
+    "date":"2026-10-18",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":4,
+    "unit_price":27.43,
+    "revenue":109.72
+  },
+  {
+    "order_id":"ORD-100202",
+    "date":"2026-12-03",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":58.0,
+    "revenue":58.0
+  },
+  {
+    "order_id":"ORD-100203",
+    "date":"2026-09-13",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":23.53,
+    "revenue":23.53
+  },
+  {
+    "order_id":"ORD-100204",
+    "date":"2026-06-03",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":38.34,
+    "revenue":38.34
+  },
+  {
+    "order_id":"ORD-100205",
+    "date":"2026-09-14",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":41.7,
+    "revenue":41.7
+  },
+  {
+    "order_id":"ORD-100206",
+    "date":"2026-12-07",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":44.17,
+    "revenue":44.17
+  },
+  {
+    "order_id":"ORD-100207",
+    "date":"2026-03-25",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":41.55,
+    "revenue":41.55
+  },
+  {
+    "order_id":"ORD-100208",
+    "date":"2026-10-21",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":55.68,
+    "revenue":111.36
+  },
+  {
+    "order_id":"ORD-100209",
+    "date":"2026-02-14",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":44.85,
+    "revenue":89.7
+  },
+  {
+    "order_id":"ORD-100210",
+    "date":"2026-03-23",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":36.28,
+    "revenue":72.56
+  },
+  {
+    "order_id":"ORD-100211",
+    "date":"2026-06-27",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"56-65",
+    "quantity":5,
+    "unit_price":51.39,
+    "revenue":256.95
+  },
+  {
+    "order_id":"ORD-100212",
+    "date":"2026-06-12",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":36.79,
+    "revenue":36.79
+  },
+  {
+    "order_id":"ORD-100213",
+    "date":"2026-06-28",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":23.19,
+    "revenue":46.38
+  },
+  {
+    "order_id":"ORD-100214",
+    "date":"2026-10-14",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":23.19,
+    "revenue":23.19
+  },
+  {
+    "order_id":"ORD-100215",
+    "date":"2026-04-15",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":24.01,
+    "revenue":48.02
+  },
+  {
+    "order_id":"ORD-100216",
+    "date":"2026-08-04",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":23.04,
+    "revenue":46.08
+  },
+  {
+    "order_id":"ORD-100217",
+    "date":"2026-02-11",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":3,
+    "unit_price":56.48,
+    "revenue":169.44
+  },
+  {
+    "order_id":"ORD-100218",
+    "date":"2026-07-27",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":43.89,
+    "revenue":131.67
+  },
+  {
+    "order_id":"ORD-100219",
+    "date":"2026-02-23",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":54.07,
+    "revenue":54.07
+  },
+  {
+    "order_id":"ORD-100220",
+    "date":"2026-09-23",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":37.35,
+    "revenue":112.05
+  },
+  {
+    "order_id":"ORD-100221",
+    "date":"2026-07-09",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":24.47,
+    "revenue":24.47
+  },
+  {
+    "order_id":"ORD-100222",
+    "date":"2026-02-25",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":3,
+    "unit_price":53.43,
+    "revenue":160.29
+  },
+  {
+    "order_id":"ORD-100223",
+    "date":"2026-09-12",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":43.99,
+    "revenue":87.98
+  },
+  {
+    "order_id":"ORD-100224",
+    "date":"2026-08-08",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":59.02,
+    "revenue":59.02
+  },
+  {
+    "order_id":"ORD-100225",
+    "date":"2026-03-13",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"66+",
+    "quantity":2,
+    "unit_price":59.5,
+    "revenue":119.0
+  },
+  {
+    "order_id":"ORD-100226",
+    "date":"2026-12-06",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":24.42,
+    "revenue":24.42
+  },
+  {
+    "order_id":"ORD-100227",
+    "date":"2026-07-31",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":25.29,
+    "revenue":50.58
+  },
+  {
+    "order_id":"ORD-100228",
+    "date":"2027-01-14",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":3,
+    "unit_price":39.63,
+    "revenue":118.89
+  },
+  {
+    "order_id":"ORD-100229",
+    "date":"2026-04-06",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":25.24,
+    "revenue":50.48
+  },
+  {
+    "order_id":"ORD-100230",
+    "date":"2026-08-09",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":58.84,
+    "revenue":58.84
+  },
+  {
+    "order_id":"ORD-100231",
+    "date":"2026-12-30",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":24.99,
+    "revenue":49.98
+  },
+  {
+    "order_id":"ORD-100232",
+    "date":"2026-06-14",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":24.14,
+    "revenue":24.14
+  },
+  {
+    "order_id":"ORD-100233",
+    "date":"2026-10-10",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":26.84,
+    "revenue":53.68
+  },
+  {
+    "order_id":"ORD-100234",
+    "date":"2026-07-14",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":27.57,
+    "revenue":55.14
+  },
+  {
+    "order_id":"ORD-100235",
+    "date":"2026-07-04",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":3,
+    "unit_price":56.95,
+    "revenue":170.85
+  },
+  {
+    "order_id":"ORD-100236",
+    "date":"2026-04-13",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":52.26,
+    "revenue":52.26
+  },
+  {
+    "order_id":"ORD-100237",
+    "date":"2026-11-10",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":39.69,
+    "revenue":39.69
+  },
+  {
+    "order_id":"ORD-100238",
+    "date":"2026-08-29",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":25.07,
+    "revenue":25.07
+  },
+  {
+    "order_id":"ORD-100239",
+    "date":"2026-09-19",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":26.51,
+    "revenue":53.02
+  },
+  {
+    "order_id":"ORD-100240",
+    "date":"2026-05-05",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":3,
+    "unit_price":58.3,
+    "revenue":174.9
+  },
+  {
+    "order_id":"ORD-100241",
+    "date":"2026-03-01",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":28.19,
+    "revenue":28.19
+  },
+  {
+    "order_id":"ORD-100242",
+    "date":"2026-07-28",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":59.25,
+    "revenue":118.5
+  },
+  {
+    "order_id":"ORD-100243",
+    "date":"2026-12-23",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"66+",
+    "quantity":2,
+    "unit_price":52.95,
+    "revenue":105.9
+  },
+  {
+    "order_id":"ORD-100244",
+    "date":"2026-12-01",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":42.41,
+    "revenue":42.41
+  },
+  {
+    "order_id":"ORD-100245",
+    "date":"2026-12-07",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":27.0,
+    "revenue":27.0
+  },
+  {
+    "order_id":"ORD-100246",
+    "date":"2026-05-19",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":4,
+    "unit_price":53.14,
+    "revenue":212.56
+  },
+  {
+    "order_id":"ORD-100247",
+    "date":"2026-12-19",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":3,
+    "unit_price":40.98,
+    "revenue":122.94
+  },
+  {
+    "order_id":"ORD-100248",
+    "date":"2026-09-21",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":55.08,
+    "revenue":110.16
+  },
+  {
+    "order_id":"ORD-100249",
+    "date":"2026-07-25",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":3,
+    "unit_price":25.4,
+    "revenue":76.2
+  },
+  {
+    "order_id":"ORD-100250",
+    "date":"2026-11-15",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":39.71,
+    "revenue":79.42
+  },
+  {
+    "order_id":"ORD-100251",
+    "date":"2026-03-22",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":24.05,
+    "revenue":24.05
+  },
+  {
+    "order_id":"ORD-100252",
+    "date":"2026-11-23",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":39.27,
+    "revenue":78.54
+  },
+  {
+    "order_id":"ORD-100253",
+    "date":"2026-09-28",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":4,
+    "unit_price":28.72,
+    "revenue":114.88
+  },
+  {
+    "order_id":"ORD-100254",
+    "date":"2026-06-04",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":40.57,
+    "revenue":81.14
+  },
+  {
+    "order_id":"ORD-100255",
+    "date":"2027-01-01",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":41.98,
+    "revenue":83.96
+  },
+  {
+    "order_id":"ORD-100256",
+    "date":"2026-08-07",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":44.82,
+    "revenue":89.64
+  },
+  {
+    "order_id":"ORD-100257",
+    "date":"2026-11-15",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":36.51,
+    "revenue":36.51
+  },
+  {
+    "order_id":"ORD-100258",
+    "date":"2026-12-17",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":60.85,
+    "revenue":60.85
+  },
+  {
+    "order_id":"ORD-100259",
+    "date":"2026-07-24",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":24.96,
+    "revenue":49.92
+  },
+  {
+    "order_id":"ORD-100260",
+    "date":"2026-02-20",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":36.4,
+    "revenue":36.4
+  },
+  {
+    "order_id":"ORD-100261",
+    "date":"2026-10-22",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":42.06,
+    "revenue":42.06
+  },
+  {
+    "order_id":"ORD-100262",
+    "date":"2026-10-18",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":57.66,
+    "revenue":57.66
+  },
+  {
+    "order_id":"ORD-100263",
+    "date":"2026-02-09",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":53.62,
+    "revenue":107.24
+  },
+  {
+    "order_id":"ORD-100264",
+    "date":"2026-02-14",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":58.96,
+    "revenue":58.96
+  },
+  {
+    "order_id":"ORD-100265",
+    "date":"2026-02-27",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":38.28,
+    "revenue":38.28
+  },
+  {
+    "order_id":"ORD-100266",
+    "date":"2026-06-05",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":27.64,
+    "revenue":55.28
+  },
+  {
+    "order_id":"ORD-100267",
+    "date":"2026-04-19",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":53.81,
+    "revenue":107.62
+  },
+  {
+    "order_id":"ORD-100268",
+    "date":"2026-03-04",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":27.1,
+    "revenue":54.2
+  },
+  {
+    "order_id":"ORD-100269",
+    "date":"2027-01-06",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":53.97,
+    "revenue":53.97
+  },
+  {
+    "order_id":"ORD-100270",
+    "date":"2027-01-13",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":41.46,
+    "revenue":41.46
+  },
+  {
+    "order_id":"ORD-100271",
+    "date":"2026-06-07",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":56.16,
+    "revenue":112.32
+  },
+  {
+    "order_id":"ORD-100272",
+    "date":"2026-10-04",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":40.89,
+    "revenue":81.78
+  },
+  {
+    "order_id":"ORD-100273",
+    "date":"2026-08-14",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":58.8,
+    "revenue":117.6
+  },
+  {
+    "order_id":"ORD-100274",
+    "date":"2026-07-28",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":43.14,
+    "revenue":43.14
+  },
+  {
+    "order_id":"ORD-100275",
+    "date":"2026-11-03",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"66+",
+    "quantity":2,
+    "unit_price":52.44,
+    "revenue":104.88
+  },
+  {
+    "order_id":"ORD-100276",
+    "date":"2026-10-30",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":50.2,
+    "revenue":150.6
+  },
+  {
+    "order_id":"ORD-100277",
+    "date":"2026-03-24",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":26.98,
+    "revenue":80.94
+  },
+  {
+    "order_id":"ORD-100278",
+    "date":"2026-10-02",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":26.58,
+    "revenue":53.16
+  },
+  {
+    "order_id":"ORD-100279",
+    "date":"2026-03-03",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":24.28,
+    "revenue":24.28
+  },
+  {
+    "order_id":"ORD-100280",
+    "date":"2026-05-01",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":28.35,
+    "revenue":28.35
+  },
+  {
+    "order_id":"ORD-100281",
+    "date":"2026-06-29",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":23.66,
+    "revenue":23.66
+  },
+  {
+    "order_id":"ORD-100282",
+    "date":"2026-09-21",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":24.59,
+    "revenue":24.59
+  },
+  {
+    "order_id":"ORD-100283",
+    "date":"2026-04-10",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":61.73,
+    "revenue":61.73
+  },
+  {
+    "order_id":"ORD-100284",
+    "date":"2026-12-29",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":43.31,
+    "revenue":86.62
+  },
+  {
+    "order_id":"ORD-100285",
+    "date":"2026-05-10",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":26.05,
+    "revenue":26.05
+  },
+  {
+    "order_id":"ORD-100286",
+    "date":"2026-04-13",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":52.04,
+    "revenue":52.04
+  },
+  {
+    "order_id":"ORD-100287",
+    "date":"2026-09-17",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":24.9,
+    "revenue":24.9
+  },
+  {
+    "order_id":"ORD-100288",
+    "date":"2027-01-21",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":42.54,
+    "revenue":42.54
+  },
+  {
+    "order_id":"ORD-100289",
+    "date":"2026-10-16",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":55.07,
+    "revenue":55.07
+  },
+  {
+    "order_id":"ORD-100290",
+    "date":"2026-05-25",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":54.55,
+    "revenue":54.55
+  },
+  {
+    "order_id":"ORD-100291",
+    "date":"2026-08-11",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":28.68,
+    "revenue":28.68
+  },
+  {
+    "order_id":"ORD-100292",
+    "date":"2026-12-03",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":58.85,
+    "revenue":117.7
+  },
+  {
+    "order_id":"ORD-100293",
+    "date":"2026-08-05",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":25.8,
+    "revenue":25.8
+  },
+  {
+    "order_id":"ORD-100294",
+    "date":"2026-04-26",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":3,
+    "unit_price":56.88,
+    "revenue":170.64
+  },
+  {
+    "order_id":"ORD-100295",
+    "date":"2026-10-09",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":59.36,
+    "revenue":59.36
+  },
+  {
+    "order_id":"ORD-100296",
+    "date":"2026-09-25",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":50.29,
+    "revenue":50.29
+  },
+  {
+    "order_id":"ORD-100297",
+    "date":"2026-02-02",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":38.54,
+    "revenue":77.08
+  },
+  {
+    "order_id":"ORD-100298",
+    "date":"2026-03-03",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":56.94,
+    "revenue":56.94
+  },
+  {
+    "order_id":"ORD-100299",
+    "date":"2026-05-04",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"66+",
+    "quantity":2,
+    "unit_price":24.29,
+    "revenue":48.58
+  },
+  {
+    "order_id":"ORD-100300",
+    "date":"2026-08-13",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":61.46,
+    "revenue":122.92
+  },
+  {
+    "order_id":"ORD-100301",
+    "date":"2026-05-03",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":54.28,
+    "revenue":54.28
+  },
+  {
+    "order_id":"ORD-100302",
+    "date":"2026-02-12",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":36.03,
+    "revenue":36.03
+  },
+  {
+    "order_id":"ORD-100303",
+    "date":"2026-05-29",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":41.32,
+    "revenue":41.32
+  },
+  {
+    "order_id":"ORD-100304",
+    "date":"2027-01-05",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":36.32,
+    "revenue":72.64
+  },
+  {
+    "order_id":"ORD-100305",
+    "date":"2026-09-17",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":4,
+    "unit_price":26.21,
+    "revenue":104.84
+  },
+  {
+    "order_id":"ORD-100306",
+    "date":"2026-05-23",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":52.72,
+    "revenue":52.72
+  },
+  {
+    "order_id":"ORD-100307",
+    "date":"2026-05-31",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":28.71,
+    "revenue":28.71
+  },
+  {
+    "order_id":"ORD-100308",
+    "date":"2026-06-02",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":60.75,
+    "revenue":60.75
+  },
+  {
+    "order_id":"ORD-100309",
+    "date":"2026-11-13",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":24.22,
+    "revenue":24.22
+  },
+  {
+    "order_id":"ORD-100310",
+    "date":"2026-12-27",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":54.24,
+    "revenue":54.24
+  },
+  {
+    "order_id":"ORD-100311",
+    "date":"2026-07-04",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":55.11,
+    "revenue":55.11
+  },
+  {
+    "order_id":"ORD-100312",
+    "date":"2026-03-02",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":60.58,
+    "revenue":121.16
+  },
+  {
+    "order_id":"ORD-100313",
+    "date":"2026-06-05",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":37.34,
+    "revenue":37.34
+  },
+  {
+    "order_id":"ORD-100314",
+    "date":"2026-06-18",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":37.9,
+    "revenue":75.8
+  },
+  {
+    "order_id":"ORD-100315",
+    "date":"2026-11-28",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":52.09,
+    "revenue":52.09
+  },
+  {
+    "order_id":"ORD-100316",
+    "date":"2026-02-08",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":53.67,
+    "revenue":107.34
+  },
+  {
+    "order_id":"ORD-100317",
+    "date":"2027-01-27",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":4,
+    "unit_price":26.85,
+    "revenue":107.4
+  },
+  {
+    "order_id":"ORD-100318",
+    "date":"2026-06-14",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":24.75,
+    "revenue":49.5
+  },
+  {
+    "order_id":"ORD-100319",
+    "date":"2026-07-14",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":43.22,
+    "revenue":43.22
+  },
+  {
+    "order_id":"ORD-100320",
+    "date":"2026-02-09",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"66+",
+    "quantity":3,
+    "unit_price":43.41,
+    "revenue":130.23
+  },
+  {
+    "order_id":"ORD-100321",
+    "date":"2026-05-29",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":52.2,
+    "revenue":104.4
+  },
+  {
+    "order_id":"ORD-100322",
+    "date":"2026-12-26",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":27.63,
+    "revenue":27.63
+  },
+  {
+    "order_id":"ORD-100323",
+    "date":"2026-11-07",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":37.69,
+    "revenue":37.69
+  },
+  {
+    "order_id":"ORD-100324",
+    "date":"2027-01-09",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":3,
+    "unit_price":62.5,
+    "revenue":187.5
+  },
+  {
+    "order_id":"ORD-100325",
+    "date":"2027-01-29",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":23.95,
+    "revenue":47.9
+  },
+  {
+    "order_id":"ORD-100326",
+    "date":"2026-10-06",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":26.35,
+    "revenue":26.35
+  },
+  {
+    "order_id":"ORD-100327",
+    "date":"2026-02-07",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":25.95,
+    "revenue":51.9
+  },
+  {
+    "order_id":"ORD-100328",
+    "date":"2026-05-03",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":58.77,
+    "revenue":117.54
+  },
+  {
+    "order_id":"ORD-100329",
+    "date":"2026-06-10",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":26.37,
+    "revenue":26.37
+  },
+  {
+    "order_id":"ORD-100330",
+    "date":"2027-01-23",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":41.65,
+    "revenue":41.65
+  },
+  {
+    "order_id":"ORD-100331",
+    "date":"2026-11-10",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":54.71,
+    "revenue":164.13
+  },
+  {
+    "order_id":"ORD-100332",
+    "date":"2026-07-20",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":3,
+    "unit_price":58.37,
+    "revenue":175.11
+  },
+  {
+    "order_id":"ORD-100333",
+    "date":"2027-01-21",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":23.94,
+    "revenue":47.88
+  },
+  {
+    "order_id":"ORD-100334",
+    "date":"2026-11-06",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"56-65",
+    "quantity":3,
+    "unit_price":38.8,
+    "revenue":116.4
+  },
+  {
+    "order_id":"ORD-100335",
+    "date":"2026-05-18",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":22.6,
+    "revenue":22.6
+  },
+  {
+    "order_id":"ORD-100336",
+    "date":"2026-08-19",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":57.29,
+    "revenue":57.29
+  },
+  {
+    "order_id":"ORD-100337",
+    "date":"2026-04-13",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":3,
+    "unit_price":59.89,
+    "revenue":179.67
+  },
+  {
+    "order_id":"ORD-100338",
+    "date":"2026-05-30",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":50.84,
+    "revenue":50.84
+  },
+  {
+    "order_id":"ORD-100339",
+    "date":"2026-08-23",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":45.55,
+    "revenue":45.55
+  },
+  {
+    "order_id":"ORD-100340",
+    "date":"2026-11-11",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"66+",
+    "quantity":2,
+    "unit_price":38.28,
+    "revenue":76.56
+  },
+  {
+    "order_id":"ORD-100341",
+    "date":"2026-03-16",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":42.61,
+    "revenue":42.61
+  },
+  {
+    "order_id":"ORD-100342",
+    "date":"2026-12-22",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":43.12,
+    "revenue":86.24
+  },
+  {
+    "order_id":"ORD-100343",
+    "date":"2026-07-08",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":3,
+    "unit_price":36.05,
+    "revenue":108.15
+  },
+  {
+    "order_id":"ORD-100344",
+    "date":"2026-10-21",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":41.57,
+    "revenue":83.14
+  },
+  {
+    "order_id":"ORD-100345",
+    "date":"2026-07-17",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":26.23,
+    "revenue":52.46
+  },
+  {
+    "order_id":"ORD-100346",
+    "date":"2026-06-05",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":28.13,
+    "revenue":28.13
+  },
+  {
+    "order_id":"ORD-100347",
+    "date":"2026-07-05",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":23.37,
+    "revenue":46.74
+  },
+  {
+    "order_id":"ORD-100348",
+    "date":"2026-06-09",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":22.98,
+    "revenue":22.98
+  },
+  {
+    "order_id":"ORD-100349",
+    "date":"2026-09-23",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"66+",
+    "quantity":2,
+    "unit_price":57.98,
+    "revenue":115.96
+  },
+  {
+    "order_id":"ORD-100350",
+    "date":"2026-07-22",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":39.3,
+    "revenue":39.3
+  },
+  {
+    "order_id":"ORD-100351",
+    "date":"2027-01-22",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":57.79,
+    "revenue":173.37
+  },
+  {
+    "order_id":"ORD-100352",
+    "date":"2026-11-22",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":40.91,
+    "revenue":81.82
+  },
+  {
+    "order_id":"ORD-100353",
+    "date":"2026-08-21",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":44.16,
+    "revenue":44.16
+  },
+  {
+    "order_id":"ORD-100354",
+    "date":"2026-09-25",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":49.87,
+    "revenue":99.74
+  },
+  {
+    "order_id":"ORD-100355",
+    "date":"2026-03-08",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":27.7,
+    "revenue":27.7
+  },
+  {
+    "order_id":"ORD-100356",
+    "date":"2026-09-05",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":42.59,
+    "revenue":42.59
+  },
+  {
+    "order_id":"ORD-100357",
+    "date":"2026-08-25",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":25.5,
+    "revenue":25.5
+  },
+  {
+    "order_id":"ORD-100358",
+    "date":"2026-11-02",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":4,
+    "unit_price":59.15,
+    "revenue":236.6
+  },
+  {
+    "order_id":"ORD-100359",
+    "date":"2026-08-01",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":26.61,
+    "revenue":53.22
+  },
+  {
+    "order_id":"ORD-100360",
+    "date":"2026-09-09",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":3,
+    "unit_price":59.85,
+    "revenue":179.55
+  },
+  {
+    "order_id":"ORD-100361",
+    "date":"2026-11-25",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":25.74,
+    "revenue":25.74
+  },
+  {
+    "order_id":"ORD-100362",
+    "date":"2026-10-15",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":26.18,
+    "revenue":26.18
+  },
+  {
+    "order_id":"ORD-100363",
+    "date":"2026-03-16",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":3,
+    "unit_price":28.25,
+    "revenue":84.75
+  },
+  {
+    "order_id":"ORD-100364",
+    "date":"2026-10-02",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":56.14,
+    "revenue":56.14
+  },
+  {
+    "order_id":"ORD-100365",
+    "date":"2027-01-30",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":4,
+    "unit_price":50.11,
+    "revenue":200.44
+  },
+  {
+    "order_id":"ORD-100366",
+    "date":"2026-07-20",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":3,
+    "unit_price":41.52,
+    "revenue":124.56
+  },
+  {
+    "order_id":"ORD-100367",
+    "date":"2026-05-07",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":42.3,
+    "revenue":42.3
+  },
+  {
+    "order_id":"ORD-100368",
+    "date":"2026-09-08",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":40.5,
+    "revenue":40.5
+  },
+  {
+    "order_id":"ORD-100369",
+    "date":"2026-03-05",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":59.18,
+    "revenue":59.18
+  },
+  {
+    "order_id":"ORD-100370",
+    "date":"2026-10-09",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":53.11,
+    "revenue":53.11
+  },
+  {
+    "order_id":"ORD-100371",
+    "date":"2026-08-20",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":54.84,
+    "revenue":109.68
+  },
+  {
+    "order_id":"ORD-100372",
+    "date":"2026-07-03",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":43.06,
+    "revenue":43.06
+  },
+  {
+    "order_id":"ORD-100373",
+    "date":"2026-06-03",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":53.81,
+    "revenue":53.81
+  },
+  {
+    "order_id":"ORD-100374",
+    "date":"2026-05-07",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":24.9,
+    "revenue":49.8
+  },
+  {
+    "order_id":"ORD-100375",
+    "date":"2026-06-28",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":51.79,
+    "revenue":51.79
+  },
+  {
+    "order_id":"ORD-100376",
+    "date":"2026-08-16",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":3,
+    "unit_price":37.37,
+    "revenue":112.11
+  },
+  {
+    "order_id":"ORD-100377",
+    "date":"2026-09-01",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"66+",
+    "quantity":2,
+    "unit_price":58.91,
+    "revenue":117.82
+  },
+  {
+    "order_id":"ORD-100378",
+    "date":"2026-06-30",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":43.61,
+    "revenue":87.22
+  },
+  {
+    "order_id":"ORD-100379",
+    "date":"2026-10-12",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":25.36,
+    "revenue":50.72
+  },
+  {
+    "order_id":"ORD-100380",
+    "date":"2026-11-05",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":28.69,
+    "revenue":28.69
+  },
+  {
+    "order_id":"ORD-100381",
+    "date":"2026-09-06",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"56-65",
+    "quantity":3,
+    "unit_price":23.87,
+    "revenue":71.61
+  },
+  {
+    "order_id":"ORD-100382",
+    "date":"2026-03-17",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":61.36,
+    "revenue":122.72
+  },
+  {
+    "order_id":"ORD-100383",
+    "date":"2026-07-30",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":26.17,
+    "revenue":26.17
+  },
+  {
+    "order_id":"ORD-100384",
+    "date":"2026-03-03",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":60.69,
+    "revenue":60.69
+  },
+  {
+    "order_id":"ORD-100385",
+    "date":"2026-07-16",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":56.91,
+    "revenue":56.91
+  },
+  {
+    "order_id":"ORD-100386",
+    "date":"2027-01-14",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":45.85,
+    "revenue":45.85
+  },
+  {
+    "order_id":"ORD-100387",
+    "date":"2027-01-02",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"56-65",
+    "quantity":3,
+    "unit_price":28.7,
+    "revenue":86.1
+  },
+  {
+    "order_id":"ORD-100388",
+    "date":"2026-10-09",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":26.73,
+    "revenue":26.73
+  },
+  {
+    "order_id":"ORD-100389",
+    "date":"2026-03-20",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":50.54,
+    "revenue":50.54
+  },
+  {
+    "order_id":"ORD-100390",
+    "date":"2026-03-20",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":61.45,
+    "revenue":61.45
+  },
+  {
+    "order_id":"ORD-100391",
+    "date":"2026-08-23",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":43.96,
+    "revenue":87.92
+  },
+  {
+    "order_id":"ORD-100392",
+    "date":"2026-11-17",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":41.78,
+    "revenue":41.78
+  },
+  {
+    "order_id":"ORD-100393",
+    "date":"2026-09-24",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"56-65",
+    "quantity":3,
+    "unit_price":37.0,
+    "revenue":111.0
+  },
+  {
+    "order_id":"ORD-100394",
+    "date":"2026-04-09",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":4,
+    "unit_price":26.8,
+    "revenue":107.2
+  },
+  {
+    "order_id":"ORD-100395",
+    "date":"2026-08-04",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":36.93,
+    "revenue":73.86
+  },
+  {
+    "order_id":"ORD-100396",
+    "date":"2027-01-02",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":38.34,
+    "revenue":38.34
+  },
+  {
+    "order_id":"ORD-100397",
+    "date":"2026-05-27",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":23.33,
+    "revenue":46.66
+  },
+  {
+    "order_id":"ORD-100398",
+    "date":"2026-09-05",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":45.88,
+    "revenue":45.88
+  },
+  {
+    "order_id":"ORD-100399",
+    "date":"2026-03-25",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":39.83,
+    "revenue":39.83
+  },
+  {
+    "order_id":"ORD-100400",
+    "date":"2027-01-13",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":42.42,
+    "revenue":42.42
+  },
+  {
+    "order_id":"ORD-100401",
+    "date":"2026-07-30",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":3,
+    "unit_price":51.76,
+    "revenue":155.28
+  },
+  {
+    "order_id":"ORD-100402",
+    "date":"2026-03-24",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":52.49,
+    "revenue":52.49
+  },
+  {
+    "order_id":"ORD-100403",
+    "date":"2026-04-13",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":25.18,
+    "revenue":25.18
+  },
+  {
+    "order_id":"ORD-100404",
+    "date":"2027-01-20",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":60.21,
+    "revenue":60.21
+  },
+  {
+    "order_id":"ORD-100405",
+    "date":"2026-08-20",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":56.51,
+    "revenue":56.51
+  },
+  {
+    "order_id":"ORD-100406",
+    "date":"2026-02-07",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":22.94,
+    "revenue":22.94
+  },
+  {
+    "order_id":"ORD-100407",
+    "date":"2026-11-19",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"66+",
+    "quantity":2,
+    "unit_price":44.61,
+    "revenue":89.22
+  },
+  {
+    "order_id":"ORD-100408",
+    "date":"2026-06-15",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":4,
+    "unit_price":50.43,
+    "revenue":201.72
+  },
+  {
+    "order_id":"ORD-100409",
+    "date":"2026-09-01",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":26.95,
+    "revenue":26.95
+  },
+  {
+    "order_id":"ORD-100410",
+    "date":"2026-05-16",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":36.79,
+    "revenue":73.58
+  },
+  {
+    "order_id":"ORD-100411",
+    "date":"2026-12-22",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":24.94,
+    "revenue":24.94
+  },
+  {
+    "order_id":"ORD-100412",
+    "date":"2026-03-02",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":61.14,
+    "revenue":61.14
+  },
+  {
+    "order_id":"ORD-100413",
+    "date":"2027-01-08",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":36.55,
+    "revenue":36.55
+  },
+  {
+    "order_id":"ORD-100414",
+    "date":"2026-10-13",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":49.66,
+    "revenue":99.32
+  },
+  {
+    "order_id":"ORD-100415",
+    "date":"2026-04-06",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"66+",
+    "quantity":2,
+    "unit_price":51.8,
+    "revenue":103.6
+  },
+  {
+    "order_id":"ORD-100416",
+    "date":"2026-06-15",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":41.24,
+    "revenue":41.24
+  },
+  {
+    "order_id":"ORD-100417",
+    "date":"2026-08-04",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":55.76,
+    "revenue":111.52
+  },
+  {
+    "order_id":"ORD-100418",
+    "date":"2026-04-01",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":58.77,
+    "revenue":117.54
+  },
+  {
+    "order_id":"ORD-100419",
+    "date":"2026-02-24",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":49.67,
+    "revenue":149.01
+  },
+  {
+    "order_id":"ORD-100420",
+    "date":"2027-02-01",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":3,
+    "unit_price":41.53,
+    "revenue":124.59
+  },
+  {
+    "order_id":"ORD-100421",
+    "date":"2026-07-14",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":38.48,
+    "revenue":38.48
+  },
+  {
+    "order_id":"ORD-100422",
+    "date":"2026-10-23",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":4,
+    "unit_price":23.89,
+    "revenue":95.56
+  },
+  {
+    "order_id":"ORD-100423",
+    "date":"2026-07-10",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"66+",
+    "quantity":3,
+    "unit_price":44.66,
+    "revenue":133.98
+  },
+  {
+    "order_id":"ORD-100424",
+    "date":"2026-06-05",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":59.67,
+    "revenue":59.67
+  },
+  {
+    "order_id":"ORD-100425",
+    "date":"2026-11-07",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":59.57,
+    "revenue":119.14
+  },
+  {
+    "order_id":"ORD-100426",
+    "date":"2026-12-23",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":25.88,
+    "revenue":51.76
+  },
+  {
+    "order_id":"ORD-100427",
+    "date":"2026-08-12",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":27.24,
+    "revenue":27.24
+  },
+  {
+    "order_id":"ORD-100428",
+    "date":"2026-03-03",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":55.27,
+    "revenue":110.54
+  },
+  {
+    "order_id":"ORD-100429",
+    "date":"2026-05-30",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"66+",
+    "quantity":4,
+    "unit_price":22.77,
+    "revenue":91.08
+  },
+  {
+    "order_id":"ORD-100430",
+    "date":"2026-10-17",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":57.49,
+    "revenue":57.49
+  },
+  {
+    "order_id":"ORD-100431",
+    "date":"2026-04-08",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":40.35,
+    "revenue":80.7
+  },
+  {
+    "order_id":"ORD-100432",
+    "date":"2026-03-11",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":38.72,
+    "revenue":38.72
+  },
+  {
+    "order_id":"ORD-100433",
+    "date":"2026-04-26",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":23.47,
+    "revenue":23.47
+  },
+  {
+    "order_id":"ORD-100434",
+    "date":"2026-07-08",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":38.08,
+    "revenue":38.08
+  },
+  {
+    "order_id":"ORD-100435",
+    "date":"2026-07-06",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":27.55,
+    "revenue":27.55
+  },
+  {
+    "order_id":"ORD-100436",
+    "date":"2027-01-31",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":51.54,
+    "revenue":103.08
+  },
+  {
+    "order_id":"ORD-100437",
+    "date":"2026-05-01",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":4,
+    "unit_price":38.99,
+    "revenue":155.96
+  },
+  {
+    "order_id":"ORD-100438",
+    "date":"2026-04-13",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":44.04,
+    "revenue":44.04
+  },
+  {
+    "order_id":"ORD-100439",
+    "date":"2027-01-18",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":25.0,
+    "revenue":25.0
+  },
+  {
+    "order_id":"ORD-100440",
+    "date":"2026-03-06",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":50.53,
+    "revenue":50.53
+  },
+  {
+    "order_id":"ORD-100441",
+    "date":"2026-07-20",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":61.15,
+    "revenue":122.3
+  },
+  {
+    "order_id":"ORD-100442",
+    "date":"2026-08-15",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":40.96,
+    "revenue":81.92
+  },
+  {
+    "order_id":"ORD-100443",
+    "date":"2026-06-21",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":28.18,
+    "revenue":28.18
+  },
+  {
+    "order_id":"ORD-100444",
+    "date":"2026-11-09",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":25.07,
+    "revenue":25.07
+  },
+  {
+    "order_id":"ORD-100445",
+    "date":"2026-05-14",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":23.36,
+    "revenue":23.36
+  },
+  {
+    "order_id":"ORD-100446",
+    "date":"2026-08-03",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":60.25,
+    "revenue":120.5
+  },
+  {
+    "order_id":"ORD-100447",
+    "date":"2026-08-18",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":41.02,
+    "revenue":41.02
+  },
+  {
+    "order_id":"ORD-100448",
+    "date":"2026-09-30",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":22.87,
+    "revenue":45.74
+  },
+  {
+    "order_id":"ORD-100449",
+    "date":"2027-01-03",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":4,
+    "unit_price":50.88,
+    "revenue":203.52
+  },
+  {
+    "order_id":"ORD-100450",
+    "date":"2026-04-30",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":62.36,
+    "revenue":62.36
+  },
+  {
+    "order_id":"ORD-100451",
+    "date":"2027-01-25",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":49.89,
+    "revenue":49.89
+  },
+  {
+    "order_id":"ORD-100452",
+    "date":"2026-10-11",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":61.62,
+    "revenue":61.62
+  },
+  {
+    "order_id":"ORD-100453",
+    "date":"2026-05-31",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":23.06,
+    "revenue":23.06
+  },
+  {
+    "order_id":"ORD-100454",
+    "date":"2026-04-08",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":4,
+    "unit_price":23.76,
+    "revenue":95.04
+  },
+  {
+    "order_id":"ORD-100455",
+    "date":"2026-04-14",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":26.17,
+    "revenue":78.51
+  },
+  {
+    "order_id":"ORD-100456",
+    "date":"2026-03-24",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":54.94,
+    "revenue":54.94
+  },
+  {
+    "order_id":"ORD-100457",
+    "date":"2026-12-25",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":40.37,
+    "revenue":121.11
+  },
+  {
+    "order_id":"ORD-100458",
+    "date":"2026-12-12",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":61.73,
+    "revenue":61.73
+  },
+  {
+    "order_id":"ORD-100459",
+    "date":"2027-01-19",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":24.86,
+    "revenue":24.86
+  },
+  {
+    "order_id":"ORD-100460",
+    "date":"2026-12-06",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":22.7,
+    "revenue":22.7
+  },
+  {
+    "order_id":"ORD-100461",
+    "date":"2026-07-20",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":5,
+    "unit_price":56.32,
+    "revenue":281.6
+  },
+  {
+    "order_id":"ORD-100462",
+    "date":"2027-01-29",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":3,
+    "unit_price":23.05,
+    "revenue":69.15
+  },
+  {
+    "order_id":"ORD-100463",
+    "date":"2026-05-19",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":3,
+    "unit_price":49.66,
+    "revenue":148.98
+  },
+  {
+    "order_id":"ORD-100464",
+    "date":"2026-09-03",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":25.24,
+    "revenue":75.72
+  },
+  {
+    "order_id":"ORD-100465",
+    "date":"2026-08-12",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":39.51,
+    "revenue":39.51
+  },
+  {
+    "order_id":"ORD-100466",
+    "date":"2026-07-14",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":38.95,
+    "revenue":77.9
+  },
+  {
+    "order_id":"ORD-100467",
+    "date":"2026-03-11",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":24.85,
+    "revenue":49.7
+  },
+  {
+    "order_id":"ORD-100468",
+    "date":"2026-09-09",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":4,
+    "unit_price":26.9,
+    "revenue":107.6
+  },
+  {
+    "order_id":"ORD-100469",
+    "date":"2026-03-24",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"66+",
+    "quantity":1,
+    "unit_price":23.48,
+    "revenue":23.48
+  },
+  {
+    "order_id":"ORD-100470",
+    "date":"2026-06-02",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":24.26,
+    "revenue":24.26
+  },
+  {
+    "order_id":"ORD-100471",
+    "date":"2026-08-04",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":37.54,
+    "revenue":37.54
+  },
+  {
+    "order_id":"ORD-100472",
+    "date":"2026-03-14",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":26.49,
+    "revenue":26.49
+  },
+  {
+    "order_id":"ORD-100473",
+    "date":"2027-01-05",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":25.44,
+    "revenue":50.88
+  },
+  {
+    "order_id":"ORD-100474",
+    "date":"2026-06-15",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":2,
+    "unit_price":55.63,
+    "revenue":111.26
+  },
+  {
+    "order_id":"ORD-100475",
+    "date":"2027-01-23",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"26-35",
+    "quantity":3,
+    "unit_price":37.51,
+    "revenue":112.53
+  },
+  {
+    "order_id":"ORD-100476",
+    "date":"2026-03-04",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"46-55",
+    "quantity":1,
+    "unit_price":23.92,
+    "revenue":23.92
+  },
+  {
+    "order_id":"ORD-100477",
+    "date":"2026-10-02",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":58.95,
+    "revenue":117.9
+  },
+  {
+    "order_id":"ORD-100478",
+    "date":"2026-10-16",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":3,
+    "unit_price":26.96,
+    "revenue":80.88
+  },
+  {
+    "order_id":"ORD-100479",
+    "date":"2026-09-18",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":3,
+    "unit_price":51.53,
+    "revenue":154.59
+  },
+  {
+    "order_id":"ORD-100480",
+    "date":"2026-12-19",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":25.22,
+    "revenue":50.44
+  },
+  {
+    "order_id":"ORD-100481",
+    "date":"2026-03-07",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":62.07,
+    "revenue":124.14
+  },
+  {
+    "order_id":"ORD-100482",
+    "date":"2027-01-25",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":61.51,
+    "revenue":61.51
+  },
+  {
+    "order_id":"ORD-100483",
+    "date":"2026-04-17",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":55.2,
+    "revenue":110.4
+  },
+  {
+    "order_id":"ORD-100484",
+    "date":"2026-11-02",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":53.43,
+    "revenue":53.43
+  },
+  {
+    "order_id":"ORD-100485",
+    "date":"2026-11-20",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":42.55,
+    "revenue":42.55
+  },
+  {
+    "order_id":"ORD-100486",
+    "date":"2026-08-25",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":26.76,
+    "revenue":26.76
+  },
+  {
+    "order_id":"ORD-100487",
+    "date":"2026-08-10",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":2,
+    "unit_price":45.21,
+    "revenue":90.42
+  },
+  {
+    "order_id":"ORD-100488",
+    "date":"2026-05-28",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":3,
+    "unit_price":45.72,
+    "revenue":137.16
+  },
+  {
+    "order_id":"ORD-100489",
+    "date":"2026-12-28",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":55.23,
+    "revenue":55.23
+  },
+  {
+    "order_id":"ORD-100490",
+    "date":"2026-10-22",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"18-25",
+    "quantity":1,
+    "unit_price":44.21,
+    "revenue":44.21
+  },
+  {
+    "order_id":"ORD-100491",
+    "date":"2026-10-27",
+    "region\/locale":"Midwest",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"56-65",
+    "quantity":1,
+    "unit_price":25.02,
+    "revenue":25.02
+  },
+  {
+    "order_id":"ORD-100492",
+    "date":"2026-02-17",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product A",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":22.86,
+    "revenue":45.72
+  },
+  {
+    "order_id":"ORD-100493",
+    "date":"2026-09-26",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":1,
+    "unit_price":39.68,
+    "revenue":39.68
+  },
+  {
+    "order_id":"ORD-100494",
+    "date":"2026-10-01",
+    "region\/locale":"North",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":2,
+    "unit_price":55.63,
+    "revenue":111.26
+  },
+  {
+    "order_id":"ORD-100495",
+    "date":"2026-06-13",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product B",
+    "age_group":"36-45",
+    "quantity":3,
+    "unit_price":44.38,
+    "revenue":133.14
+  },
+  {
+    "order_id":"ORD-100496",
+    "date":"2026-05-21",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"46-55",
+    "quantity":2,
+    "unit_price":61.24,
+    "revenue":122.48
+  },
+  {
+    "order_id":"ORD-100497",
+    "date":"2026-08-29",
+    "region\/locale":"West",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"56-65",
+    "quantity":2,
+    "unit_price":53.2,
+    "revenue":106.4
+  },
+  {
+    "order_id":"ORD-100498",
+    "date":"2026-02-05",
+    "region\/locale":"South",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"36-45",
+    "quantity":3,
+    "unit_price":57.77,
+    "revenue":173.31
+  },
+  {
+    "order_id":"ORD-100499",
+    "date":"2026-07-29",
+    "region\/locale":"East",
+    "distribution channel":[
+      "Web Service",
+      "Mobile",
+      "In Store",
+      "Retail",
+      "Delivery"
+    ],
+    "product":"Product C",
+    "age_group":"26-35",
+    "quantity":1,
+    "unit_price":54.68,
+    "revenue":54.68
+  }
+]

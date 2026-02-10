@@ -124,7 +124,7 @@ Note: You can attempt to submit adequate changes by opening a pull request.
 ## <a name='architecture'></a>Architecture
 
 <p align="center">
-  <img src="assets/Architecture.png" alt="System Architecture" width="85%"/>
+  <img src="assets/Architecture updated.png" alt="System Architecture" width="85%"/>
 </p>
 
 This agent follows a modular, agent-centered architecture designed for transparency and experimentation.

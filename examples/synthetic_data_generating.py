@@ -102,30 +102,34 @@ def _synthetic_fill_numeric(
     }
     return out, na_mask, audit
 
-    #  highlight synthetic data in a new dataset
+   
+from openpyxl import Workbook
+from openpyxl.styles import PatternFill
+from openpyxl.utils.dataframe import dataframe_to_rows
+from openpyxl.worksheet.worksheet import Worksheet
+import pandas as pd
+from typing import cast
+
+
 def save_xlsx_with_highlights(
     df: pd.DataFrame,
     xlsx_path: str,
     highlight_map: dict,
-    fill_color: str = "FFFF00",  # yellow
+    fill_color: str = "FFFF00",
 ):
-    """
-    highlight_map: { column_name: boolean_mask_series (True means synthetic-filled) }
-    """
     wb = Workbook()
-    ws = wb.active
+    ws = cast(Worksheet, wb.active)   
+
     ws.title = "data"
 
-    for r_idx, row in enumerate(dataframe_to_rows(df, index=False, header=True), start=1):
+    for row in dataframe_to_rows(df, index=False, header=True):
         ws.append(row)
 
     yellow = PatternFill(start_color=fill_color, end_color=fill_color, fill_type="solid")
 
-    # build column index map 
     col_to_excel = {name: i + 1 for i, name in enumerate(df.columns)}
-
-    # apply highlight: note df rows begin at Excel row 2
     nrows = len(df)
+
     for col_name, mask in highlight_map.items():
         if col_name not in col_to_excel:
             continue

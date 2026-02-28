@@ -1,0 +1,7 @@
+gradio>=4.0.0
+langgraph>=1.0.0
+langgraph-checkpoint>=1.0.0
+langgraph-checkpoint-sqlite>=1.0.0
+langchain-core>=0.2.0
+langchain-openai>=0.1.0
+openai>=1.0.0

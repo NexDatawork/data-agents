@@ -4,7 +4,7 @@ emoji: 🤖
 colorFrom: indigo
 colorTo: purple
 sdk: gradio
-app_file: examples/app.py
+app_file: framework_demo_c.py
 pinned: false
 ---
 

@@ -25,5 +25,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git remote add hf https://huggingface.co/spaces/NexDatawork/NexDatawork-Mini-Agent
-          git push https://NexDatawork:${HF_TOKEN}@huggingface.co/spaces/NexDatawork/NexDatawork-Mini-Agent main --force
+
+          git push https://NexDatawork:${HF_TOKEN}@huggingface.co/spaces/NexDatawork/agentic_ai_powered_predictive_modeling main --force

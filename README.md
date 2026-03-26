@@ -10,7 +10,7 @@
 
 </div>
 
-OpenGraph AI is a developer toolchain for building agent-first systems over heterogeneous data.
+OpenGraph AI is a developer toolchain for building agent-first systems over heterogeneous data. such as text, audio, image.
 
 It turns tables, text, images, audio, and video into semantic knowledge graphs for retrieval and reasoning, enabling structured understanding that AI agents can actually use.
 

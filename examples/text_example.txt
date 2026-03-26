@@ -1,3 +1,6 @@
-TODO: Replace this with realistic unstructured text input.
-
-OpenGraph AI should parse this sample and extract entities and relationships.
+Alice Johnson is the CEO of Acme Corporation.
+Acme Corporation was founded by Alice Johnson in San Francisco.
+Bob Smith leads the engineering team at Acme Corporation.
+Bob Smith previously worked at TechGroup.
+TechGroup is a competitor of Acme Corporation.
+Acme Corporation acquired Beta Labs in 2023.

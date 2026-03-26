@@ -1,231 +1,136 @@
-# OpenGraph
+# OpenGraph AI
 
-*An open-source framework for building agentic AI applications with graph-structured knowledge, modular workflows, and developer-first tools.*
+<div align="center">
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/yourusername/opengraph-ai/actions)
-[![Version](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/yourusername/opengraph-ai/releases)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/yourusername/opengraph-ai/pulls)
+[![Pull Requests](https://img.shields.io/badge/pull%20requests-welcome-5A2AB8?labelColor=3834B6)](https://github.com/your-org/opengraph-ai/pulls)
+[![License](https://img.shields.io/badge/license-MIT-5A2AB8?labelColor=3834B6)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.11%2B-5A2AB8?labelColor=3834B6)](pyproject.toml)
+[![Node](https://img.shields.io/badge/node-20%2B-5A2AB8?labelColor=3834B6)](mcp-server/package.json)
+[![FastAPI](https://img.shields.io/badge/api-FastAPI-5A2AB8?labelColor=3834B6)](api/main.py)
 
-## Overview
+</div>
 
-OpenGraph is an open-source framework designed to simplify the development of agentic AI applications. It provides a graph-native architecture for representing knowledge, orchestrating modular workflows, and integrating with various AI models and data sources.
+OpenGraph AI is a developer toolchain for building agent-first systems over heterogeneous data.
 
-### Why OpenGraph?
+It turns tables, text, images, audio, and video into semantic knowledge graphs for retrieval and reasoning, enabling structured understanding that AI agents can actually use.
 
-Building agentic AI systems often involves complex interactions between multiple components, state management, and reasoning over interconnected data. Traditional approaches can lead to monolithic codebases that are hard to maintain and scale. OpenGraph addresses this by offering:
+## Why It Exists
 
-- **Graph-based reasoning**: Represent knowledge and relationships as graphs for more intuitive and powerful AI reasoning
-- **Modular workflows**: Build complex agent behaviors from composable, reusable components
-- **Developer-first tools**: Focus on productivity with clean APIs, CLI tools, and extensive documentation
+AI agents struggle with multi-source, unstructured data. Data is often fragmented across files, formats, and modalities, which makes reasoning brittle and context incomplete.
 
-### Core Philosophy
+OpenGraph AI adds a graph layer between raw data and agent workflows so entities, relationships, and evidence become explicit and queryable.
 
-OpenGraph embraces an **agent-native architecture** that prioritizes:
+## Features (Initial Version)
 
-- **Graph-structured knowledge**: Everything is a graph - from data representation to workflow orchestration
-- **Modular components**: Small, focused modules that can be mixed and matched
-- **Openness**: Extensible design that welcomes community contributions and integrations
-- **Developer experience**: Intuitive APIs and tools that make building AI agents accessible
+- Extract graph structures from text
+- Extract graph structures from tables
+- Convert entities and relationships into graph JSON
+- Query the graph
+- Run graph workflows from CLI commands
+- Access graph workflows through API endpoints
+- Expose graph tooling to agent runtimes via MCP tools
 
-## Key Features
+## Project Components
 
-- **Graph-native knowledge representation**: Model complex relationships and reasoning patterns as graphs
-- **Agent workflow engine**: Orchestrate multi-step agent behaviors with conditional logic and loops
-- **Flexible API layer**: RESTful and GraphQL APIs for easy integration
-- **CLI tool**: Command-line interface for development, testing, and deployment
-- **Extensible module/plugin design**: Add custom agents, tools, and connectors
-
-### Example Use Cases
-
-- **AI Assistants**: Build conversational agents that maintain context across multiple interactions
-- **Multimodal Agents**: Process and reason over text, images, and other data types
-- **Data Agents**: Automate data analysis, transformation, and visualization workflows
-- **Workflow Automation**: Create custom business logic agents for specific domains
-
-## Repository Structure
-
-```
-├── src/                    # Core framework code
-│   ├── agents/            # Agent implementations
-│   ├── prompts/           # Prompt templates and utilities
-│   └── utils/             # Helper functions and utilities
-├── examples/              # Example applications and demos
-├── data/                  # Sample datasets and configuration
-├── archive/               # Legacy code and documentation
-└── docs/                  # Documentation (future)
-```
+- Python CLI (Typer-oriented command layer)
+- Python API service (FastAPI)
+- Node.js MCP server (Claude Code and Cursor integration)
+- Shared Python engine for extraction, graph build, and query operations
 
 ## Installation
 
-### Using Python / pip
+### 1. Install CLI via pip
 
 ```bash
-pip install opengraph-ai
+pip install -e .
+python -m cli --version
 ```
 
-### Using Docker
+### 2. Run API server
 
 ```bash
-docker pull opengraph/opengraph-ai:latest
-docker run -p 8000:8000 opengraph/opengraph-ai
+pip install -e .
+uvicorn api.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-### Using CLI
+### 3. Use MCP server with Claude Code or Cursor
 
 ```bash
-# Install CLI tool
-pip install opengraph-cli
-
-# Verify installation
-opengraph --version
+cd mcp-server
+npm install
+npm run dev
 ```
 
-## Quick Start
+Then register the MCP server command in your Claude Code or Cursor MCP configuration.
 
-### Basic Agent Setup
+## Quickstart Examples
+
+### Text Extraction
 
 ```python
-from opengraph import Agent, GraphEngine
+from engine.extractors.text_extractor import extract_text
 
-# Initialize the graph engine
-graph = GraphEngine()
-
-# Create a simple agent
-agent = Agent(
-    name="HelloAgent",
-    graph=graph,
-    tools=["web_search", "text_analyzer"]
-)
-
-# Run the agent
-response = agent.run("What is the weather today?")
-print(response)
+chunks = extract_text("Alice founded Acme Corp in 2020.\nAcme acquired Beta Labs.")
+print(chunks)
 ```
 
-### Registering Custom Tools
+### Table Extraction
 
 ```python
-from opengraph import Tool
+from engine.extractors.table_extractor import extract_table
 
-@Tool.register("custom_calculator")
-def calculate(expression: str) -> float:
-    """Evaluate a mathematical expression."""
-    return eval(expression)
-
-# The tool is now available to all agents
-agent = Agent(tools=["custom_calculator"])
+rows = extract_table("examples/table_example.csv")
+print(rows[:2])
 ```
 
-### CLI Usage
+### Graph Query
 
-```bash
-# Create a new agent project
-opengraph init my-agent
+```python
+from engine.graphs.builder import build_graph
+from engine.graphs.query import get_node
 
-# Run an agent with a query
-opengraph run --agent hello_agent --query "Hello world"
+records = [
+    {"id": "entity-1", "label": "Alice", "type": "person"},
+    {"id": "entity-2", "label": "Acme", "type": "company"},
+]
 
-# List available tools
-opengraph tools list
+graph = build_graph(records)
+print(get_node(graph, "entity-1"))
 ```
 
-## Architecture
+## Architecture Overview
 
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   CLI / SDK     │    │   API Layer     │    │   Connectors    │
-│                 │    │                 │    │                 │
-│ • Command line  │◄──►│ • REST API      │◄──►│ • LLM APIs      │
-│ • SDK libraries │    │ • GraphQL       │    │ • Data sources  │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-         │                       │                       │
-         ▼                       ▼                       ▼
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│  Workflow       │    │   Agent Engine  │    │   Graph Engine  │
-│  Orchestrator   │    │                 │    │                 │
-│                 │◄──►│ • Agent logic   │◄──►│ • Knowledge     │
-│ • Task queues   │    │ • State mgmt    │    │ • Relationships │
-│ • Conditional   │    │ • Tool calling  │    │ • Reasoning     │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-         ▲                       ▲                       ▲
-         └───────────────────────┼───────────────────────┘
-                                 │
-                    ┌─────────────────┐
-                    │   Memory /      │
-                    │   State Store   │
-                    │                 │
-                    │ • Persistent    │
-                    │ • Distributed   │
-                    │ • Versioned     │
-                    └─────────────────┘
+```text
+CLI (Python) --------------> Shared Engine (Python)
+API (FastAPI) -------------> Shared Engine (Python)
+MCP (Node.js) -> Python wrapper -> Shared Engine (Python)
 ```
 
-### Core Components
-
-- **Graph Engine**: Handles graph-based knowledge representation and querying
-- **Agent Engine**: Manages agent lifecycle, tool calling, and decision making
-- **Workflow Orchestrator**: Coordinates complex multi-step workflows
-- **Memory / State**: Persistent storage for agent state and conversation history
-- **Connectors**: Integration layer for external APIs and data sources
-- **CLI / SDK**: Developer tools and programmatic interfaces
+Core flow:
+- Extract modality-specific data
+- Normalize entities and relationships
+- Build graph JSON
+- Query for retrieval and reasoning
 
 ## Roadmap
 
-### Near-term (MVP - v0.1.0)
-- [x] Basic graph engine implementation
-- [x] Simple agent framework
-- [x] Core CLI tool
-- [ ] REST API endpoints
-- [ ] Basic documentation
-
-### Mid-term (v0.2.0 - v0.5.0)
-- [ ] Advanced workflow orchestration
-- [ ] Plugin system for custom agents
-- [ ] GraphQL API
-- [ ] Performance optimizations
-- [ ] Comprehensive test suite
-
-### Long-term (v1.0.0+)
-- [ ] Distributed agent deployment
-- [ ] Multi-modal reasoning capabilities
-- [ ] Enterprise integrations
-- [ ] Advanced graph algorithms
-- [ ] Community marketplace for agents
-
-## Contributing
-
-We welcome contributions from the community! Here's how you can get involved:
-
-### Filing Issues
-- Use GitHub Issues to report bugs or request features
-- Provide detailed descriptions and code examples when possible
-- Check existing issues to avoid duplicates
-
-### Proposing New Modules/Tools
-- Open a GitHub Discussion to discuss your idea
-- Follow our module design guidelines (coming soon)
-- Submit a pull request with your implementation
-
-### Coding Standards
-- Follow PEP 8 for Python code
-- Write comprehensive tests for new features
-- Update documentation for API changes
-- Use type hints and docstrings
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+- Add extraction support for images
+- Add extraction support for audio
+- Add extraction support for video
+- Add vector database connectors
+- Add higher-level agent workflow orchestration
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See [LICENSE](LICENSE).
 
-## Acknowledgements
+## Contributing
 
-OpenGraph draws inspiration from:
+Contributions are welcome.
 
-- **LangChain** and **LlamaIndex** for agent frameworks
-- **NetworkX** and **igraph** for graph algorithms
-- **FastAPI** for API design patterns
-- The broader AI and graph computing communities
+- Open an issue with problem statement and reproducible context
+- Propose design updates via pull request
+- Include tests for new extraction, graph, or query behavior
+- Keep public APIs typed and documented
 
-Special thanks to our contributors and the open-source ecosystem that makes projects like this possible.
+Initial contribution guidance is available at [archive/CONTRIBUTING.md](archive/CONTRIBUTING.md).

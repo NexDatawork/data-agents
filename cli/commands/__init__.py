@@ -1,7 +1,10 @@
 """CLI command registry.
 
-TODO: Split command handlers into dedicated modules.
+Registers subcommand Typer apps onto the root CLI.
+TODO: Load commands dynamically from plugins.
 """
+
+from cli.commands import extract  # noqa: F401
 
 
 def list_commands() -> list[str]:
@@ -9,4 +12,4 @@ def list_commands() -> list[str]:
 
     TODO: Load commands dynamically from plugins.
     """
-    return ["version"]
+    return ["version", "extract"]

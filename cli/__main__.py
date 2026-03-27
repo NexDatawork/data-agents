@@ -8,6 +8,7 @@ import typer
 
 from cli.commands.demo import demo
 from cli.commands.extract import app as extract_app
+from cli.commands.query import query
 
 app = typer.Typer(
     name="opengraph",
@@ -20,6 +21,7 @@ app.add_typer(extract_app, name="extract")
 
 # ── Register direct commands ──────────────────────────────────────────────────
 app.command("demo")(demo)
+app.command("query")(query)
 
 
 @app.callback(invoke_without_command=True)

@@ -35,20 +35,33 @@ def build_graph_from_extraction(extraction: dict) -> Graph:
     graph = Graph()
 
     for ent in extraction.get("entities", []):
+        entity_properties = dict(ent.get("properties", {}))
+        entity_properties.setdefault("type", ent.get("type", ""))
+
+        for key, value in ent.items():
+            if key not in {"id", "label", "type", "properties"}:
+                entity_properties[key] = value
+
         graph.add_node(
             Node(
                 id=ent["id"],
                 label=ent["label"],
-                properties={"type": ent.get("type", "")},
+                properties=entity_properties,
             )
         )
 
     for rel in extraction.get("relationships", []):
+        edge_properties = dict(rel.get("properties", {}))
+        for key, value in rel.items():
+            if key not in {"source", "target", "relation", "properties"}:
+                edge_properties[key] = value
+
         graph.add_edge(
             Edge(
                 source=rel["source"],
                 target=rel["target"],
                 relation=rel["relation"],
+                properties=edge_properties,
             )
         )
 

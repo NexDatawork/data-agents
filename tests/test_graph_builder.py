@@ -30,3 +30,46 @@ def test_build_graph_from_extraction_empty_input() -> None:
     graph = build_graph_from_extraction({"entities": [], "relationships": []})
     assert len(graph.nodes) == 0
     assert len(graph.edges) == 0
+
+
+def test_build_graph_from_extraction_preserves_entity_and_edge_properties() -> None:
+    extraction = {
+        "entities": [
+            {
+                "id": "customers:c001",
+                "label": "Alice Chen",
+                "type": "customer",
+                "properties": {
+                    "table": "customers",
+                    "email": "alice@example.com",
+                },
+            },
+            {
+                "id": "orders:o1001",
+                "label": "O1001",
+                "type": "order",
+                "properties": {
+                    "table": "orders",
+                    "order_date": "2026-03-01",
+                },
+            },
+        ],
+        "relationships": [
+            {
+                "source": "orders:o1001",
+                "target": "customers:c001",
+                "relation": "customer",
+                "properties": {
+                    "source_table": "orders",
+                    "source_column": "customer_id",
+                },
+            },
+        ],
+    }
+
+    graph = build_graph_from_extraction(extraction)
+
+    assert graph.nodes["customers:c001"].properties["type"] == "customer"
+    assert graph.nodes["customers:c001"].properties["email"] == "alice@example.com"
+    assert graph.edges[0].properties["source_table"] == "orders"
+    assert graph.edges[0].properties["source_column"] == "customer_id"

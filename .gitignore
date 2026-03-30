@@ -35,3 +35,12 @@ __pycache__/
 env/
 venv/
 .venv/
+
+# packaging
+build/
+dist/
+*.egg-info/
+
+# pytest
+.pytest-tmp/
+.pytest_cache/

@@ -17,7 +17,9 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files
-# .env*
+.env
+.env.*
+!.env.example
 
 # vercel
 .vercel
@@ -44,3 +46,9 @@ dist/
 # pytest
 .pytest-tmp/
 .pytest_cache/
+
+# generated outputs
+output/
+
+# tests
+tests/

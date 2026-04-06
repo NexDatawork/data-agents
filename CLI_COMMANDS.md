@@ -39,6 +39,7 @@ Runs the offline pipeline:
 - extracts entities and relationships
 - builds the graph
 - prints nodes, edges, and graph JSON
+- saves graph JSON to `output/<dataset_name>/graph.json` by default
 
 ### Text example
 
@@ -52,11 +53,17 @@ python -m cli demo examples/text_example.txt
 python -m cli demo examples/table_example
 ```
 
+Default saved file:
+
+```text
+output/table_example/graph.json
+```
+
 ---
 
 ## 3. `query`
 
-Builds an offline graph from text or table input and searches for matching nodes.
+Loads saved graph JSON from `output/<dataset_name>/graph.json` and searches for matching nodes.
 
 Output includes:
 - matching node
@@ -81,6 +88,12 @@ python -m cli query examples/text_example.txt "Alice Johnson" --exact
 python -m cli query examples/table_example customer
 ```
 
+This reads from:
+
+```text
+output/table_example/graph.json
+```
+
 ### Table example: exact node lookup
 
 ```bash
@@ -93,11 +106,21 @@ python -m cli query examples/table_example "customers:c003" --exact
 python -m cli query examples/table_example "orders:o1003" --exact
 ```
 
+### Rebuild graph before querying
+
+```bash
+python -m cli query examples/table_example customer --rebuild
+```
+
 ---
 
 ## 4. `visualize`
 
 Builds a graph and saves it as a PNG image.
+
+If `--output` points directly under `output/`, the CLI automatically creates a dataset-named subfolder:
+- table folder input `examples/table_example` → `output/table_example/...`
+- text file input `examples/text_example.txt` → `output/text_example/...`
 
 ### Text example graph image
 
@@ -109,6 +132,12 @@ python -m cli visualize examples/text_example.txt --output output/text-example-g
 
 ```bash
 python -m cli visualize examples/table_example --output output/table-example-graph.png --title "Table Example Graph"
+```
+
+Result path:
+
+```text
+output/table_example/table-example-graph.png
 ```
 
 ### Table example schema view
@@ -179,5 +208,7 @@ python -m cli visualize examples/table_example --schema-view --output output/tab
 
 - Use the folder [examples/table_example](examples/table_example) for table workflows, not [examples/table_example.csv](examples/table_example.csv).
 - `demo`, `query`, and `visualize` currently use the offline extractors.
+- `query` reads saved graph JSON from `output/<dataset_name>/graph.json` by default.
+- If needed, use `query --rebuild` to regenerate graph JSON from source files.
 - `extract text` uses the LLM-backed extractor.
 - `visualize --schema-view` is best for understanding the dataset at a high level.

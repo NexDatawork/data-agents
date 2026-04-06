@@ -7,6 +7,7 @@ No API key required.
 """
 
 import json
+import re
 from pathlib import Path
 
 import typer
@@ -16,10 +17,36 @@ from engine.extractors.text_extractor import extract_from_text_offline
 from engine.graphs.builder import build_graph_from_extraction
 
 
+def _dataset_name(source: Path) -> str:
+    """Return dataset name derived from source folder or file."""
+    base = source.name if source.is_dir() else source.stem
+    normalized = re.sub(r"[^a-zA-Z0-9._-]+", "-", base).strip("-._")
+    return normalized or "dataset"
+
+
+def _resolve_graph_output_path(source: Path, output: str) -> Path:
+    """Place graph JSON inside output/<dataset_name>/ by default."""
+    target = Path(output)
+
+    if target.suffix == "":
+        return target / _dataset_name(source) / "graph.json"
+
+    if target.parent == Path("output"):
+        return target.parent / _dataset_name(source) / target.name
+
+    return target
+
+
 def demo(
     file_path: str = typer.Argument(
         ...,
         help="Path to a text file, or a folder containing CSV tables.",
+    ),
+    output: str = typer.Option(
+        "./output/graph.json",
+        "--output",
+        "-o",
+        help="Destination file for graph JSON (default: ./output/graph.json).",
     ),
 ) -> None:
     """Read text or table input, extract entities, build a graph, and print nodes + edges."""
@@ -61,4 +88,11 @@ def demo(
 
     # ── Print final graph JSON ────────────────────────────────────────
     typer.echo("\nGraph JSON:")
-    typer.echo(json.dumps(extraction, indent=2))
+    graph_json = json.dumps(extraction, indent=2)
+    typer.echo(graph_json)
+
+    # ── Persist graph JSON ─────────────────────────────────────────────
+    out_path = _resolve_graph_output_path(source, output)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(graph_json, encoding="utf-8")
+    typer.echo(f"\nSaved graph JSON to {out_path.resolve()}")

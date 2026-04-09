@@ -12,6 +12,7 @@ from pathlib import Path
 
 import typer
 
+from engine.extractors.table_extractor import extract_from_tables
 from engine.extractors.table_extractor import extract_from_tables_offline
 from engine.extractors.text_extractor import extract_from_text_offline
 from engine.graphs.builder import build_graph_from_extraction
@@ -48,6 +49,11 @@ def demo(
         "-o",
         help="Destination file for graph JSON (default: ./output/graph.json).",
     ),
+    llm: bool = typer.Option(
+        False,
+        "--llm",
+        help="Use LLM-backed extraction for table folders (requires OPENAI_API_KEY).",
+    ),
 ) -> None:
     """Read text or table input, extract entities, build a graph, and print nodes + edges."""
     source = Path(file_path)
@@ -58,13 +64,26 @@ def demo(
     if source.is_dir():
         typer.echo(f"Reading table folder {source} ...")
         try:
-            typer.echo("Extracting entities and relationships from tables (offline mode) ...")
-            extraction = extract_from_tables_offline(str(source))
+            if llm:
+                typer.echo("Extracting entities and relationships from tables (LLM mode) ...")
+                extraction = extract_from_tables(str(source))
+            else:
+                typer.echo("Extracting entities and relationships from tables (offline mode) ...")
+                extraction = extract_from_tables_offline(str(source))
         except ValueError as exc:
+            typer.echo(f"Extraction failed: {exc}", err=True)
+            raise typer.Exit(code=1) from exc
+        except EnvironmentError as exc:
             typer.echo(f"Extraction failed: {exc}", err=True)
             raise typer.Exit(code=1) from exc
     else:
         typer.echo(f"Reading {source} ...")
+        if llm:
+            typer.echo(
+                "Error: --llm is currently supported only for table folders, not text files.",
+                err=True,
+            )
+            raise typer.Exit(code=1)
         text = source.read_text(encoding="utf-8")
         typer.echo("Extracting entities and relationships (offline mode) ...")
         extraction = extract_from_text_offline(text)

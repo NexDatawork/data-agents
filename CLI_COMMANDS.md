@@ -34,12 +34,16 @@ python -m cli --version
 
 ## 2. `demo`
 
-Runs the offline pipeline:
+Runs the pipeline:
 - reads text file or table folder
 - extracts entities and relationships
 - builds the graph
 - prints nodes, edges, and graph JSON
 - saves graph JSON to `output/<dataset_name>/graph.json` by default
+
+For table folders, you can choose:
+- default offline mode
+- `--llm` for LLM-backed extraction
 
 ### Text example
 
@@ -51,6 +55,14 @@ python -m cli demo examples/text_example.txt
 
 ```bash
 python -m cli demo examples/table_example
+```
+
+### Table example with LLM mode
+
+> Requires `OPENAI_API_KEY` to be set.
+
+```bash
+python -m cli demo examples/table_example --llm
 ```
 
 Default saved file:
@@ -116,7 +128,9 @@ python -m cli query examples/table_example customer --rebuild
 
 ## 4. `visualize`
 
-Builds a graph and saves it as a PNG image.
+Loads saved graph JSON from `output/<dataset_name>/graph.json` by default and saves it as a PNG image.
+
+Use `--rebuild` only if you want to regenerate the graph from the source files.
 
 If `--output` points directly under `output/`, the CLI automatically creates a dataset-named subfolder:
 - table folder input `examples/table_example` → `output/table_example/...`
@@ -146,6 +160,12 @@ This is the cleaner, human-friendly overview.
 
 ```bash
 python -m cli visualize examples/table_example --schema-view --output output/table-example-schema.png --title "Table Example Schema"
+```
+
+### Rebuild before visualizing
+
+```bash
+python -m cli visualize examples/table_example --schema-view --rebuild --output output/table-example-schema.png
 ```
 
 ### Text example schema view
@@ -192,6 +212,46 @@ python -m cli visualize examples/table_example --output output/table-example-gra
 python -m cli visualize examples/table_example --schema-view --output output/table-example-schema.png --title "Table Example Schema"
 ```
 
+### C. Airline dataset end-to-end with LLM
+
+Start from the project root:
+
+```bash
+cd /Users/d/Documents/GitHub/opengraph-ai
+source .venv/bin/activate
+export OPENAI_API_KEY=sk-...
+```
+
+Run the dataset through LLM extraction and save graph JSON:
+
+```bash
+python -m cli demo "input/User-DL/Airline+Loyalty+Program" --llm
+```
+
+That saves to:
+
+```text
+output/Airline-Loyalty-Program/graph.json
+```
+
+Query the saved graph:
+
+```bash
+python -m cli query "input/User-DL/Airline+Loyalty+Program" loyalty
+```
+
+Render the saved graph as a schema image:
+
+```bash
+python -m cli visualize "input/User-DL/Airline+Loyalty+Program" --schema-view --output output/airline_schema.png
+```
+
+Render the saved graph as a full graph image:
+
+```bash
+python -m cli visualize "input/User-DL/Airline+Loyalty+Program" --output output/airline_graph.png
+```
+
 ---
 
 ## Current example files
@@ -207,8 +267,10 @@ python -m cli visualize examples/table_example --schema-view --output output/tab
 ## Notes
 
 - Use the folder [examples/table_example](examples/table_example) for table workflows, not [examples/table_example.csv](examples/table_example.csv).
-- `demo`, `query`, and `visualize` currently use the offline extractors.
+- `demo` uses offline extraction by default, and supports LLM table extraction with `--llm`.
 - `query` reads saved graph JSON from `output/<dataset_name>/graph.json` by default.
 - If needed, use `query --rebuild` to regenerate graph JSON from source files.
+- `visualize` now reads saved graph JSON by default.
+- If needed, use `visualize --rebuild` to regenerate graph JSON from source files before rendering.
 - `extract text` uses the LLM-backed extractor.
 - `visualize --schema-view` is best for understanding the dataset at a high level.

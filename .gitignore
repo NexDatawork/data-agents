@@ -16,9 +16,13 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files
+# local secret / env files
+# keep `.env.example` committed as a template, but never commit real local secrets
 .env
+.env.local
 .env.*
+.envrc
+.secrets/
 !.env.example
 
 # vercel
@@ -51,4 +55,4 @@ dist/
 output/
 
 # tests
-tests/
+# keep repo tests version-controlled

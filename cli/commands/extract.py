@@ -14,48 +14,56 @@ app = typer.Typer(help="Extract graph structures from various data sources.")
 
 @app.command("text")
 def extract_text(
-    file_path: str = typer.Argument(..., help="Path to the text file to extract from."),
+    file_path: str = typer.Argument(
+        ...,
+        help="Path to the text or PDF file to extract from.",
+    ),
     output: str = typer.Option(
         "./output/graph.json",
         "--output",
         "-o",
-        help="Destination file for the graph JSON (default: ./output/graph.json).",
+        help="Destination graph JSON path (default: ./output/graph.json).",
     ),
 ) -> None:
-    """Extract entities and relationships from a text file and emit graph JSON.
-
-    Reads the file at FILE_PATH, sends its content to the LLM-backed extractor,
-    prints the resulting graph JSON, and saves it to OUTPUT.
-    """
+    """Extract entities and relationships from text/PDF input and emit graph artifacts."""
     # Lazy import keeps CLI startup fast even when engine deps are missing.
-    from engine.extractors.text_extractor import extract_from_text  # noqa: PLC0415
+    from engine.extractors.text_extractor import (  # noqa: PLC0415
+        extract_from_text,
+        load_text_source,
+        write_extraction_artifacts,
+    )
 
     source = Path(file_path)
     if not source.exists():
         typer.echo(f"Error: file not found: {file_path}", err=True)
         raise typer.Exit(code=1)
 
-    typer.echo(f"Reading {source}...")
-    text = source.read_text(encoding="utf-8")
+    typer.echo(f"Loading {source}...")
+    try:
+        text, source_metadata = load_text_source(source)
+    except (RuntimeError, ValueError) as exc:
+        typer.echo(f"Input error: {exc}", err=True)
+        raise typer.Exit(code=1) from exc
 
     typer.echo("Extracting graph — calling LLM...")
     try:
-        graph = extract_from_text(text)
+        extraction = extract_from_text(text, source_metadata=source_metadata)
+        artifacts = write_extraction_artifacts(
+            extraction,
+            source=source,
+            output_path=output,
+            title=f"{source_metadata['source_name'].replace('-', ' ').title()} Graph",
+        )
     except EnvironmentError as exc:
         typer.echo(f"Configuration error: {exc}", err=True)
-        raise typer.Exit(code=1)
+        raise typer.Exit(code=1) from exc
     except ValueError as exc:
         typer.echo(f"Extraction failed (bad LLM response): {exc}", err=True)
-        raise typer.Exit(code=1)
+        raise typer.Exit(code=1) from exc
 
-    graph_json = json.dumps(graph, indent=2)
+    graph_json = json.dumps(extraction, indent=2)
 
-    # ── Print to console ──────────────────────────────────────────────
     typer.echo("\nExtracted graph:")
     typer.echo(graph_json)
-
-    # ── Persist to disk ───────────────────────────────────────────────
-    out_path = Path(output)
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(graph_json, encoding="utf-8")
-    typer.echo(f"\nSaved to {out_path.resolve()}")
+    typer.echo(f"\nSaved graph JSON to {artifacts['json_path']}")
+    typer.echo(f"Saved graph image to {artifacts['graph_path']}")

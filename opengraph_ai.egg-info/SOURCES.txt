@@ -12,6 +12,7 @@ cli/commands/extract.py
 cli/commands/query.py
 cli/commands/visualize.py
 engine/__init__.py
+engine/config.py
 engine/connectors/__init__.py
 engine/embeddings/__init__.py
 engine/embeddings/generator.py
@@ -35,6 +36,8 @@ opengraph_ai.egg-info/dependency_links.txt
 opengraph_ai.egg-info/entry_points.txt
 opengraph_ai.egg-info/requires.txt
 opengraph_ai.egg-info/top_level.txt
+tests/test_config.py
 tests/test_extractors.py
 tests/test_graph_builder.py
+tests/test_text_extraction_pipeline.py
 tests/test_visualize.py

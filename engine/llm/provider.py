@@ -4,8 +4,9 @@ TODO: Add Anthropic/Claude support via a provider flag.
 TODO: Add batch mode for high-volume extraction workloads.
 """
 
-import os
 from __future__ import annotations
+import os
+
 
 import logging
 import time

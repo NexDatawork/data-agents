@@ -190,6 +190,30 @@ python -m cli extract text examples/text_example.txt --output output/text-graph.
 
 ---
 
+## 6. `upload`
+
+Uploads a dataset folder from the `input/` tree to Google Cloud Storage.
+
+The command takes the dataset folder name, not the full path. It searches under
+`input/` recursively, so a folder like `input/User-DL/Airline+Loyalty+Program`
+can be uploaded by passing only `Airline+Loyalty+Program`.
+
+> Requires `GCP_PROJECT_ID`, `GCS_BUCKET`, and valid Google credentials.
+
+### Airline dataset upload
+
+```bash
+python -m cli upload "Airline+Loyalty+Program"
+```
+
+### Override bucket prefix
+
+```bash
+python -m cli upload "Airline+Loyalty+Program" --prefix opengraph-ai/datasets
+```
+
+---
+
 ## Recommended test sequence
 
 If you want to quickly verify the current CLI end to end, run these in order.
@@ -273,4 +297,5 @@ python -m cli visualize "input/User-DL/Airline+Loyalty+Program" --output output/
 - `visualize` now reads saved graph JSON by default.
 - If needed, use `visualize --rebuild` to regenerate graph JSON from source files before rendering.
 - `extract text` uses the LLM-backed extractor.
+- `upload` resolves dataset folders by name from inside `input/`.
 - `visualize --schema-view` is best for understanding the dataset at a high level.

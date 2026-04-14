@@ -6,6 +6,7 @@ TODO: Add batch mode for high-volume extraction workloads.
 
 import os
 from typing import Any
+from pathlib import Path
 
 import openai
 
@@ -13,15 +14,45 @@ import openai
 # TODO: Make model name configurable via a config file or ENV.
 _DEFAULT_MODEL = "gpt-4o-mini"
 _DEFAULT_TIMEOUT = 60.0
+_ENV_LOADED = False
+
+
+def _load_local_env() -> None:
+    """Load key-value pairs from .env.local into process env if missing.
+
+    This keeps CLI usage simple for local development sessions where users
+    restart terminals and do not want to re-export OPENAI_API_KEY each time.
+    """
+    global _ENV_LOADED
+    if _ENV_LOADED:
+        return
+
+    _ENV_LOADED = True
+    env_path = Path.cwd() / ".env.local"
+    if not env_path.exists() or not env_path.is_file():
+        return
+
+    for raw_line in env_path.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        if line.startswith("export "):
+            line = line[len("export "):].strip()
+        key, value = line.split("=", 1)
+        key = key.strip()
+        value = value.strip().strip('"').strip("'")
+        if key and key not in os.environ:
+            os.environ[key] = value
 
 
 def _make_client() -> openai.OpenAI:
     """Create an authenticated OpenAI client from environment variables."""
+    _load_local_env()
     api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key:
         raise EnvironmentError(
             "OPENAI_API_KEY environment variable is not set. "
-            "Export it before running OpenGraph AI."
+            "Set it in .env.local or export it before running OpenGraph AI."
         )
     return openai.OpenAI(api_key=api_key, timeout=_DEFAULT_TIMEOUT)
 

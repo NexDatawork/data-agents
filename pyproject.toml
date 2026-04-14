@@ -14,7 +14,7 @@ dependencies = [
   "openai>=1.30.0",
   "matplotlib>=3.9.0",
   "networkx>=3.3",
-  "pypdf>=5.1.0"
+  "google-cloud-storage>=2.18.0"
 ]
 
 [project.optional-dependencies]

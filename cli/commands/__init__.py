@@ -5,6 +5,7 @@ TODO: Load commands dynamically from plugins.
 """
 
 from cli.commands import extract  # noqa: F401
+from cli.commands import upload  # noqa: F401
 
 
 def list_commands() -> list[str]:
@@ -12,4 +13,4 @@ def list_commands() -> list[str]:
 
     TODO: Load commands dynamically from plugins.
     """
-    return ["version", "extract"]
+    return ["version", "extract", "demo", "query", "upload", "visualize"]

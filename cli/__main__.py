@@ -9,6 +9,7 @@ import typer
 from cli.commands.demo import demo
 from cli.commands.extract import app as extract_app
 from cli.commands.query import query
+from cli.commands.upload import upload
 from cli.commands.visualize import visualize
 from engine.config import load_env_config
 
@@ -26,6 +27,7 @@ app.add_typer(extract_app, name="extract")
 # ── Register direct commands ──────────────────────────────────────────────────
 app.command("demo")(demo)
 app.command("query")(query)
+app.command("upload")(upload)
 app.command("visualize")(visualize)
 
 

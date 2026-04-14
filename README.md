@@ -46,6 +46,23 @@ pip install -e .
 python -m cli --version
 ```
 
+### Local API key configuration
+
+Copy the template and fill in your own key locally:
+
+```bash
+cp .env.example .env.local
+```
+
+Then edit `.env.local` and set:
+
+```dotenv
+OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_MODEL=gpt-4o-mini
+```
+
+> The CLI and engine automatically load `.env.local` / `.env`, so you do not need to manually `export` the key in every new terminal session.
+
 ### 2. Run API server
 
 ```bash

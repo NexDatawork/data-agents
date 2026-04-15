@@ -9,4 +9,4 @@ def available_connectors() -> list[str]:
 
     TODO: Discover connectors via plugin registration.
     """
-    return ["placeholder_connector"]
+    return ["neo4j_aura"]

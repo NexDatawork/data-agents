@@ -8,6 +8,7 @@ import typer
 
 from cli.commands.demo import demo
 from cli.commands.extract import app as extract_app
+from cli.commands.graphdb import app as graphdb_app
 from cli.commands.query import query
 from cli.commands.upload import upload
 from cli.commands.visualize import visualize
@@ -23,6 +24,7 @@ app = typer.Typer(
 
 # ── Register subcommand groups ────────────────────────────────────────────────
 app.add_typer(extract_app, name="extract")
+app.add_typer(graphdb_app, name="graphdb")
 
 # ── Register direct commands ──────────────────────────────────────────────────
 app.command("demo")(demo)

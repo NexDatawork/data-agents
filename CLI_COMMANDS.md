@@ -214,6 +214,46 @@ python -m cli upload "Airline+Loyalty+Program" --prefix opengraph-ai/datasets
 
 ---
 
+## 7. `graphdb` (Neo4j AuraDB)
+
+Use this when you want to store extracted nodes/edges in Neo4j AuraDB, then
+export them back to graph JSON later.
+
+Required env vars:
+
+```dotenv
+NEO4J_URI=neo4j+s://<your-aura-host>.databases.neo4j.io
+NEO4J_USERNAME=neo4j
+NEO4J_PASSWORD=<your-password>
+# Optional (default: neo4j)
+NEO4J_DATABASE=neo4j
+```
+
+### Push graph JSON to Neo4j
+
+```bash
+python -m cli graphdb push output/Airline-Loyalty-Program/graph.json --dataset Airline-Loyalty-Program
+```
+
+### Pull graph JSON back from Neo4j
+
+```bash
+python -m cli graphdb pull Airline-Loyalty-Program --output output/graph.json
+```
+
+This command now writes both artifacts and prints them in CLI output:
+- graph JSON
+- graph PNG (`graph.png` by default in the same folder)
+- entity/relationship counts
+
+This writes to:
+
+```text
+output/Airline-Loyalty-Program/graph.json
+```
+
+---
+
 ## Recommended test sequence
 
 If you want to quickly verify the current CLI end to end, run these in order.
@@ -298,4 +338,6 @@ python -m cli visualize "input/User-DL/Airline+Loyalty+Program" --output output/
 - If needed, use `visualize --rebuild` to regenerate graph JSON from source files before rendering.
 - `extract text` uses the LLM-backed extractor.
 - `upload` resolves dataset folders by name from inside `input/`.
+- `graphdb push` stores entities/relationships into Neo4j AuraDB.
+- `graphdb pull` exports Neo4j nodes/edges back into `graph.json` format.
 - `visualize --schema-view` is best for understanding the dataset at a high level.

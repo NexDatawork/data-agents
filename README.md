@@ -70,6 +70,26 @@ pip install -e .
 uvicorn api.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
+### Cloud Run service-style graph request
+
+Once the API is deployed, you can call the dataset workflow by dataset name:
+
+```bash
+curl -X POST http://localhost:8000/graph/from-gcs \
+    -H "Content-Type: application/json" \
+    -d '{
+        "dataset": "Airline+Loyalty+Program",
+        "model": "gpt-4o-mini"
+    }'
+```
+
+This runs:
+- GCS dataset read
+- LLM extraction
+- Neo4j storage/export
+- JSON + PNG upload back to GCS
+- JSON response returned by the API
+
 ### 3. Use MCP server with Claude Code or Cursor
 
 ```bash

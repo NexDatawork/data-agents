@@ -188,6 +188,23 @@ Runs the LLM-backed text extractor and writes graph JSON to disk.
 python -m cli extract text examples/text_example.txt --output output/text-graph.json
 ```
 
+### Table dataset via GCS (upload then extract)
+
+This flow is useful for Cloud Run preparation: upload local dataset folder into
+GCS, then run LLM extraction by reading CSV files from GCS.
+
+```bash
+python -m cli extract tables-gcs "Airline+Loyalty+Program"
+```
+
+Optional flags:
+- `--input-root ./input`
+- `--bucket <bucket-name>`
+- `--project-id <gcp-project-id>`
+- `--gcs-prefix opengraph-ai/input`
+- `--skip-upload` (extract from already uploaded files)
+- `--model gpt-4o-mini`
+
 ---
 
 ## 6. `upload`
@@ -241,6 +258,20 @@ python -m cli graphdb push output/Airline-Loyalty-Program/graph.json --dataset A
 python -m cli graphdb pull Airline-Loyalty-Program --output output/graph.json
 ```
 
+### End-to-end from GCS → LLM → Neo4j → GCS artifacts
+
+Use this after dataset files are in the bucket. The command:
+1) reads CSV dataset from GCS,
+2) runs LLM extraction,
+3) stores nodes/edges in Neo4j,
+4) exports Neo4j graph JSON + renders PNG,
+5) uploads JSON + PNG back to GCS,
+6) prints final JSON in CLI output.
+
+```bash
+python -m cli graphdb from-gcs "Airline+Loyalty+Program"
+```
+
 This command now writes both artifacts and prints them in CLI output:
 - graph JSON
 - graph PNG (`graph.png` by default in the same folder)
@@ -283,7 +314,23 @@ Start from the project root:
 ```bash
 cd /Users/d/Documents/GitHub/opengraph-ai
 source .venv/bin/activate
-export OPENAI_API_KEY=sk-...
+```
+
+If your `.env.local` already has `OPENAI_API_KEY`, `GCS_BUCKET`,
+`GCP_PROJECT_ID`, `NEO4J_URI`, `NEO4J_USERNAME`, `NEO4J_PASSWORD`,
+and `NEO4J_DATABASE`, you can run the cloud workflow directly.
+
+Upload dataset folder from `input/` to GCS:
+
+```bash
+python -m cli upload "Airline+Loyalty+Program"
+```
+
+Build graph from GCS (LLM extraction), store in Neo4j, export JSON+PNG,
+upload artifacts back to GCS, and print final JSON in CLI:
+
+```bash
+python -m cli graphdb from-gcs "Airline+Loyalty+Program" --output output/airline-from-gcs-neo4j.json --model gpt-4o-mini
 ```
 
 Run the dataset through LLM extraction and save graph JSON:

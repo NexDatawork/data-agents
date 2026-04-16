@@ -120,3 +120,45 @@ def test_graphdb_pull_writes_output(monkeypatch, tmp_path: Path) -> None:
     assert payload["metadata"]["dataset"] == "DemoSet"
     assert "JSON:" in result.stdout
     assert "PNG:" in result.stdout
+
+
+def test_graphdb_from_gcs_runs_end_to_end(monkeypatch, tmp_path: Path) -> None:
+    out_path = tmp_path / "output" / "graph.json"
+
+    def fake_workflow(**kwargs):
+        assert kwargs["dataset"] == "DemoSet"
+        assert kwargs["output"] == str(out_path)
+        return {
+            "dataset": "DemoSet",
+            "gcs_input_uri": "gs://bucket/opengraph-ai/input/DemoSet",
+            "gcs_json_uri": "gs://bucket/opengraph-ai/output/DemoSet/graph.json",
+            "gcs_png_uri": "gs://bucket/opengraph-ai/output/DemoSet/graph.png",
+            "local_json_path": str(out_path),
+            "local_png_path": str(out_path.parent / "graph.png"),
+            "stored_node_count": 1,
+            "stored_edge_count": 0,
+            "entity_count": 1,
+            "relationship_count": 0,
+            "graph_json": {
+                "entities": [{"id": "n1", "label": "Alice", "type": "person"}],
+                "relationships": [],
+                "metadata": {"dataset": "DemoSet"},
+            },
+        }
+
+    monkeypatch.setattr("cli.commands.graphdb.run_graph_from_gcs_workflow", fake_workflow)
+
+    result = runner.invoke(
+        get_command(cli_app),
+        [
+            "graphdb",
+            "from-gcs",
+            "DemoSet",
+            "--output",
+            str(out_path),
+        ],
+    )
+
+    assert result.exit_code == 0, result.stdout
+    assert "gs://bucket/opengraph-ai/input/DemoSet" in result.stdout
+    assert "Neo4j graph JSON:" in result.stdout

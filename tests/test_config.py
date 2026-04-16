@@ -39,9 +39,15 @@ def test_load_env_config_override_behavior(monkeypatch, tmp_path: Path) -> None:
 
 def test_get_required_env_raises_clear_error_when_missing(monkeypatch, tmp_path: Path) -> None:
     monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+    monkeypatch.chdir(tmp_path)
 
     with pytest.raises(EnvironmentError, match="OPENAI_API_KEY"):
-        get_required_env("OPENAI_API_KEY", search_from=tmp_path, force_reload=True)
+        get_required_env(
+            "OPENAI_API_KEY",
+            search_from=tmp_path,
+            env_files=(".env.missing",),
+            force_reload=True,
+        )
 
 
 def test_provider_uses_local_env_file_automatically(monkeypatch, tmp_path: Path) -> None:

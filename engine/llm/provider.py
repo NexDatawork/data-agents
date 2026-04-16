@@ -98,6 +98,8 @@ def call_llm_messages(
     *,
     json_mode: bool = False,
     model: str | None = None,
+    max_retries: int = 3,
+    search_from: str | Path | None = None,
 ) -> str:
     """Call the configured OpenAI model with a full messages list.
 
@@ -118,17 +120,42 @@ def call_llm_messages(
         EnvironmentError: If OPENAI_API_KEY is not set.
         openai.BadRequestError: If json_mode is used with an unsupported model.
     """
-    client = _make_client()
-    kwargs: dict[str, Any] = {
-        "model": _resolve_model(model),
-        "messages": messages,
-    }
-    if json_mode:
-        kwargs["response_format"] = {"type": "json_object"}
+    load_env_config(search_from=search_from)
+    api_key = get_required_env("OPENAI_API_KEY", search_from=search_from)
+    resolved_model = get_optional_env(
+        "OPENAI_MODEL",
+        _DEFAULT_MODEL,
+        search_from=search_from,
+    ) or _DEFAULT_MODEL
+    client = openai.OpenAI(api_key=api_key, timeout=_DEFAULT_TIMEOUT)
 
-    response = client.chat.completions.create(**kwargs)
-    return response.choices[0].message.content or ""
-_DEFAULT_TIMEOUT = 30.0
+    attempts = max(1, max_retries)
+    for attempt in range(1, attempts + 1):
+        try:
+            kwargs: dict[str, Any] = {
+                "model": model or resolved_model,
+                "messages": messages,
+            }
+            if json_mode:
+                kwargs["response_format"] = {"type": "json_object"}
+
+            response = client.chat.completions.create(**kwargs)
+            return response.choices[0].message.content or ""
+        except _RETRYABLE_EXCEPTIONS as exc:
+            if attempt == attempts:
+                raise
+
+            delay = min(8.0, 2.0 ** (attempt - 1))
+            logger.warning(
+                "Retrying OpenAI messages request after transient failure on attempt %s/%s: %s",
+                attempt,
+                attempts,
+                exc,
+            )
+            time.sleep(delay)
+
+    return ""
+_DEFAULT_TIMEOUT = 180.0
 _RETRYABLE_EXCEPTIONS = (
     openai.APIConnectionError,
     openai.APITimeoutError,

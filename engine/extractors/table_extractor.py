@@ -13,8 +13,13 @@ import csv
 import json
 import re
 from collections import Counter
+from io import StringIO
 from itertools import combinations
 from pathlib import Path
+from pathlib import PurePosixPath
+
+from engine.config import get_optional_env
+from engine.config import load_env_config
 
 
 # ---------------------------------------------------------------------------
@@ -72,6 +77,87 @@ def extract_tables(path: str) -> dict[str, list[dict[str, str]]]:
 
     if not tables:
         raise ValueError(f"No CSV tables found in folder: {path}")
+
+    return tables
+
+
+def _table_key_for_blob(prefix: str, blob_name: str, stem_counts: Counter[str]) -> str:
+    """Return a stable table key for a GCS blob path."""
+    prefix_clean = prefix.strip("/")
+    blob_path = PurePosixPath(blob_name)
+
+    if prefix_clean:
+        prefix_path = PurePosixPath(prefix_clean)
+        try:
+            relative_no_suffix = blob_path.relative_to(prefix_path).with_suffix("")
+        except ValueError:
+            relative_no_suffix = blob_path.with_suffix("")
+    else:
+        relative_no_suffix = blob_path.with_suffix("")
+
+    if stem_counts[blob_path.stem] == 1:
+        return _normalize_column_name(blob_path.stem)
+
+    return "__".join(_normalize_column_name(part) for part in relative_no_suffix.parts)
+
+
+def _extract_rows_from_csv_text(csv_text: str, source_name: str) -> list[dict[str, str]]:
+    """Extract normalized rows from raw CSV text."""
+    reader = csv.DictReader(StringIO(csv_text), restval="")
+    if reader.fieldnames is None:
+        raise ValueError(f"CSV file has no header row: {source_name}")
+
+    normalized_rows: list[dict[str, str]] = []
+    for raw_row in reader:
+        row = {
+            _normalize_column_name(key): _normalize_cell(value)
+            for key, value in raw_row.items()
+            if key is not None
+        }
+        if any(value for value in row.values()):
+            normalized_rows.append(row)
+
+    return normalized_rows
+
+
+def extract_tables_from_gcs(
+    *,
+    bucket_name: str,
+    prefix: str,
+    project_id: str | None = None,
+) -> dict[str, list[dict[str, str]]]:
+    """Extract all CSV tables from a GCS prefix."""
+    try:
+        from google.cloud import storage
+    except ImportError as exc:
+        raise RuntimeError(
+            "google-cloud-storage is not installed. Install project dependencies first."
+        ) from exc
+
+    clean_prefix = prefix.strip("/")
+    list_prefix = f"{clean_prefix}/" if clean_prefix else ""
+
+    client = storage.Client(project=project_id)
+    blobs = sorted(
+        (
+            blob
+            for blob in client.list_blobs(bucket_name, prefix=list_prefix)
+            if blob.name.lower().endswith(".csv")
+        ),
+        key=lambda item: item.name,
+    )
+
+    if not blobs:
+        raise ValueError(
+            f"No CSV tables found in GCS location: gs://{bucket_name}/{clean_prefix}"
+        )
+
+    stem_counts = Counter(PurePosixPath(blob.name).stem for blob in blobs)
+    tables: dict[str, list[dict[str, str]]] = {}
+    for blob in blobs:
+        csv_text = blob.download_as_text(encoding="utf-8")
+        table_key = _table_key_for_blob(clean_prefix, blob.name, stem_counts)
+        tables[table_key] = _extract_rows_from_csv_text(csv_text, blob.name)
 
     return tables
 
@@ -747,48 +833,13 @@ def _validate_and_clean_llm_result(raw_result: dict) -> dict:
 
 # ── Main LLM extraction function ──────────────────────────────────────────────
 
-def extract_from_tables(
-    path: str,
+def _extract_from_table_dicts_llm(
+    tables: dict[str, list[dict[str, str]]],
+    *,
     max_rows_per_table: int = 10,
     model: str | None = None,
 ) -> dict:
-    """Extract entities and relationships from CSV tables via LLM.
-
-    Sends compact table summaries (schema + sample rows + FK hints) to the
-    configured LLM using structured system + user messages and JSON output mode.
-    Returns the same shape as ``extract_from_tables_offline`` so the two modes
-    are drop-in compatible.
-
-    Strategy:
-    1. Discover all CSV files (recursive) and load them.
-    2. Run offline heuristics (PK inference, FK candidate detection) to build
-       structural hints that are injected into the prompt — the LLM does not
-       need to guess column roles from scratch.
-    3. Build a compact human-readable summary per table (column types, uniqueness
-       stats, FK arrows, sample rows).
-    4. Call the LLM with a system prompt + the table summaries.
-       JSON mode is requested so the response is guaranteed parseable JSON.
-    5. If parsing or validation fails, retry once with the error fed back to
-       the model so it can self-correct.
-
-    Args:
-        path:               Folder containing CSV files (searched recursively).
-        max_rows_per_table: Max sample rows included per table in the prompt.
-                            Keep low (≤15) to stay within token limits for large datasets.
-        model:              Override the LLM model (default: OPENAI_MODEL env var
-                            or gpt-4o-mini).
-
-    Returns:
-        ``{"entities": [...], "relationships": [...]}`` — same shape as the
-        offline extractor.
-
-    Raises:
-        EnvironmentError: If OPENAI_API_KEY is not set.
-        ValueError:       If the LLM returns an invalid or unparseable response
-                          after retries.
-    """
-    tables = extract_tables(path)
-
+    """Extract entities and relationships from in-memory tables via LLM."""
     # Reuse offline heuristics to provide FK/PK hints to the LLM.
     primary_keys: dict[str, str] = {
         name: _guess_primary_key(name, rows)
@@ -846,3 +897,74 @@ def extract_from_tables(
     raise ValueError(
         f"LLM extraction failed after 2 attempts. Last error: {last_exc}"
     ) from last_exc
+
+
+def extract_from_tables(
+    path: str,
+    max_rows_per_table: int = 10,
+    model: str | None = None,
+) -> dict:
+    """Extract entities and relationships from CSV tables via LLM.
+
+    Sends compact table summaries (schema + sample rows + FK hints) to the
+    configured LLM using structured system + user messages and JSON output mode.
+    Returns the same shape as ``extract_from_tables_offline`` so the two modes
+    are drop-in compatible.
+
+    Strategy:
+    1. Discover all CSV files (recursive) and load them.
+    2. Run offline heuristics (PK inference, FK candidate detection) to build
+       structural hints that are injected into the prompt — the LLM does not
+       need to guess column roles from scratch.
+    3. Build a compact human-readable summary per table (column types, uniqueness
+       stats, FK arrows, sample rows).
+    4. Call the LLM with a system prompt + the table summaries.
+       JSON mode is requested so the response is guaranteed parseable JSON.
+    5. If parsing or validation fails, retry once with the error fed back to
+       the model so it can self-correct.
+
+    Args:
+        path:               Folder containing CSV files (searched recursively).
+        max_rows_per_table: Max sample rows included per table in the prompt.
+                            Keep low (≤15) to stay within token limits for large datasets.
+        model:              Override the LLM model (default: OPENAI_MODEL env var
+                            or gpt-4o-mini).
+
+    Returns:
+        ``{"entities": [...], "relationships": [...]}`` — same shape as the
+        offline extractor.
+
+    Raises:
+        EnvironmentError: If OPENAI_API_KEY is not set.
+        ValueError:       If the LLM returns an invalid or unparseable response
+                          after retries.
+    """
+    tables = extract_tables(path)
+    return _extract_from_table_dicts_llm(
+        tables,
+        max_rows_per_table=max_rows_per_table,
+        model=model,
+    )
+
+
+def extract_from_tables_gcs(
+    *,
+    bucket_name: str,
+    prefix: str,
+    max_rows_per_table: int = 10,
+    model: str | None = None,
+    project_id: str | None = None,
+) -> dict:
+    """Extract entities and relationships from CSV tables in GCS via LLM."""
+    load_env_config()
+    resolved_project_id = project_id or get_optional_env("GCP_PROJECT_ID")
+    tables = extract_tables_from_gcs(
+        bucket_name=bucket_name,
+        prefix=prefix,
+        project_id=resolved_project_id,
+    )
+    return _extract_from_table_dicts_llm(
+        tables,
+        max_rows_per_table=max_rows_per_table,
+        model=model,
+    )

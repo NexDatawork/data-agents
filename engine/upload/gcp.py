@@ -94,6 +94,39 @@ def upload_dataset_to_gcs(
     return uploaded
 
 
+def upload_file_to_gcs(
+    local_file: Path,
+    *,
+    bucket_name: str,
+    blob_name: str,
+    project_id: str | None = None,
+) -> str:
+    """Upload one local file to GCS and return ``gs://`` URI."""
+    try:
+        from google.auth.exceptions import DefaultCredentialsError
+        from google.cloud import storage
+    except ImportError as exc:
+        raise RuntimeError(
+            "google-cloud-storage is not installed. Install project dependencies first."
+        ) from exc
+
+    if not local_file.exists() or not local_file.is_file():
+        raise ValueError(f"Local file does not exist: {local_file}")
+
+    try:
+        client = storage.Client(project=project_id)
+    except DefaultCredentialsError as exc:
+        raise RuntimeError(
+            "GCP credentials not found. Run 'gcloud auth application-default login' "
+            "or set GOOGLE_APPLICATION_CREDENTIALS."
+        ) from exc
+
+    clean_blob_name = blob_name.strip("/")
+    blob = client.bucket(bucket_name).blob(clean_blob_name)
+    blob.upload_from_filename(str(local_file))
+    return f"gs://{bucket_name}/{clean_blob_name}"
+
+
 def build_parser() -> argparse.ArgumentParser:
     """Create the CLI parser for dataset uploads."""
     parser = argparse.ArgumentParser(

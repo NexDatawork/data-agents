@@ -13,6 +13,10 @@ from engine.connectors.neo4j_aura import store_extraction_in_neo4j
 from engine.graphs.builder import build_graph_from_extraction
 from engine.graphs.visualize import visualize_graph
 from engine.graphs.visualize import visualize_schema_graph
+from engine.upload.gcp import DEFAULT_GCS_PREFIX
+from engine.workflows.graph_from_gcs import DEFAULT_GCS_OUTPUT_PREFIX
+from engine.workflows.graph_from_gcs import resolve_output_json_path
+from engine.workflows.graph_from_gcs import run_graph_from_gcs_workflow
 
 app = typer.Typer(help="Store and retrieve extraction graphs from Neo4j AuraDB.")
 
@@ -105,11 +109,7 @@ def pull(
     ),
 ) -> None:
     """Pull a dataset from Neo4j AuraDB into extraction JSON format."""
-    out_path = Path(output)
-    if out_path.suffix == "":
-        out_path = out_path / dataset / "graph.json"
-    elif out_path.parent == Path("output"):
-        out_path = out_path.parent / dataset / out_path.name
+    out_path = resolve_output_json_path(dataset, output)
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -143,3 +143,80 @@ def pull(
     typer.echo(f"  - PNG:  {saved_graph_path}")
     typer.echo(f"  - Entities: {entity_count}")
     typer.echo(f"  - Relationships: {relationship_count}")
+
+
+@app.command("from-gcs")
+def from_gcs(
+    dataset: str = typer.Argument(..., help="Dataset folder name already uploaded to GCS."),
+    bucket: str | None = typer.Option(
+        None,
+        "--bucket",
+        help="GCS bucket name (defaults to GCS_BUCKET from env).",
+    ),
+    input_prefix: str = typer.Option(
+        DEFAULT_GCS_PREFIX,
+        "--input-prefix",
+        help="Base GCS input prefix containing uploaded dataset folders.",
+    ),
+    output_prefix: str = typer.Option(
+        DEFAULT_GCS_OUTPUT_PREFIX,
+        "--output-prefix",
+        help="Base GCS output prefix for graph artifacts.",
+    ),
+    output: str = typer.Option(
+        "./output/graph.json",
+        "--output",
+        "-o",
+        help="Local destination file for exported graph JSON.",
+    ),
+    model: str | None = typer.Option(
+        None,
+        "--model",
+        help="Optional LLM model override for extraction.",
+    ),
+    project_id: str | None = typer.Option(
+        None,
+        "--project-id",
+        help="GCP project id (defaults to GCP_PROJECT_ID from env).",
+    ),
+    schema_view: bool = typer.Option(
+        False,
+        "--schema-view",
+        help="Render schema/entity-type graph view instead of full row-level graph.",
+    ),
+    print_json: bool = typer.Option(
+        True,
+        "--print-json/--no-print-json",
+        help="Print final Neo4j-exported graph JSON in CLI output.",
+    ),
+) -> None:
+    """Create graph from GCS dataset via LLM, store in Neo4j, and publish artifacts to GCS."""
+    try:
+        result = run_graph_from_gcs_workflow(
+            dataset=dataset,
+            bucket=bucket,
+            input_prefix=input_prefix,
+            output_prefix=output_prefix,
+            output=output,
+            model=model,
+            project_id=project_id,
+            schema_view=schema_view,
+        )
+    except (EnvironmentError, RuntimeError, ValueError) as exc:
+        typer.echo(f"Workflow failed: {exc}", err=True)
+        raise typer.Exit(code=1) from exc
+
+    typer.echo(f"Workflow complete for dataset '{dataset}'")
+    typer.echo(f"  - GCS input:  {result['gcs_input_uri']}")
+    typer.echo(f"  - Neo4j stored nodes: {result['stored_node_count']}")
+    typer.echo(f"  - Neo4j stored edges: {result['stored_edge_count']}")
+    typer.echo(f"  - Local JSON: {result['local_json_path']}")
+    typer.echo(f"  - Local PNG:  {result['local_png_path']}")
+    typer.echo(f"  - GCS JSON:   {result['gcs_json_uri']}")
+    typer.echo(f"  - GCS PNG:    {result['gcs_png_uri']}")
+    typer.echo(f"  - Entities: {result['entity_count']}")
+    typer.echo(f"  - Relationships: {result['relationship_count']}")
+
+    if print_json:
+        typer.echo("\nNeo4j graph JSON:")
+        typer.echo(json.dumps(result["graph_json"], indent=2))
